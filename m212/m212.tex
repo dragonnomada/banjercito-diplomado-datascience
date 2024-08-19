@@ -1,0 +1,101 @@
+\documentclass{article}
+
+\begin{document}
+
+\begin{flushleft}
+    \LARGE \textbf{Práctica M212} \\[12pt]
+    \Large Banjercito | Diplomado en Ciencia de Datos \\[12pt]
+    \Large Instructor: Alan Badillo Salas \\[24pt]
+\end{flushleft}
+
+\section{Introducción}
+
+En esta práctica trabajaremos sobre el \textit{dataset} de créditos de clientes para realizar algunas pruebas de hipótesis que determinen el \textbf{soporte} de las muestras que caen en la hipótesis y la \textbf{probabilidad} de que ocurra.
+\\[12pt]
+El \textit{dataset} contiene los siguientes ejes de análisis:
+\begin{itemize}
+    \item \textbf{ID de Crédito} | Cada crédito
+    \item \textbf{Monto Aprobado} | Lo que se prestó en el crédito
+    \item \textbf{Total de Abonos} | Número de pagos aportados al crédito 
+    \item \textbf{Suma de Abonos} | La suma total de los pagos aportados al crédito
+    \item \textbf{Promedio de Abonos} | El promedio de cada pago aportado al crédito
+    \item \textbf{Desviación de los Abonos} | Qué tanto se aleja del promedio de cada aportado al crédito
+    \item \textbf{Porcentaje de Recuperación} | Cuánto del crédito se ha recuperado (pagado)
+\end{itemize}
+El objetivo es calcular de cada hipótesis planteada el \textbf{soporte} (número de muestras que cumplen la hipótesis) y la \textbf{probabilidad} de que ocurra (el número de muestras que cumplen la hipótesis entre el total de muestras).
+
+\section{Pruebas de Hipótesis}
+
+Una prueba de hipótesis la podemos entender cómo una pregunta o sentencia lógica que conforma un resultado probabilístico, por ejemplo, cuántas muestras o créditos fueron otorgados con un monto mayor a \$20,000 o cuántos créditos recuperaron más del 50\% en su suma abonos aportados.
+\begin{enumerate}
+    \item $H_1$ | Se otorga un crédito menor a \$10k (estricto)
+    \item $H_2$ | Se otorga un crédito entre \$10k y \$20k (inclusive)
+    \item $H_3$ | Se otorga un crédito mayor \$20k (estricto)
+    \item $G_1$ | Se recupera menos del 10\% del crédito (estricto)
+    \item $G_2$ | Se recupera menos entre 10\% y 50\% del crédito (inclusive)
+    \item $G_3$ | Se recupera más del 50\% del crédito (estricto)
+    \item $H_1 \land G_1$ | Crédito menor a \$10k con recuperación menor al 10\%
+    \item $H_1 \land G_2$ | Crédito menor a \$10k con recuperación del 10\% al 50\%
+    \item $H_1 \land G_3$ | Crédito menor a \$10k con recuperación mayor al 50\%
+    \item $H_2 \land G_1$ | Crédito entre \$10k y \$20k con recuperación menor al 10\%
+    \item $H_2 \land G_2$ | Crédito entre \$10k y \$20k con recuperación del 10\% al 50\%
+    \item $H_2 \land G_3$ | Crédito entre \$10k y \$20k con recuperación mayor al 50\%
+    \item $H_3 \land G_1$ | Crédito mayor a \$20k con recuperación menor al 10\%
+    \item $H_3 \land G_2$ | Crédito mayor a \$20k con recuperación del 10\% al 50\%
+    \item $H_3 \land G_3$ | Crédito mayor a \$20k con recuperación mayor al 50\%
+\end{enumerate}
+
+\section{Cálculo de probabilidades condicionales}
+
+Las probabilidades condicionales nos permitirán entender verdades ocultas en los datos, como la probabilidad de recuperar un porcentaje del crédito dado que se otorgó un crédito para algún monto aprobado.
+\begin{enumerate}
+    \item $P(H_1 | G_1)$ | Se otorga un crédito menor a \$10k dado que se recuperó menos del 10\%
+    \item $P(G_1 | H_1)$ | Recuperar menos del 10\% dado que se otorga un crédito menor a \$10k
+    \item $P(H_1 | G_2)$ | Se otorga un crédito menor a \$10k dado que se recuperó entre el 10\% y 50\%
+    \item $P(G_2 | H_1)$ | Recuperar entre el 10\% y el 50\% dado que se otorga un crédito menor a \$10k
+    \item $P(H_1 | G_3)$ | Se otorga un crédito menor a \$10k dado que se recuperó más del 50\%
+    \item $P(G_3 | H_1)$ | Recuperar más del 50\% dado que se otorga un crédito menor a \$10k
+    \item $P(H_2 | G_1)$ | Se otorga un crédito entre \$10k y \$20k dado que se recuperó menos del 10\%
+    \item $P(G_1 | H_2)$ | Recuperar menos del 10\% dado que se otorga un crédito entre \$10k y \$20k
+    \item $P(H_2 | G_2)$ | Se otorga un crédito entre \$10k y \$20k dado que se recuperó entre el 10\% y 50\%
+    \item $P(G_2 | H_2)$ | Recuperar entre el 10\% y el 50\% dado que se otorga un crédito entre \$10k y \$20k
+    \item $P(H_2 | G_3)$ | Se otorga un crédito entre \$10k y \$20k dado que se recuperó más del 50\%
+    \item $P(G_3 | H_2)$ | Recuperar más del 50\% dado que se otorga un crédito entre \$10k y \$20k
+    \item $P(H_3 | G_1)$ | Se otorga un crédito mayor a \$20k dado que se recuperó menos del 10\%
+    \item $P(G_1 | H_3)$ | Recuperar menos del 10\% dado que se otorga un crédito mayor a \$20k
+    \item $P(H_3 | G_2)$ | Se otorga un crédito mayor a \$20k dado que se recuperó entre el 10\% y 50\%
+    \item $P(G_2 | H_3)$ | Recuperar entre el 10\% y el 50\% dado que se otorga un crédito mayor a \$20k
+    \item $P(H_3 | G_3)$ | Se otorga un crédito mayor a \$20k dado que se recuperó más del 50\%
+    \item $P(G_3 | H_3)$ | Recuperar más del 50\% dado que se otorga un crédito mayor a \$20k
+\end{enumerate}
+Fórmula de la probabilidad condicional
+$P(A|B) = \frac{P(A \land B)}{P(B)}$
+
+\section{Retos}
+
+Resuelve los siguientes retos analizando las probabilidades anteriores e intenta graficar los resultados.
+\\[12pt]
+La siguientes preguntas se pueden resolver con la probabilidad condicional $P(H_i|G_j)$ donde $i=1,2,3$ para algún monto aprobado y $j=1,2,3$ para algún porcentaje de recuperación.
+\begin{itemize}
+    \item ¿Cuál es intervalo del monto aprobado de mayor probabilidad para una recuperación del crédito menor al 10\%? ($H_1$, $H2$ o $H3$)
+    \item ¿Cuál es intervalo del monto aprobado de mayor probabilidad para una recuperación del crédito entre el 10\% y el 50\%? ($H_1$, $H2$ o $H3$)
+    \item ¿Cuál es intervalo del monto aprobado de mayor probabilidad para una recuperación del crédito mayor al 50\%? ($H_1$, $H2$ o $H3$)
+\end{itemize}
+La siguientes preguntas se pueden resolver con la probabilidad condicional $P(G_j|H_i)$ donde $i=1,2,3$ para algún monto aprobado y $j=1,2,3$ para algún porcentaje de recuperación.
+\begin{itemize}
+    \item Dado que el monto aprobado fue menor a \$10,000 ¿Cuál es el porcentaje de recuperación de mayor probabilidad? ($G_1$, $G2$ o $G3$)
+    \item Dado que el monto aprobado fue entre \$10,000 a \$20,000 ¿Cuál es el porcentaje de recuperación de mayor probabilidad? ($G_1$, $G2$ o $G3$)
+    \item Dado que el monto aprobado fue mayor a \$20,000 ¿Cuál es el porcentaje de recuperación de mayor probabilidad? ($G_1$, $G2$ o $G3$)
+\end{itemize}
+Genera las siguientes gráficas de barras:
+\begin{enumerate}
+    \item La probabilidad $P(H_1 | G_j)$ para cada $G_j$ con $j=1,2,3$
+    \item La probabilidad $P(H_2 | G_j)$ para cada $G_j$ con $j=1,2,3$
+    \item La probabilidad $P(H_3 | G_j)$ para cada $G_j$ con $j=1,2,3$
+    \item La probabilidad $P(G_1 | H_i)$ para cada $H_i$ con $i=1,2,3$
+    \item La probabilidad $P(G_2 | H_i)$ para cada $H_i$ con $i=1,2,3$
+    \item La probabilidad $P(G_3 | H_i)$ para cada $H_i$ con $i=1,2,3$
+\end{enumerate}
+Explica cada gráfica y que significa un porcentaje mayor o menor y qué significa ser el máximo y mínimo o que todos sean iguales.
+
+\end{document}

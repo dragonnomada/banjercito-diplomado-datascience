@@ -1,0 +1,693 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{caption}
+
+\begin{document}
+
+\begin{center}
+    \Large Banjercito \\[24pt]
+    \Large Diplomado en Ciencia de Datos
+\end{center}
+
+\vfill
+
+\begin{flushleft}
+    \LARGE \textbf{Notas del Curso} \\[12pt]
+    \LARGE Módulo III | Semana 1 \\[24pt]
+\end{flushleft}
+
+\vfil
+
+\begin{flushleft}
+    Instructor: Alan Badillo Salas \\[12pt]
+    Agosto 2024 \\[24pt]
+\end{flushleft}
+
+\vfill
+
+\section{Introducción}
+
+En el Módulo I hemos profundizado los conceptos más importantes del uso de Excel y Power BI, como el tablas dinámicas en Excel y la adquisición de datos mediante Power Query y generación de informes en PoweBI.
+\\[12pt]
+En el Módulo II hemos aprendido los concetos fundamentales de \textit{Python} como el manejo de listas, series y tablas de pandas. Así como una introducción a la probabilidad y estadística de las que partiremos en este curso.
+\\[12pt]
+En este módulo III \textit{"Ciencia de Datos"} comenzaremos por revisar los conceptos más importantes de la estadística como los tipos de análisis cuantitativos y cualitativos, las medidas de tendencia central, las medidas de dispersión, las distribuciones de probabilidad, la inferencia estadística, la regresión y correlación, el análisis de la varianza (ANOVA) y la estadística descriptiva, exploratoria y muestreos.
+\\[12pt]
+Adicionalmente, profundarizaremos en el uso de Excel, PowerBI y Excel según sea conveniente en cada estudio o ambos en caso de que se quieran dominar ambas herramientas al mismo tiempo.
+
+\clearpage
+
+% \tableofcontents
+
+% \clearpage
+
+\subsection{Contenido de la Semana 1}
+
+Esta semana revisaremos los siguientes temas:
+
+\begin{enumerate}
+    \item Tipos de análisis estadístico
+    \begin{enumerate}
+        \item Análisis cuantitativo
+        \item Análisis cualitativo
+    \end{enumerate}
+    \item Medidas de tendencia central
+    \begin{enumerate}
+        \item Media
+        \item Mediana
+        \item Moda
+        \item Cuartiles
+        \item Percentiles
+    \end{enumerate}
+\end{enumerate}
+
+\section{Tipos de análisis estadístico}
+
+El análisis estadístico es una técnica que permite obtener información de los datos relativa a los mismos datos, por ejemplo, si poseemos una lista de edades, podríamos describir la edad mínima, la edad máxima, la edad promedio, la edad más repetida e incluso que tanto se dispersa una edad respecto a otra. A estos valores los llamaremos estadísticos y su base de fondo será la probabilidad de que un evento pueda ocurrir.
+\\[12pt]
+Existen idealmente dos tipos de datos que pueden ser analizados mediante la estadística y son los datos cuantitativos o que se pueden cuantificar, por ejemplo, sumar, promediar, escalar, y los datos cualitativos o que no se pueden dimensionar y se refieren a características de relaciones entre los datos, por ejemplo, a qué categoría o grupo pertenecen, la valoración que da un usuario a un producto o el nivel de satisfacción en una compra.
+\\[12pt]
+En general haremos un \textit{Análisis Cuantitativo} si los datos están relacionados a valores numéricos o un \textit{Análisis Cualitativo} si los datos son categóricos o relacionales.
+
+\subsection{Análisis cuantitativo}
+
+El análisis cuantitativo se refiere a un análisis sobre datos numéricos que pueden ser continuos como el precio de la gasolina, la estatura de una persona, el peso de un producto o la temperatura del ambiente. También sobre datos numéricos que pueden ser discretos como la edad de una persona, el número de hijos de un trabajador o el número de horas extras trabajadas.
+\\[12pt]
+En en análisis cuantitativo los valores continuos pueden tomar valores intermedios unos de otros, por ejemplo, podríamos tener que una persona pesa 64.5kg y otra 72.8kg, pero en cualquier momento podríamos recibir un dato intermedio de una persona que pesa 67.9kg. Esto implica que no siempre tendremos valores repetidos y la probabilidad de que una persona pese 65kg o 70kg sea más difícil de calcular.
+\\[12pt]
+En el análisis cuantitativo los valores discretos no pueden tomar valores intermedios, generalmente son números enteros que toman valores finitos o infinitos, pero no intermedios, por ejemplo, la edad de una persona teoricamente es finita, pero también se podría ver como posiblemente infinita, en fines prácticos nadie podría tener 23.7 años ya que o tiene 23 años o 24 años cumplidos y en algún momento podría tomar un valor de 140 años si se prolongara la vida de una persona. Casi siempre ocurren estos tipos de casos, por ejemplo, el número de hijos que tiene un trabajador podría ser útil para la empresa para otorgar un crédito o aumentar su salario. Y aunque es más probable que tenga 0, 1, 2, 3 o incluso 4, podría a llegar a tener 8, 10 o 12 hijos. Este tipo de complejidad debe ser considerada al analizar los datos discretos y aunque se asume que alguien no podría tener 1.4 hijos, tampoco se conoce el número máximo de hijos.
+
+\subsection{Análisis cualitativo}
+
+El análisis cualitativo consiste en establecer información sobre propiedades relacionales de los datos, por ejemplo, para un carro algunos valores cualitativos serían: marca, modelo, color, valoración del cliente, nivel de satisfacción de la compra etc. Generalmente se asocian los análisis cualitativos con categorías o valoraciones (rating o rankeo). Se podría pensar que la valoración de un cliente o el nivel de satisfacción es un valor cuantitativo, por ejemplo, si la valoración de un cliente es del 1 al 5, podríamos pensar que es algo cuantitativo y discreto o continuo, pero en realidad, la valoración de un cliente es algo subjetivo que no se midió directamente del carro y no es una propiedad natural de carro, sino que es un valor relacionado o asociado al carro de manera inderecta.
+\\[12pt]
+Los análisis cualitativos sirven generalmente para dividir los datos o agruparlos en categorías o grupos de categorías, por ejemplo, todos los carros color rojo o todos los carros con una valoración del cliente mayor a 3. Esto permitirá hacer análisis cuantitativo en subespacios enfocados y ajustados a cualidades del objeto de análisis, por ejemplo, cuál es el promedio del precio (algo cuantitativo) sobre los carros con un nivel de satisfacción menor a 2 (algo cualitativo).
+
+\section{Medidas de Tendencia Central}
+
+Los datos cuantitativos (numéricos) poseen características matemáticas que podemos calcular para poder entender mejor la naturaleza del dato.
+\\[12pt]
+Las principales medidas de tendencia central son:
+\begin{itemize}
+    \item \textbf{Media} | Represental el valor promedio de un conjunto de valores y es el elemento con la menor distancia a cada uno de los datos, por ejemplo, si tenemos un conjunto de edades, la edad promedio será la que represente mejor al grupo, ya que estará a la menor distancia posible de cada una de las edades.
+    \item \textbf{Mediana} | Representa el valor medio de un conjunto de valores ordenados, y es el valor que queda en medio o a la mitad de todos los valores, si el número de valores es par se tomará el promedio de los dos valores centrales. La mediana podría ser diferente a la media y su sentido es entender qué tan sesgados están los datos. Si la mediana es menor a la media significará que hay muchos valores pequeños en el conjunto de valores y por lo tanto un sesgo a la izquierda y si la mediana es mayor a la media significará que los valores grandes dominan más de la mitad del conjunto de valores y el sesgo estará a la derecha. Esto nos sirve para determinar si los datos estarán centrados o desplazados.
+    \item \textbf{Moda} | Representa el valor más repetido o de mayor frecuencia de un conjunto de valores ordenados por frecuencia de repetición. Este generalmente se usa en datos discretos e indica cuál es el elemento que más se repite. Con esto podríamos entender mejor los datos, por ejemplo, ordenarlos por frecuencia de aparición y obtener diferentes modas (la primera, segunda, tercera y así sucesivamente).
+    \item \textbf{Cuartiles} | Representa el valor promedio a un 25\% (Primer Cuartil | $Q_1$), 50\% (Segundo Cuartil | $Q_2$) o 75\% (Tercer Cuartil | $Q_3$). Estos son importantes para construir la caja estadística que representa el espacio donde vive la mayoría de los datos. Así el 25\% de los datos nos dará un límite inferior que nos dirá que abajo de ese valor promedio vive solo el 25\% de los datos y el 75\% nos dará de manera similar el límite superior que nos dirá cuál es el 25\% de los datos que viven arriba de ese límite. De esta manera nos quedamos con el 50\% de los datos y podemos ver si el sesgo está cargado hacia el 75\% de los datos (sesgo a la derecha) o cargado hacia el 25\% de los datos (sesgo a la izquierda).
+    \item \textbf{Percentiles} | Representa la generalización del promedio de datos a cierto porcentaje de la población, por ejemplo, al 30\% representará el valor promedio al 30\% de la población. Para obtenerlo debemos ordenar el conjunto de valores del menor al mayor y ver qué porcentaje de progreso tiene, luego calcular el valor promedio al $x\%$.
+\end{itemize}
+
+\subsection{Media}
+
+Para calcular la media basta con sumar todos los valores del conjunto y dividir dicha suma entre el número total de elementos en el conjunto. Esto representará un valor único para todo el conjunto que aproxime el valor ideal de lo que debería valer cada dato del conjunto si todos representaran una misma idea o naturaleza.
+\\[12pt]
+La ecuación para calcular el valor medio es:
+\begin{equation}
+    \begin{aligned}
+        \bar{x} = \frac{1}{N} \sum_{i=1}^{N} x_i
+    \end{aligned}
+    \label{eq:media}
+\end{equation}
+La ecuación (\ref{eq:media}) representa el valor promedio (valor medio) de los datos y geométricamente es el que queda al centro de todos los datos (en un espacio euclidiano). Este valor sirve para conocer dónde se encuentra el valor central que podría representar a todo un conjunto de valores, si es que su dispresión es baja.
+
+\subsubsection{Ejemplo para calcular la media}
+
+Supongamos que tenemos la siguiente lista de valores:
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|}
+    \hline
+    \textbf{Edad} \\ \hline
+    23 \\ \hline
+    24 \\ \hline
+    18 \\ \hline
+    20 \\ \hline
+    27 \\ \hline
+    35 \\ \hline
+    \end{tabular}
+    \caption{Conjunto de edades}
+\end{table}
+\\
+La edad promedio se calcula como:
+\begin{equation}
+    \begin{aligned}
+        \overline{edad} = \frac{1}{6} \sum_{i=1}^{6} Edad_i \\
+        \qquad = \frac{23 + 24 + 18 + 20 + 27 + 35}{6} \\
+        \qquad = \frac{147}{6} \\
+        \qquad = 24.5
+    \end{aligned}
+\label{eq:media_edades}
+\end{equation}
+Entonces la edad promedio $\overline{edad} = 24.5$ y representa la edad más cercana a todas las edades. También nos indica que las edades están cercanas a los 24.5 años y aunque podríamos pensar que nadie puede tener estrictamente 24.5 años, la edad media si puede y significa que entre 24 y 25 años tendría una persona en promedio.
+
+\subsection{Mediana}
+
+Para calcular la mediana primero debemos ordenar los datos y encontrar el valor del centro, si el número de valores es par habrán dos centros y entonces la mediana será el promedio de estos dos valores centrales, sino, si es impar habrá un único centro y será la mediana directamente. El valor de la mediana representa el valor central o el valor que tomaría aproximadamente el 50\% de la población, por ejemplo, si ordenamos a todos los alumnos de un curso de secundaria por estatura de la menor a la mayor, la estatura central nos indicaría que tan alto es el alumno que se encuentra en medio de todos los alumnos, si este alumno es más alto que el promedio, entonces los alumnos serían altos en general, pero si es más bajo que el promedio, esto indicaría que muchos de los alumnos son más bajos que el promedio ideal.
+\\[12pt]
+La ecuación de la mediana se calcula como:
+\begin{equation}
+    \begin{aligned}
+        \widehat{x} = 
+        \begin{cases}
+            x_{p} \quad N \equiv 1 \pmod{2}, p=\frac{N + 1}{2} \\
+            \frac{x_{p} + x_{p + 1}}{2} \quad N \equiv 1 \pmod{2}, p=\frac{N}{2} \\
+        \end{cases}
+    \end{aligned}
+    \label{eq:mediana}
+\end{equation}
+La ecuación (\ref{eq:mediana}) representa el valor de en medio de los datos ordenados e indica qué tan bajo o alto es respecto al promedio para entender si los datos se cargan a la izqueirda o a la derecha.
+
+\subsubsection{Ejemplo para calcular la mediana}
+
+Supongamos que tenemos la siguiente lista de valores:
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|}
+    \hline
+    \textbf{Edad} \\ \hline
+    23 \\ \hline
+    24 \\ \hline
+    18 \\ \hline
+    20 \\ \hline
+    27 \\ \hline
+    35 \\ \hline
+    \end{tabular}
+    \caption{Conjunto de edades}
+\end{table}
+\\
+Ordenando los valores de menor a mayor tenemos:
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline
+    \textbf{Edad} \\ \hline
+    1 & 18 \\ \hline
+    2 & 20 \\ \hline
+    3 & 23 \\ \hline
+    4 & 24 \\ \hline
+    5 & 27 \\ \hline
+    6 & 35 \\ \hline
+    \end{tabular}
+    \caption{Conjunto de edades ordenadas de menor a mayor}
+\end{table}
+\\
+La edad mediana se calcula como (caso par para 6 valores):
+\begin{equation}
+    \begin{aligned}
+        p = \frac{6}{2} = 3 \\
+        \widehat{edad} = \frac{edad_{3} + edad_{4}}{2} \\
+        = \frac{23 + 24}{2} \\
+        = \frac{47}{2} \\
+        = 23.5 \\
+    \end{aligned}
+\label{eq:ejemplo_mediana}
+\end{equation}
+Entonces la edad mediana $\widehat{edad} = 23.5$ y representa el centro de las edades. Vemos que es ligeramente menor al promedio por lo que los datos están ligeramente sesgados a la izqueirda, esto significa que hay más edades menores al promedio que edades mayores al promedio. Por lo que podemos asumir que hay mayor población más joven que el promedio. Es decir, 4 personas son menores al promedio mientras solo 2 son mayores al promedio.
+
+\subsection{Moda}
+
+Para calcular la moda hay que ordenar todos los datos por frecuencia en que se repiten, esto suele funcionar únicamente en valores discretos, ya que dos valores continuos podrían no repetirse, por ejemplo, si tenemos el precio del gas de $\$17.36$ y otro de $\$17.37$ serán distintos idealmente. Sin embargo, podríamos crear intervalos o \textit{bins} como veremos más adelante en la construcción de un histograma.
+\\[12pt]
+La ecuación de la moda se calcula como:
+\begin{equation}
+    \begin{aligned}
+        \dot{x} = x_m, max_{m=1..N} freq(x_m)
+    \end{aligned}
+    \label{eq:moda}
+\end{equation}
+La ecuación (\ref{eq:moda}) representa el valor que más se repite, es decir de mayor frecuencia de repetición ($freq(x_m)$). Este valor de moda indica cuál es el valor que más se repite en el conjunto de datos, se usa mucho para saber cuál es el producto más vendido, la edad más común o el número de hijos con mayor repetición en el conjunto de valores.
+
+\subsubsection{Ejemplo para calcular la moda}
+
+\clearpage
+
+Supongamos que tenemos la siguiente lista de valores:
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    \textbf{Índice} & \textbf{Edad} & \textbf{Índice} & \textbf{Edad} \\ \hline
+    1 & \textbf{18} & 11 & \textbf{18}  \\ \hline
+    2 & \textbf{18} & 12 & \textbf{20}  \\ \hline
+    3 & \textbf{19} & 13 & \textbf{28}  \\ \hline
+    4 & \textbf{18} & 14 & \textbf{20}  \\ \hline
+    5 & \textbf{18} & 15 & \textbf{19}  \\ \hline
+    6 & \textbf{19} & 16 & \textbf{18}  \\ \hline
+    7 & \textbf{18} & 17 & \textbf{24}  \\ \hline
+    8 & \textbf{20} & 18 & \textbf{18}  \\ \hline
+    9 & \textbf{18} & 19 & \textbf{20}  \\ \hline
+    10 & \textbf{18} & 20 & \textbf{18}  \\ \hline
+    \end{tabular}
+    \caption{Conjunto de las edades del grupo de primer año de licenciatura}
+\end{table}
+\\
+Podemos observar que muchas de las edades se repiten, sobre todo las de $18$ años.
+\\[12pt]
+Si ordenamos los datos por frecuencia de mayor a menor tenemos:
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    \textbf{Edad} & \textbf{Frecuencia} \\ \hline
+    18 & \textbf{11}  \\ \hline
+    20 & \textbf{4}  \\ \hline
+    19 & \textbf{3}  \\ \hline
+    24 & \textbf{1}  \\ \hline
+    28 & \textbf{1}  \\ \hline
+    \end{tabular}
+    \caption{Conjunto de las edades del grupo de primer año de licenciatura, ordenados por frecuencia descendente}
+\end{table}
+\\
+Podemos observar que la moda es $\dot{edad} = 18$, sin embargo podemos ver que el siguiente valor más repetido es $20$ años y luego $19$ años con $11, 4, 3$ repticiones respectivamente. Esto nos daría las primeras 3 modas y sabríamos que $90\%$ de los datos son $18, 20, 19$.
+
+\subsection{Cuariles}
+
+Para calcular los tres cuartiles $Q_1, Q_2, Q_3$ necesitamos ordenar los datos usaremos una idea similar a la mediana para ubicar el dato al $Q_1 \rightarrow 25\%$, $Q_2 \rightarrow 50\%$ (corresponde a la mediana) y $Q_3 \rightarrow 75\%$.
+\\[12pt]
+La ecuación del primer cuartil $Q_1$ se calcula como:
+\begin{equation}
+    \begin{aligned}
+        Q_1 = x_{a}, \quad a = \left \lceil \frac{N}{4} \right \rceil
+    \end{aligned}
+    \label{eq:q1}
+\end{equation}
+La ecuación del segundo cuartil $Q_2$ se calcula como:
+\begin{equation}
+    \begin{aligned}
+        Q_2 = x_{b}, \quad b = \left \lceil \frac{N}{2} \right \rceil
+    \end{aligned}
+    \label{eq:q2}
+\end{equation}
+La ecuación del tercer cuartil $Q_3$ se calcula como:
+\begin{equation}
+    \begin{aligned}
+        Q_3 = x_{c}, \quad c = \left \lceil \frac{3 \cdot N}{4} \right \rceil
+    \end{aligned}
+    \label{eq:q3}
+\end{equation}
+Para ser más precisos si hay dos centros cercanos al pivote $p$ debemos promediar dichos valores.
+
+\subsubsection{Ejemplo para calcular los cuartiles}
+
+Supongamos que tenemos la siguiente lista de valores:
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    \textbf{Índice} & \textbf{Edad} & \textbf{Índice} & \textbf{Edad} \\ \hline
+    1 & \textbf{18} & 11 & \textbf{18}  \\ \hline
+    2 & \textbf{18} & 12 & \textbf{20}  \\ \hline
+    3 & \textbf{19} & 13 & \textbf{28}  \\ \hline
+    4 & \textbf{18} & 14 & \textbf{20}  \\ \hline
+    5 & \textbf{18} & 15 & \textbf{19}  \\ \hline
+    6 & \textbf{19} & 16 & \textbf{18}  \\ \hline
+    7 & \textbf{18} & 17 & \textbf{24}  \\ \hline
+    8 & \textbf{20} & 18 & \textbf{18}  \\ \hline
+    9 & \textbf{18} & 19 & \textbf{20}  \\ \hline
+    10 & \textbf{18} & 20 & \textbf{18}  \\ \hline
+    \end{tabular}
+    \caption{Conjunto de las edades del grupo de primer año de licenciatura}
+\end{table}
+
+\clearpage
+
+Si ordenamos los datos de menor a mayor (de forma ascendente) tenemos:
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    \textbf{Índice} & \textbf{Edad} & \textbf{Índice} & \textbf{Edad} \\ \hline
+    1 & \textbf{18} & 11 & \textbf{18}  \\ \hline
+    2 & \textbf{18} & 12 & \textbf{19}  \\ \hline
+    3 & \textbf{18} & 13 & \textbf{19}  \\ \hline
+    4 & \textbf{18} & 14 & \textbf{19}  \\ \hline
+    5 & \textbf{18} & 15 & \textbf{20}  \\ \hline
+    6 & \textbf{18} & 16 & \textbf{20}  \\ \hline
+    7 & \textbf{18} & 17 & \textbf{20}  \\ \hline
+    8 & \textbf{18} & 18 & \textbf{20}  \\ \hline
+    9 & \textbf{18} & 19 & \textbf{24}  \\ \hline
+    10 & \textbf{18} & 20 & \textbf{28}  \\ \hline
+    \end{tabular}
+    \caption{Conjunto de las edades del grupo de primer año de licenciatura ordenados}
+\end{table}
+\\
+Entonces el valor de los cuartiles serán:
+\begin{equation}
+    \begin{aligned}
+        Q_1 = x_{a} = x_{5} = \textbf{18}, \quad a = \left \lceil \frac{20}{4} \right \rceil = 5 \\
+        Q_2 = x_{b} = x_{10} = \textbf{18}, \quad b = \left \lceil \frac{20}{2} \right \rceil = 10 \\
+        Q_3 = x_{c} = x_{15} = \textbf{20}, \quad c = \left \lceil \frac{3 \cdot 20}{4} \right \rceil = 15 \\
+    \end{aligned}
+    \label{eq:ejemplo_cuartiles}
+\end{equation}
+Así, podemos observar que la edad para el 25\% y 50\% de la población sigue siendo $18$ años, esto significa que las edades están cargadas hacia los 18 años en su 50\% y apenas alcanza los $20$ años al 75\% de la población.
+
+\subsection{Percentiles}
+
+Extendiendo la idea los cuartiles que indican el valor medio en los porcentajes 25\%, 50\% y 75\% podemos calcular el valor central para cada porcentaje desde el 0\% hasta el 100\%. Esto significa que cada valor tiene asociado un porcentaje de progreso y podemos calcular cada promedio relacionado a un porcentaje. Aquí los datos deben estar ordenados de menor a mayor.
+\\[12pt]
+La ecuación del percentil $P_j$ con $j=0, 1, 2, ..., 100$ se calcula como:
+\begin{equation}
+    \begin{aligned}
+        P_j = \overline{x_i}, \forall \left \lceil \frac{100 \cdot i}{N} \right \rceil = j
+    \end{aligned}
+    \label{eq:percentil}
+\end{equation}
+Esto significa que $P_j$ será el promedio de todos los valores $x_i$ tales que su progreso o porcentaje de avance del índice $i=1...N$ sea igual a $j$ en valor su redondeado.
+
+\subsubsection{Ejemplo para calcular el percentil}
+
+Supongamos que tenemos la siguiente lista de valores:
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|c|}
+    \hline
+    \textbf{Índice} & \textbf{Edad} & \textbf{Índice} & \textbf{Edad} & \textbf{Índice} & \textbf{Edad} & \textbf{Índice} & \textbf{Edad} \\ \hline
+    1 & \textbf{18} & 26 & \textbf{19} & 51 & \textbf{19} & 76 & \textbf{18} \\ \hline
+    2 & \textbf{18} & 27 & \textbf{19} & 52 & \textbf{19} & 77 & \textbf{20} \\ \hline
+    3 & \textbf{19} & 28 & \textbf{20} & 53 & \textbf{20} & 78 & \textbf{22} \\ \hline
+    4 & \textbf{18} & 29 & \textbf{20} & 54 & \textbf{20} & 79 & \textbf{21} \\ \hline
+    5 & \textbf{18} & 30 & \textbf{19} & 55 & \textbf{19} & 80 & \textbf{19} \\ \hline
+    6 & \textbf{19} & 31 & \textbf{18} & 56 & \textbf{18} & 81 & \textbf{22} \\ \hline
+    7 & \textbf{18} & 32 & \textbf{21} & 57 & \textbf{21} & 82 & \textbf{20} \\ \hline
+    8 & \textbf{20} & 33 & \textbf{19} & 58 & \textbf{19} & 83 & \textbf{23} \\ \hline
+    9 & \textbf{18} & 34 & \textbf{22} & 59 & \textbf{22} & 84 & \textbf{19} \\ \hline
+    10 & \textbf{18} & 35 & \textbf{20} & 60 & \textbf{20} & 85 & \textbf{22} \\ \hline
+    11 & \textbf{18} & 36 & \textbf{19} & 61 & \textbf{19} & 86 & \textbf{21} \\ \hline
+    12 & \textbf{20} & 37 & \textbf{20} & 62 & \textbf{20} & 87 & \textbf{20} \\ \hline
+    13 & \textbf{28} & 38 & \textbf{18} & 63 & \textbf{18} & 88 & \textbf{19} \\ \hline
+    14 & \textbf{20} & 39 & \textbf{22} & 64 & \textbf{22} & 89 & \textbf{20} \\ \hline
+    15 & \textbf{19} & 40 & \textbf{21} & 65 & \textbf{21} & 90 & \textbf{22} \\ \hline
+    16 & \textbf{18} & 41 & \textbf{20} & 66 & \textbf{20} & 91 & \textbf{21} \\ \hline
+    17 & \textbf{24} & 42 & \textbf{19} & 67 & \textbf{19} & 92 & \textbf{23} \\ \hline
+    18 & \textbf{18} & 43 & \textbf{22} & 68 & \textbf{22} & 93 & \textbf{20} \\ \hline
+    19 & \textbf{20} & 44 & \textbf{18} & 69 & \textbf{18} & 94 & \textbf{22} \\ \hline
+    20 & \textbf{18} & 45 & \textbf{23} & 70 & \textbf{23} & 95 & \textbf{21} \\ \hline
+    21 & \textbf{18} & 46 & \textbf{20} & 71 & \textbf{20} & 96 & \textbf{22} \\ \hline
+    22 & \textbf{19} & 47 & \textbf{21} & 72 & \textbf{21} & 97 & \textbf{19} \\ \hline
+    23 & \textbf{18} & 48 & \textbf{19} & 73 & \textbf{19} & 98 & \textbf{21} \\ \hline
+    24 & \textbf{22} & 49 & \textbf{20} & 74 & \textbf{20} & 99 & \textbf{20} \\ \hline
+    25 & \textbf{20} & 50 & \textbf{21} & 75 & \textbf{21} & 100 & \textbf{23} \\ \hline
+    \end{tabular}
+    \caption{Conjunto de las edades de los grupos primer año de licenciatura}
+\end{table}
+\\
+Esta tabla contiene 100 edades, sin embargo, la mayoría de las veces tendremos más valores por lo que al ordenar más de un valor caerá en el mismo percentil.
+
+\clearpage
+
+\hfill\\
+Si ordenamos los valores de menor a mayor:
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|c|}
+    \hline
+    \textbf{Índice} & \textbf{Edad} & \textbf{Índice} & \textbf{Edad} & \textbf{Índice} & \textbf{Edad} & \textbf{Índice} & \textbf{Edad} \\ \hline
+    1 & \textbf{18} & 26 & \textbf{19} & 51 & \textbf{20} & 76 & \textbf{21} \\ \hline
+    2 & \textbf{18} & 27 & \textbf{19} & 52 & \textbf{20} & 77 & \textbf{21} \\ \hline
+    3 & \textbf{18} & 28 & \textbf{19} & 53 & \textbf{20} & 78 & \textbf{21} \\ \hline
+    4 & \textbf{18} & 29 & \textbf{19} & 54 & \textbf{20} & 79 & \textbf{21} \\ \hline
+    5 & \textbf{18} & 30 & \textbf{19} & 55 & \textbf{20} & 80 & \textbf{21} \\ \hline
+    6 & \textbf{18} & 31 & \textbf{19} & 56 & \textbf{20} & 81 & \textbf{22} \\ \hline
+    7 & \textbf{18} & 32 & \textbf{19} & 57 & \textbf{20} & 82 & \textbf{22} \\ \hline
+    8 & \textbf{18} & 33 & \textbf{19} & 58 & \textbf{20} & 83 & \textbf{22} \\ \hline
+    9 & \textbf{18} & 34 & \textbf{19} & 59 & \textbf{20} & 84 & \textbf{22} \\ \hline
+    10 & \textbf{18} & 35 & \textbf{19} & 60 & \textbf{20} & 85 & \textbf{22} \\ \hline
+    11 & \textbf{18} & 36 & \textbf{19} & 61 & \textbf{20} & 86 & \textbf{22} \\ \hline
+    12 & \textbf{18} & 37 & \textbf{19} & 62 & \textbf{20} & 87 & \textbf{22} \\ \hline
+    13 & \textbf{18} & 38 & \textbf{19} & 63 & \textbf{20} & 88 & \textbf{22} \\ \hline
+    14 & \textbf{18} & 39 & \textbf{19} & 64 & \textbf{20} & 89 & \textbf{22} \\ \hline
+    15 & \textbf{18} & 40 & \textbf{19} & 65 & \textbf{20} & 90 & \textbf{22} \\ \hline
+    16 & \textbf{18} & 41 & \textbf{19} & 66 & \textbf{20} & 91 & \textbf{22} \\ \hline
+    17 & \textbf{18} & 42 & \textbf{19} & 67 & \textbf{20} & 92 & \textbf{22} \\ \hline
+    18 & \textbf{18} & 43 & \textbf{20} & 68 & \textbf{21} & 93 & \textbf{22} \\ \hline
+    19 & \textbf{18} & 44 & \textbf{20} & 69 & \textbf{21} & 94 & \textbf{23} \\ \hline
+    20 & \textbf{18} & 45 & \textbf{20} & 70 & \textbf{21} & 95 & \textbf{23} \\ \hline
+    21 & \textbf{19} & 46 & \textbf{20} & 71 & \textbf{21} & 96 & \textbf{23} \\ \hline
+    22 & \textbf{19} & 47 & \textbf{20} & 72 & \textbf{21} & 97 & \textbf{23} \\ \hline
+    23 & \textbf{19} & 48 & \textbf{20} & 73 & \textbf{21} & 98 & \textbf{23} \\ \hline
+    24 & \textbf{19} & 49 & \textbf{20} & 74 & \textbf{21} & 99 & \textbf{24} \\ \hline
+    25 & \textbf{19} & 50 & \textbf{20} & 75 & \textbf{21} & 100 & \textbf{28} \\ \hline
+    \end{tabular}
+    \caption{Conjunto de las edades de los grupos primer año de licenciatura}
+\end{table}
+\\
+Como la tabla coíncide en 100 valores y 100 porcentajes, es fácil calcular cada percentil, el cuál será el de su índice. Por ejemplo, el percentil 17 es $P_{17} = 18$ y el percentil 65 es $P_{65} = 20$ y el perccentil 95 es $P_{95} = 23$.
+\\[12pt]
+Si la tabla tuviera 500 valores, entonces el índice 17 ya no correspondería al percentil 17, sino que sería $\left \lceil \frac{17}{500} \right \rceil = 3$, que corresponde al percentil al $3\%$ de progreso. Pero entonces los índices $i=15,16,17,18,19$ también corresponden al percentil $3\%$. Por lo que el percentil 500 sería $P_{500} = \frac{x_{15} + x_{16} + x_{17} + x_{18} + x_{19}}{5}$, esto significa el promedio de todos los valores cuyo índice tienen una progresión al $3\%$.
+
+
+\section{Problemas}
+
+Los siguientes problemas desarrollan los conceptos expuestos. Resuelve al menos un problema y presenta los resultados de la solución indicando el proceso completo para resolverlo.
+
+\subsection{Problema 1 | Ejemplos de tipos de análisis}
+
+Muestra un ejemplo de al menos 10 valores para los datos cuantitativos o cualitativos listados, sin usar los ejemplos siguientes:
+\begin{itemize}
+    \item \textbf{Datos cuantitativos y continuos} | Por ejemplo, el precio del gas en 10 días distintos.
+    \item \textbf{Datos cuantitativos y discretos} | Por ejemplo, la edad de 20 personas.
+    \item \textbf{Datos cualitativos de tipo categoría} | Por ejemplo, el departamento al que pertenecen 30 productos.
+    \item \textbf{Datos cualitativos de tipo etiqueta} | Por ejemplo, el color de 14 automóviles.
+    \item \textbf{Datos cualitativos de tipo valoración} | Por ejemplo, la valoración del 1 al 5 de 50 películas diferentes.
+    \item \textbf{Datos cualitativos de tipo satisfacción} | Por ejemplo, la satisfacción \textit{"Muy Satisfecho"}, \textit{"Satisfecho"}, \textit{"Poco Satisfecho"} o \textit{"Insatisfecho"} para 17 clientes que reciben un servicio.
+\end{itemize}
+Construye una hoja de excel para cada ejemplo propuesto y sus valores, por ejemplo:
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline
+    \textbf{Día} & \textbf{Precio del Gas} \\ \hline
+    1 & 17.45 \\ \hline
+    2 & 17.95 \\ \hline
+    3 & 17.23 \\ \hline
+    4 & 16.13 \\ \hline
+    5 & 19.21 \\ \hline
+    6 & 19.32 \\ \hline
+    7 & 18.29 \\ \hline
+    8 & 17.67 \\ \hline
+    9 & 15.12 \\ \hline
+    10 & 11.98 \\ \hline
+    \end{tabular}
+    \caption{heading}
+\end{table}
+
+\subsection{Problema 2 | Determinar la media}
+
+Para el siguiente conjunto de valores, determina su media (valor promedio):
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|c|}
+    \hline
+    \textbf{Índice} & \textbf{Edad} & \textbf{Índice} & \textbf{Edad} & \textbf{Índice} & \textbf{Edad} & \textbf{Índice} & \textbf{Edad} \\ \hline
+    1 & \textbf{18} & 26 & \textbf{19} & 51 & \textbf{19} & 76 & \textbf{18} \\ \hline
+    2 & \textbf{18} & 27 & \textbf{19} & 52 & \textbf{19} & 77 & \textbf{20} \\ \hline
+    3 & \textbf{19} & 28 & \textbf{20} & 53 & \textbf{20} & 78 & \textbf{22} \\ \hline
+    4 & \textbf{18} & 29 & \textbf{20} & 54 & \textbf{20} & 79 & \textbf{21} \\ \hline
+    5 & \textbf{18} & 30 & \textbf{19} & 55 & \textbf{19} & 80 & \textbf{19} \\ \hline
+    6 & \textbf{19} & 31 & \textbf{18} & 56 & \textbf{18} & 81 & \textbf{22} \\ \hline
+    7 & \textbf{18} & 32 & \textbf{21} & 57 & \textbf{21} & 82 & \textbf{20} \\ \hline
+    8 & \textbf{20} & 33 & \textbf{19} & 58 & \textbf{19} & 83 & \textbf{23} \\ \hline
+    9 & \textbf{18} & 34 & \textbf{22} & 59 & \textbf{22} & 84 & \textbf{19} \\ \hline
+    10 & \textbf{18} & 35 & \textbf{20} & 60 & \textbf{20} & 85 & \textbf{22} \\ \hline
+    11 & \textbf{18} & 36 & \textbf{19} & 61 & \textbf{19} & 86 & \textbf{21} \\ \hline
+    12 & \textbf{20} & 37 & \textbf{20} & 62 & \textbf{20} & 87 & \textbf{20} \\ \hline
+    13 & \textbf{28} & 38 & \textbf{18} & 63 & \textbf{18} & 88 & \textbf{19} \\ \hline
+    14 & \textbf{20} & 39 & \textbf{22} & 64 & \textbf{22} & 89 & \textbf{20} \\ \hline
+    15 & \textbf{19} & 40 & \textbf{21} & 65 & \textbf{21} & 90 & \textbf{22} \\ \hline
+    16 & \textbf{18} & 41 & \textbf{20} & 66 & \textbf{20} & 91 & \textbf{21} \\ \hline
+    17 & \textbf{24} & 42 & \textbf{19} & 67 & \textbf{19} & 92 & \textbf{23} \\ \hline
+    18 & \textbf{18} & 43 & \textbf{22} & 68 & \textbf{22} & 93 & \textbf{20} \\ \hline
+    19 & \textbf{20} & 44 & \textbf{18} & 69 & \textbf{18} & 94 & \textbf{22} \\ \hline
+    20 & \textbf{18} & 45 & \textbf{23} & 70 & \textbf{23} & 95 & \textbf{21} \\ \hline
+    21 & \textbf{18} & 46 & \textbf{20} & 71 & \textbf{20} & 96 & \textbf{22} \\ \hline
+    22 & \textbf{19} & 47 & \textbf{21} & 72 & \textbf{21} & 97 & \textbf{19} \\ \hline
+    23 & \textbf{18} & 48 & \textbf{19} & 73 & \textbf{19} & 98 & \textbf{21} \\ \hline
+    24 & \textbf{22} & 49 & \textbf{20} & 74 & \textbf{20} & 99 & \textbf{20} \\ \hline
+    25 & \textbf{20} & 50 & \textbf{21} & 75 & \textbf{21} & 100 & \textbf{23} \\ \hline
+    \end{tabular}
+    \caption{Conjunto de las edades de los grupos primer año de licenciatura}
+\end{table}
+\\
+Contesta las siguientes preguntas:
+\begin{itemize}
+    \item ¿Cuántos valores están por debajo de la media?
+    \item ¿Cómo es el sesgo de los datos, hacia la izquierda o a la derecha?
+    \item ¿Si los datos estuvieran ordenados la media sería distinta?
+    \item ¿La media de los primeros 50 datos más la media de los 50 restantes equivale a la media de los 100 datos totales?
+\end{itemize}
+
+\clearpage
+
+\subsection{Problema 3 | Determinar la mediana}
+
+Determina el valor de la mediana para los siguientes valores no numéricos:
+\begin{table}[!h]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|c|}
+        \hline
+        \textbf{} & \textbf{Género} & \textbf{} & \textbf{Género} & \textbf{} & \textbf{Género} & \textbf{} & \textbf{Género} \\ \hline
+        1  & HOMBRE & 21 & HOMBRE & 41 & MUJER  & 61 & HOMBRE \\ \hline
+        2  & MUJER  & 22 & HOMBRE & 42 & MUJER  & 62 & MUJER  \\ \hline
+        3  & MUJER  & 23 & MUJER  & 43 & HOMBRE & 63 & HOMBRE \\ \hline
+        4  & MUJER  & 24 & HOMBRE & 44 & MUJER  & 64 & HOMBRE \\ \hline
+        5  & HOMBRE & 25 & MUJER  & 45 & MUJER  & 65 & HOMBRE \\ \hline
+        6  & HOMBRE & 26 & MUJER  & 46 & HOMBRE & 66 & HOMBRE \\ \hline
+        7  & HOMBRE & 27 & HOMBRE & 47 & HOMBRE & 67 & MUJER  \\ \hline
+        8  & HOMBRE & 28 & HOMBRE & 48 & MUJER  & 68 & HOMBRE \\ \hline
+        9  & MUJER  & 29 & MUJER  & 49 & HOMBRE & 69 & MUJER  \\ \hline
+        10 & MUJER  & 30 & HOMBRE & 50 & MUJER  & 70 & HOMBRE \\ \hline
+        11 & MUJER  & 31 & HOMBRE & 51 & HOMBRE & 71 & HOMBRE \\ \hline
+        12 & MUJER  & 32 & MUJER  & 52 & HOMBRE & 72 & MUJER  \\ \hline
+        13 & HOMBRE & 33 & MUJER  & 53 & MUJER  & 73 & HOMBRE \\ \hline
+        14 & HOMBRE & 34 & HOMBRE & 54 & MUJER  & 74 & HOMBRE \\ \hline
+        15 & MUJER  & 35 & HOMBRE & 55 & HOMBRE & 75 & HOMBRE \\ \hline
+        16 & MUJER  & 36 & HOMBRE & 56 & HOMBRE & 76 & HOMBRE \\ \hline
+        17 & HOMBRE & 37 & HOMBRE & 57 & MUJER  & 77 & HOMBRE \\ \hline
+        18 & HOMBRE & 38 & HOMBRE & 58 & HOMBRE & 78 & HOMBRE \\ \hline
+        19 & MUJER  & 39 & MUJER  & 59 & MUJER  & 79 & HOMBRE \\ \hline
+        20 & MUJER  & 40 & MUJER  & 60 & HOMBRE & 80 & MUJER  \\ \hline
+    \end{tabular}
+\end{table}
+\\
+Contesta las siguientes preguntas:
+\begin{itemize}
+    \item ¿Se puede calcular la mediana de la lista con valores no numéricos?
+    \item ¿Qué criterio usaste para ordenar los datos, primero las mujeres o primero los hombres?
+    \item ¿Qué valor queda en el centro con el índice 40 cuándo se ordenan los datos, un hombre o una mujer?
+    \item ¿Qué sentido tiene calcular la mediana en valores no numéricos?
+    \item ¿Qué pasaría si los valores fueran impares y la mediana estuviera entre hombre y mujer?
+    \item ¿Si hubieran más categorías sería posible ordenar los datos y calcular la mediana?
+\end{itemize}
+
+\clearpage
+
+\subsection{Problema 4 | Determinar la moda}
+
+Determina el valor de la moda para los siguientes valores:
+\begin{table}[!h]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|c|}
+        \hline
+        \textbf{} & \textbf{Alerta} & \textbf{} & \textbf{Alerta} & \textbf{} & \textbf{Alerta} & \textbf{} & \textbf{Alerta} \\ \hline
+        1  & 3  & 21 & 3 & 41 & 2 & 61 & 3 \\ \hline
+        2  & 2  & 22 & 3 & 42 & 2 & 62 & 2 \\ \hline
+        3  & 4  & 23 & 4 & 43 & 2 & 63 & 2 \\ \hline
+        4  & 4  & 24 & 2 & 44 & 4 & 64 & 2 \\ \hline
+        5  & 2  & 25 & 4 & 45 & 4 & 65 & 2 \\ \hline
+        6  & 2  & 26 & 4 & 46 & 2 & 66 & 2 \\ \hline
+        7  & 2  & 27 & 2 & 47 & 0 & 67 & 5 \\ \hline
+        8  & 0  & 28 & 0 & 48 & 5 & 68 & 0 \\ \hline
+        9  & 5  & 29 & 5 & 49 & 0 & 69 & 5 \\ \hline
+        10 & 5  & 30 & 0 & 50 & 5 & 70 & 0 \\ \hline
+        11 & 5  & 31 & 0 & 51 & 0 & 71 & 0 \\ \hline
+        12 & 5  & 32 & 5 & 52 & 0 & 72 & 5 \\ \hline
+        13 & 3  & 33 & 5 & 53 & 5 & 73 & 3 \\ \hline
+        14 & 3  & 34 & 3 & 54 & 2 & 74 & 3 \\ \hline
+        15 & 2  & 35 & 3 & 55 & 3 & 75 & 4 \\ \hline
+        16 & 2  & 36 & 4 & 56 & 4 & 76 & 4 \\ \hline
+        17 & 1  & 37 & 1 & 57 & 2 & 77 & 1 \\ \hline
+        18 & 1  & 38 & 1 & 58 & 0 & 78 & 0 \\ \hline
+        19 & 3  & 39 & 3 & 59 & 3 & 79 & 0 \\ \hline
+        20 & 2  & 40 & 2 & 60 & 5 & 80 & 2 \\ \hline
+    \end{tabular}
+\end{table}
+\\
+Contesta las siguientes preguntas:
+\begin{itemize}
+    \item ¿Se puede calcular la mediana de la lista con valores no numéricos?
+    \item ¿Qué criterio usaste para ordenar los datos, primero las mujeres o primero los hombres?
+    \item ¿Qué valor queda en el centro con el índice 40 cuándo se ordenan los datos, un hombre o una mujer?
+    \item ¿Qué sentido tiene calcular la mediana en valores no numéricos?
+    \item ¿Qué pasaría si los valores fueran impares y la mediana estuviera entre hombre y mujer?
+    \item ¿Si hubieran más categorías sería posible ordenar los datos y calcular la mediana?
+\end{itemize}
+
+\clearpage
+
+\subsection{Problema 5 | Determinar los Cuartiles}
+
+Determina el valor de los tres cuartiles $Q_1, Q_2, Q_3$ para los siguientes valores:
+\begin{table}[!h]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|c|}
+        \hline
+        \textbf{} & \textbf{Alerta} & \textbf{} & \textbf{Alerta} & \textbf{} & \textbf{Alerta} & \textbf{} & \textbf{Alerta} \\ \hline
+        1  & 3  & 21 & 3 & 41 & 2 & 61 & 3 \\ \hline
+        2  & 2  & 22 & 3 & 42 & 2 & 62 & 2 \\ \hline
+        3  & 4  & 23 & 4 & 43 & 2 & 63 & 2 \\ \hline
+        4  & 4  & 24 & 2 & 44 & 4 & 64 & 2 \\ \hline
+        5  & 2  & 25 & 4 & 45 & 4 & 65 & 2 \\ \hline
+        6  & 2  & 26 & 4 & 46 & 2 & 66 & 2 \\ \hline
+        7  & 2  & 27 & 2 & 47 & 0 & 67 & 5 \\ \hline
+        8  & 0  & 28 & 0 & 48 & 5 & 68 & 0 \\ \hline
+        9  & 5  & 29 & 5 & 49 & 0 & 69 & 5 \\ \hline
+        10 & 5  & 30 & 0 & 50 & 5 & 70 & 0 \\ \hline
+        11 & 5  & 31 & 0 & 51 & 0 & 71 & 0 \\ \hline
+        12 & 5  & 32 & 5 & 52 & 0 & 72 & 5 \\ \hline
+        13 & 3  & 33 & 5 & 53 & 5 & 73 & 3 \\ \hline
+        14 & 3  & 34 & 3 & 54 & 2 & 74 & 3 \\ \hline
+        15 & 2  & 35 & 3 & 55 & 3 & 75 & 4 \\ \hline
+        16 & 2  & 36 & 4 & 56 & 4 & 76 & 4 \\ \hline
+        17 & 1  & 37 & 1 & 57 & 2 & 77 & 1 \\ \hline
+        18 & 1  & 38 & 1 & 58 & 0 & 78 & 0 \\ \hline
+        19 & 3  & 39 & 3 & 59 & 3 & 79 & 0 \\ \hline
+        20 & 2  & 40 & 2 & 60 & 5 & 80 & 2 \\ \hline
+    \end{tabular}
+\end{table}
+\\
+Contesta las siguientes preguntas:
+\begin{itemize}
+    \item ¿Qué significa el valor de $Q_1$?
+    \item ¿Qué significa el valor de $Q_2$?
+    \item ¿Qué significa el valor de $Q_3$?
+    \item ¿Si tuvieramos que quedarnos con el 50\% de los datos, cuáles serían los que deberíamos escojer y bajo qué criterio?
+    \item ¿Puedes dibujar una caja estadística que muestre dónde se ubican los valores de $Q_1, Q_2, Q_3$?
+\end{itemize}
+
+\clearpage
+
+\subsection{Problema 6 | Determinar los Percentiles}
+
+Determina el valor de los 100 percentiles $P_1, P_2, ..., P_{99}, P_{100}$ para los siguientes valores:
+\begin{table}[!h]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|c|}
+        \hline
+        \textbf{} & \textbf{Alerta} & \textbf{} & \textbf{Alerta} & \textbf{} & \textbf{Alerta} & \textbf{} & \textbf{Alerta} \\ \hline
+        1  & 3  & 21 & 3 & 41 & 2 & 61 & 3 \\ \hline
+        2  & 2  & 22 & 3 & 42 & 2 & 62 & 2 \\ \hline
+        3  & 4  & 23 & 4 & 43 & 2 & 63 & 2 \\ \hline
+        4  & 4  & 24 & 2 & 44 & 4 & 64 & 2 \\ \hline
+        5  & 2  & 25 & 4 & 45 & 4 & 65 & 2 \\ \hline
+        6  & 2  & 26 & 4 & 46 & 2 & 66 & 2 \\ \hline
+        7  & 2  & 27 & 2 & 47 & 0 & 67 & 5 \\ \hline
+        8  & 0  & 28 & 0 & 48 & 5 & 68 & 0 \\ \hline
+        9  & 5  & 29 & 5 & 49 & 0 & 69 & 5 \\ \hline
+        10 & 5  & 30 & 0 & 50 & 5 & 70 & 0 \\ \hline
+        11 & 5  & 31 & 0 & 51 & 0 & 71 & 0 \\ \hline
+        12 & 5  & 32 & 5 & 52 & 0 & 72 & 5 \\ \hline
+        13 & 3  & 33 & 5 & 53 & 5 & 73 & 3 \\ \hline
+        14 & 3  & 34 & 3 & 54 & 2 & 74 & 3 \\ \hline
+        15 & 2  & 35 & 3 & 55 & 3 & 75 & 4 \\ \hline
+        16 & 2  & 36 & 4 & 56 & 4 & 76 & 4 \\ \hline
+        17 & 1  & 37 & 1 & 57 & 2 & 77 & 1 \\ \hline
+        18 & 1  & 38 & 1 & 58 & 0 & 78 & 0 \\ \hline
+        19 & 3  & 39 & 3 & 59 & 3 & 79 & 0 \\ \hline
+        20 & 2  & 40 & 2 & 60 & 5 & 80 & 2 \\ \hline
+    \end{tabular}
+\end{table}
+\\
+Contesta las siguientes preguntas:
+\begin{itemize}
+    \item ¿Fue posible calcular los 100 percentiles?
+    \item ¿Qué pasa cuando tenemos menos de 100 valores?
+    \item ¿Qué pasaría si tuvieramos más de 100 valores?
+    \item ¿Qué significa el percentil al 5\% ($P_5$)?
+    \item ¿Qué significa el percentil al 95\% ($P_{95}$)?
+    \item ¿Si tuvieramos que quedarnos con el 90\% de los valores más significativos, cuáles serían?
+\end{itemize}
+
+\end{document}
