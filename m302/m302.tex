@@ -350,7 +350,7 @@ Y podemos interpretar la varianza como sigue:
 \begin{itemize}
     \item \textbf{Valor muy positivo} | significa que los datos de un eje están sobre su promedio, mientras que los datos del otro eje también están sobre su promedio y también significa que los datos de un eje están bajo su promedio mientras que los datos del otro eje también están debajo de su promedio. Esto forma una \textbf{relación directa} y significa que cuando un dato está a la alza sobre un eje, en el otro también lo estará y cuando un dato está a la baja en un eje, en el otro también estará a la baja. Por ejemplo, si el peso de una persona es mayor al promedio, la estatura de la persona también será mayor al promedio, y si el peso de una persona está debajo de su promedio, la estatura de la persona también estará bajo su promedio.
     \item \textbf{Valor muy negativo} | significa que los datos de un eje están sobre su promedio, mientras que los datos del otro eje no están están sobre su promedio, por el contrario, están debajo de su promedio. Esto forma una \textbf{relación inversa} y significa que cuando un dato está a la alza sobre un eje, en el otro está a la baja y cuando un dato está a la baja en el eje, en el otro se encuentra a la alza. Por ejemplo, si el ancho de banda aumenta, el tiempo de descarga disminuye y si el ancho de banda disminuye debajo de su promedio, el tiempo de descarga aumentará arriba de su promedio.
-    \item \textbf{Valor cercano a cero} | significa que ya sea positivo o negativo, hay casi las mismas multiplicaciones positivas que negativas. Esto significa que cuando un eje se encuentra arriba de su promedio, el otro también algunas veces, pero otras veces abajo de su promedio. Esto genera que se cancelen sumas positivas y negativas indicando que no hay una covarianza fuerte entre ambos ejes. Generalmente esto implica que no hay correlación entre los ejes, es decir, que un eje no explica al otro eje de manera directa o indirecta, y a esto se le llama \textbf{relación nula} o correlación nula.
+    \item \textbf{Valor cercano a cero} | significa que ya sea positivo o negativo, hay casi las mismas multiplicaciones positivas que negativas. Esto significa que cuando un eje se encuentra arriba de su promedio, el otro también algunas veces, pero otras veces abajo de su promedio. Esto genera que se cancelen sumas positivas y negativas indicando que no hay una covarianza fuerte entre ambos ejes. Generalmente esto implica que no hay correlación entre los ejes, es decir, que un eje no explica al otro eje de manera directa o inversa, y a esto se le llama \textbf{relación nula} o correlación nula.
 \end{itemize}
 Pero, ¿Qué tan positivo o negativo debe ser el valor para decir que hay una correlación fuerte entre ambos ejes? Y ¿Qué significa que dos ejes estén correlacionados?
 
@@ -363,13 +363,13 @@ La correlación entre dos ejes es el grado de similitud entre los datos de cada 
     \item ¿La persona mide más o menos que la estatura promedio?
     \item ¿La persona gana más o menos que el salario promedio?
 \end{itemize}
-En términos de estar arriba o abajo del promedio, cada eje no nos dice nada muy significativo. Pero haciendo el análisis bivariado (sobre dos ejes), encontramos que un eje podría explicar al otro eje de forma directa o indirecta, permitiéndonos hacer hipótesis más complejos como:
+En términos de estar arriba o abajo del promedio, cada eje no nos dice nada muy significativo. Pero haciendo el análisis bivariado (sobre dos ejes), encontramos que un eje podría explicar al otro eje de forma directa o inversa, permitiéndonos hacer hipótesis más complejos como:
 \begin{itemize}
     \item Si la persona es más grande que la edad promedio, ¿Su peso será mayor al peso promedio?
     \item Si la persona es más chica que la edad promedio, ¿Su estatura será menor a la estatura promedio?
     \item Si una persona gana más que el promedio, ¿Su edad será menor a la edad promedio?
 \end{itemize}
-Estas preguntas forman una correlación entre los datos, que puede ser directa, si la covarianza entre los ejes es muy positiva o puede ser indirecta, si la covarianza entre los ejes es muy negativa.
+Estas preguntas forman una correlación entre los datos, que puede ser directa, si la covarianza entre los ejes es muy positiva o puede ser inversa, si la covarianza entre los ejes es muy negativa.
 \\[12pt]
 La mejor forma de medir la correlación entre dos ejes es normalizando los datos, es decir, dividiendo la covarianza entre las desviaciones estándares de cada ejes. De esta forma y asombrosamente, el intervalo quedará entre $[-1, +1]$, donde un valor de $-1$ será una correlación inversa perfecta y $+1$ será una correlación directa perfecta. Un valor cercano a cero seguirá significando que los dos ejes no están correlacionados o que tienen una correlación nula.
 \\[12pt]
