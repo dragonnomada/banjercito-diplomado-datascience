@@ -1,0 +1,37 @@
+> MÓDULO I. INTRODUCCIÓN A PYTHON CON FINANZAS
+
+	•	Introducción a Python, Excel y Power BI
+	•	Instalar paquetes (librerías)
+	•	Importar librerías
+	•	Variables
+	•	Funciones principales
+
+> MÓDULO II. ESTADÍSTICA Y PROBABILIDAD CON PYTHON
+
+	•	Numpy
+	•	Pandas
+	•	Conteos y porcentajes
+	•	Probabilidad bayesiana
+	•	Estadísticos principales
+
+> MÓDULO III. CIENCIA DE DATOS
+
+	•	Flujo de la Ciencia de Datos ALEPVA
+	•	Adquisición (texto, csv, excel, web, sql, imágenes, geoespaciales)
+	•	Limpieza y Estructuración (rellenar o sustituir, separar y sintetizar)
+	•	Procesamiento (Estadística Descriptiva | Estadística Inferencial)
+	•	Visualización de datos (Histogramas, Distribución, Correlación, Heatmap)
+	•	Automatización (Función generadora y lista generada)
+
+> MÓDULO IV. MACHINE LEARNING
+
+	•	Regresión
+	•	Clasificación
+	•	Clúster
+	•	Simulación
+
+> MÓDULO V. DEEP LEARNING
+
+	•	Redes Neuronales Generales (ANN)
+	•	Redes Neuronales Recurrentes (RNN)
+	•	Redes Neuronales Convolutivas (CNN)
