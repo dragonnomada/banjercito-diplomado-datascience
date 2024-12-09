@@ -1,0 +1,1001 @@
+TIPO CUENTA,TIENE CUENTA,GÉNERO,TIPO MOVIMIENTO,TIEMPO ESPERA,TIEMPO MOVIEMVIENTO,TIEMPO TOTAL,SATISFACCIÓN
+TC,1,Mujer,Ventanilla,108,241,350,9
+TD,1,Mujer,Ventanilla,129,290,420,1
+TD,1,Mujer,Ventanilla,95,266,362,8
+TD,1,Hombre,Ejecutivo,181,179,361,10
+TD,1,Hombre,Ventanilla,110,355,466,7
+TD,1,Hombre,Apertura Cuenta,173,299,473,8
+NT,0,Otro,Otro,354,287,641,8
+DB,1,Hombre,Ventanilla,129,256,385,6
+TD,1,Hombre,Apertura Cuenta,184,80,264,3
+NT,0,Otro,Otro,279,352,631,3
+TC,1,Hombre,Apertura Cuenta,540,475,1015,1
+CQ,0,Otro,Otro,481,432,913,8
+CQ,0,Otro,Otro,492,241,733,3
+TD,1,Hombre,Ejecutivo,275,217,492,7
+TC,1,Hombre,Ventanilla,167,267,435,2
+TD,1,Mujer,Ventanilla,187,217,405,1
+TD,1,Mujer,Ventanilla,154,108,262,10
+TD,1,Mujer,Ventanilla,127,274,402,10
+TD,1,Hombre,Ventanilla,116,262,378,9
+TD,1,Mujer,Servicio Cliente,319,194,513,7
+TD,1,Mujer,Servicio Cliente,121,180,302,4
+TD,1,Hombre,Ventanilla,150,264,414,2
+TD,1,Mujer,Apertura Cuenta,102,624,726,5
+NT,0,Otro,Otro,83,600,683,9
+NT,0,Otro,Otro,28,116,145,10
+TD,1,Mujer,Apertura Cuenta,436,327,763,8
+DB,1,Mujer,Apertura Cuenta,90,130,220,6
+TD,1,Hombre,Ejecutivo,300,197,497,6
+TD,1,Hombre,Servicio Cliente,112,459,571,3
+TD,1,Hombre,Ventanilla,128,82,210,6
+NT,0,Otro,Otro,273,10,283,4
+TC,1,Hombre,Ventanilla,105,232,338,7
+TC,1,Hombre,Apertura Cuenta,283,327,610,8
+TD,1,Hombre,Servicio Cliente,377,397,774,1
+TD,1,Mujer,Apertura Cuenta,368,425,793,2
+TC,1,Mujer,Ventanilla,103,207,311,8
+TC,1,Hombre,Apertura Cuenta,196,297,493,4
+TD,1,Mujer,Ventanilla,145,348,493,3
+NT,0,Otro,Otro,104,303,408,3
+TD,1,Hombre,Apertura Cuenta,147,667,814,4
+TD,1,Hombre,Ventanilla,108,136,245,10
+NT,0,Otro,Otro,335,67,403,2
+CQ,0,Otro,Otro,556,10,566,3
+CQ,0,Otro,Otro,293,461,755,8
+NT,0,Otro,Otro,600,334,934,7
+TC,1,Mujer,Ventanilla,101,251,353,9
+CQ,0,Otro,Otro,337,445,783,3
+TC,1,Hombre,Ventanilla,110,193,303,10
+NT,0,Otro,Otro,362,288,650,1
+DB,1,Hombre,Ventanilla,141,130,271,10
+TD,1,Hombre,Ejecutivo,188,374,562,1
+TD,1,Hombre,Ventanilla,120,303,424,7
+CQ,0,Otro,Otro,110,267,378,6
+TC,1,Hombre,Ventanilla,146,165,311,4
+TC,1,Hombre,Ejecutivo,136,330,466,1
+TC,1,Mujer,Ventanilla,113,326,439,9
+TC,1,Hombre,Ejecutivo,300,268,568,2
+TD,1,Hombre,Ejecutivo,60,300,360,9
+TD,1,Hombre,Ventanilla,89,217,306,8
+TD,1,Mujer,Servicio Cliente,168,363,531,4
+TD,1,Mujer,Apertura Cuenta,446,228,674,10
+TD,1,Hombre,Apertura Cuenta,80,371,451,6
+DB,1,Hombre,Ventanilla,103,105,209,5
+TC,1,Hombre,Ventanilla,93,142,236,9
+TC,1,Hombre,Servicio Cliente,275,327,603,1
+TC,1,Hombre,Servicio Cliente,456,314,771,5
+TC,1,Mujer,Ventanilla,82,308,391,10
+DB,1,Hombre,Ventanilla,116,313,429,6
+TC,1,Mujer,Ventanilla,138,197,335,6
+NT,0,Otro,Otro,184,356,540,7
+NT,0,Otro,Otro,10,286,296,4
+NT,0,Otro,Otro,342,564,907,0
+NT,0,Otro,Otro,43,10,53,10
+NT,0,Otro,Otro,175,10,185,2
+TD,1,Mujer,Servicio Cliente,269,471,741,8
+TD,1,Hombre,Servicio Cliente,406,354,761,5
+NT,0,Otro,Otro,544,300,845,7
+DB,1,Hombre,Servicio Cliente,357,491,849,5
+TD,1,Mujer,Ventanilla,170,277,447,8
+TD,1,Mujer,Ventanilla,145,208,354,3
+TD,1,Hombre,Ventanilla,124,191,316,10
+TD,1,Hombre,Apertura Cuenta,80,626,706,2
+NT,0,Otro,Otro,447,414,862,8
+TC,1,Mujer,Apertura Cuenta,169,511,680,7
+NT,0,Otro,Otro,140,600,740,1
+CQ,0,Otro,Otro,380,264,644,3
+NT,0,Otro,Otro,402,10,412,8
+CQ,0,Otro,Otro,316,669,985,3
+TD,1,Hombre,Ejecutivo,143,300,443,7
+TD,1,Hombre,Servicio Cliente,426,381,807,3
+TD,1,Hombre,Ejecutivo,157,438,595,7
+NT,0,Otro,Otro,318,250,569,7
+TD,1,Mujer,Ventanilla,67,248,316,10
+NT,0,Otro,Otro,107,10,117,5
+TD,1,Mujer,Apertura Cuenta,167,380,547,1
+TC,1,Hombre,Ventanilla,100,302,402,6
+CQ,0,Otro,Otro,427,676,1103,4
+TC,1,Mujer,Ventanilla,139,166,306,10
+TD,1,Mujer,Ventanilla,98,117,216,10
+TC,1,Hombre,Servicio Cliente,377,396,774,1
+CQ,0,Otro,Otro,231,10,241,1
+TC,1,Hombre,Ventanilla,127,295,422,7
+TC,1,Hombre,Ventanilla,124,271,396,8
+TC,1,Hombre,Servicio Cliente,284,479,764,1
+NT,0,Otro,Otro,439,247,686,8
+TD,1,Mujer,Ejecutivo,193,60,253,10
+TD,1,Hombre,Servicio Cliente,165,623,789,1
+TD,1,Mujer,Apertura Cuenta,202,178,381,10
+NT,0,Otro,Otro,475,223,698,9
+TD,1,Hombre,Ventanilla,119,20,139,9
+DB,1,Hombre,Ventanilla,148,217,366,8
+TD,1,Mujer,Ventanilla,139,137,277,10
+DB,1,Hombre,Servicio Cliente,283,583,866,8
+DB,1,Hombre,Ventanilla,108,286,395,9
+TD,1,Hombre,Ejecutivo,149,178,327,6
+TC,1,Mujer,Ventanilla,106,187,294,10
+NT,0,Otro,Otro,399,300,700,7
+TC,1,Hombre,Ventanilla,81,144,225,10
+TD,1,Mujer,Ventanilla,207,120,327,10
+TC,1,Hombre,Servicio Cliente,409,377,787,1
+DB,1,Hombre,Ventanilla,126,155,282,10
+TD,1,Hombre,Servicio Cliente,366,385,751,7
+TC,1,Hombre,Apertura Cuenta,80,382,462,3
+TD,1,Hombre,Apertura Cuenta,265,321,587,4
+DB,1,Hombre,Apertura Cuenta,338,512,850,8
+TD,1,Hombre,Ejecutivo,199,321,521,1
+NT,0,Otro,Otro,10,415,425,8
+TC,1,Hombre,Ventanilla,92,197,289,10
+TD,1,Mujer,Ventanilla,132,180,313,10
+TD,1,Mujer,Apertura Cuenta,340,487,827,1
+TD,1,Hombre,Ejecutivo,260,220,481,2
+DB,1,Hombre,Ventanilla,145,269,415,7
+TC,1,Hombre,Servicio Cliente,226,398,624,7
+TC,1,Hombre,Ventanilla,92,238,331,8
+TC,1,Hombre,Ventanilla,87,300,388,10
+TD,1,Hombre,Servicio Cliente,431,482,914,3
+TD,1,Hombre,Ventanilla,111,238,350,10
+TD,1,Hombre,Servicio Cliente,333,455,788,5
+TC,1,Mujer,Ventanilla,87,73,161,10
+TC,1,Hombre,Ventanilla,98,264,363,8
+TD,1,Hombre,Servicio Cliente,297,344,641,2
+TD,1,Mujer,Ventanilla,147,168,315,9
+TD,1,Hombre,Servicio Cliente,324,606,931,1
+NT,0,Otro,Otro,426,167,593,1
+TC,1,Hombre,Servicio Cliente,258,388,646,7
+TD,1,Hombre,Ventanilla,91,317,409,8
+TD,1,Hombre,Apertura Cuenta,147,313,461,3
+TD,1,Hombre,Servicio Cliente,345,527,873,4
+DB,1,Hombre,Servicio Cliente,201,478,680,4
+TC,1,Hombre,Servicio Cliente,231,348,580,1
+TD,1,Mujer,Ventanilla,124,303,427,5
+TC,1,Mujer,Ventanilla,86,331,418,9
+TD,1,Hombre,Apertura Cuenta,138,279,417,6
+TD,1,Hombre,Ejecutivo,240,100,341,10
+TC,1,Hombre,Ejecutivo,300,248,548,8
+TD,1,Mujer,Ventanilla,88,165,253,10
+NT,0,Otro,Otro,269,308,577,8
+TC,1,Hombre,Ventanilla,118,20,138,10
+TC,1,Hombre,Servicio Cliente,320,362,683,3
+TD,1,Hombre,Ventanilla,94,63,157,10
+NT,0,Otro,Otro,562,136,699,3
+TC,1,Hombre,Ventanilla,86,342,428,10
+TD,1,Mujer,Ventanilla,138,283,422,8
+TC,1,Hombre,Ventanilla,198,211,410,8
+TD,1,Hombre,Ventanilla,143,199,342,10
+TC,1,Mujer,Servicio Cliente,292,366,658,9
+TD,1,Mujer,Ventanilla,164,163,328,5
+TD,1,Mujer,Ventanilla,159,180,340,10
+TD,1,Hombre,Apertura Cuenta,162,303,466,8
+TC,1,Hombre,Servicio Cliente,293,451,745,4
+NT,0,Otro,Otro,285,318,603,8
+CQ,0,Otro,Otro,534,586,1120,8
+TC,1,Hombre,Ventanilla,109,256,366,7
+TC,1,Hombre,Apertura Cuenta,359,80,439,5
+TD,1,Hombre,Ventanilla,93,248,342,7
+TC,1,Mujer,Ventanilla,143,159,302,10
+TC,1,Hombre,Ventanilla,138,233,372,7
+TD,1,Hombre,Servicio Cliente,281,375,657,5
+NT,0,Otro,Otro,146,515,662,2
+NT,0,Otro,Otro,349,172,521,6
+TD,1,Hombre,Servicio Cliente,389,459,848,1
+NT,0,Otro,Otro,369,263,632,5
+TC,1,Hombre,Ejecutivo,60,60,120,10
+NT,0,Otro,Otro,123,509,632,9
+TC,1,Hombre,Ventanilla,101,338,439,6
+NT,0,Otro,Otro,78,130,209,7
+TD,1,Hombre,Apertura Cuenta,153,80,233,8
+CQ,0,Otro,Otro,10,722,732,0
+TD,1,Mujer,Servicio Cliente,286,289,575,4
+CQ,0,Otro,Otro,600,315,915,8
+NT,0,Otro,Otro,146,600,746,7
+TD,1,Hombre,Ejecutivo,169,365,534,8
+TC,1,Mujer,Ventanilla,177,283,461,8
+TD,1,Mujer,Ventanilla,159,194,353,10
+NT,0,Otro,Otro,125,218,344,4
+TD,1,Hombre,Ventanilla,71,177,249,10
+NT,0,Otro,Otro,149,10,159,2
+TC,1,Hombre,Ventanilla,122,209,332,2
+DB,1,Hombre,Ventanilla,143,228,372,7
+TD,1,Hombre,Ventanilla,111,199,310,9
+TC,1,Hombre,Ventanilla,137,144,282,8
+TC,1,Hombre,Servicio Cliente,261,304,566,3
+TC,1,Hombre,Ventanilla,144,263,408,7
+TC,1,Mujer,Ejecutivo,172,171,343,2
+TD,1,Hombre,Ejecutivo,62,225,288,10
+NT,0,Otro,Otro,21,415,437,3
+TD,1,Hombre,Servicio Cliente,564,386,950,1
+TD,1,Hombre,Ejecutivo,63,110,174,10
+DB,1,Hombre,Ventanilla,51,135,187,10
+TD,1,Mujer,Ventanilla,140,371,511,10
+DB,1,Hombre,Ejecutivo,84,334,418,3
+NT,0,Otro,Otro,155,56,212,7
+NT,0,Otro,Otro,549,146,696,6
+NT,0,Otro,Otro,289,301,591,5
+TC,1,Hombre,Servicio Cliente,146,796,942,4
+TD,1,Hombre,Ejecutivo,208,261,469,8
+DB,1,Hombre,Ventanilla,119,218,338,8
+TD,1,Hombre,Ventanilla,93,363,456,4
+NT,0,Otro,Otro,199,96,295,9
+TD,1,Mujer,Servicio Cliente,352,624,976,3
+TD,1,Mujer,Ventanilla,130,374,505,9
+NT,0,Otro,Otro,10,363,373,1
+TC,1,Mujer,Ventanilla,136,216,352,9
+TC,1,Hombre,Servicio Cliente,224,558,783,2
+TD,1,Mujer,Servicio Cliente,524,448,973,3
+TD,1,Hombre,Ventanilla,119,125,244,9
+TD,1,Hombre,Ejecutivo,62,412,474,9
+NT,0,Otro,Otro,600,392,992,1
+NT,0,Otro,Otro,395,10,405,9
+TD,1,Hombre,Ventanilla,157,257,415,7
+TC,1,Mujer,Ventanilla,117,330,448,8
+CQ,0,Otro,Otro,198,269,468,3
+NT,0,Otro,Otro,211,156,367,9
+NT,0,Otro,Otro,65,378,444,10
+TD,1,Hombre,Ventanilla,110,260,371,8
+DB,1,Hombre,Apertura Cuenta,80,406,486,6
+TD,1,Hombre,Apertura Cuenta,311,202,514,6
+TD,1,Mujer,Ventanilla,126,285,412,8
+DB,1,Hombre,Servicio Cliente,475,660,1135,6
+TD,1,Hombre,Apertura Cuenta,227,295,523,1
+TD,1,Mujer,Ventanilla,138,238,376,9
+TD,1,Mujer,Ventanilla,107,215,323,7
+NT,0,Otro,Otro,539,291,831,2
+DB,1,Hombre,Ventanilla,61,158,219,6
+TD,1,Hombre,Apertura Cuenta,390,307,698,4
+TD,1,Hombre,Ejecutivo,217,361,579,7
+NT,0,Otro,Otro,36,369,405,8
+TD,1,Mujer,Servicio Cliente,330,361,692,3
+TD,1,Hombre,Ventanilla,146,278,424,8
+DB,1,Hombre,Apertura Cuenta,223,237,461,4
+TD,1,Hombre,Apertura Cuenta,80,396,476,7
+TD,1,Hombre,Ventanilla,107,107,214,10
+DB,1,Hombre,Servicio Cliente,262,498,760,5
+TC,1,Hombre,Ejecutivo,128,162,291,3
+TC,1,Hombre,Ejecutivo,112,165,278,4
+DB,1,Hombre,Servicio Cliente,335,205,540,1
+DB,1,Mujer,Servicio Cliente,345,336,682,3
+TC,1,Hombre,Ejecutivo,234,267,501,2
+TD,1,Hombre,Ventanilla,153,209,362,7
+TD,1,Mujer,Ventanilla,99,293,393,9
+TD,1,Mujer,Ventanilla,112,229,342,4
+TC,1,Hombre,Ventanilla,110,327,437,8
+TD,1,Hombre,Ejecutivo,60,397,457,8
+TD,1,Hombre,Ventanilla,71,275,346,2
+TC,1,Hombre,Ventanilla,199,271,471,8
+NT,0,Otro,Otro,102,674,776,3
+DB,1,Hombre,Ventanilla,130,183,313,9
+TC,1,Mujer,Ventanilla,107,276,384,10
+TD,1,Mujer,Apertura Cuenta,80,464,544,3
+NT,0,Otro,Otro,10,97,107,6
+DB,1,Mujer,Apertura Cuenta,524,357,881,9
+TC,1,Hombre,Ejecutivo,248,278,527,8
+TD,1,Mujer,Servicio Cliente,240,572,813,5
+DB,1,Hombre,Ventanilla,138,138,276,9
+TC,1,Mujer,Ejecutivo,300,245,545,8
+TC,1,Mujer,Ventanilla,112,166,278,8
+TD,1,Mujer,Apertura Cuenta,269,80,349,7
+NT,0,Otro,Otro,600,400,1000,9
+TD,1,Mujer,Ventanilla,139,216,355,8
+TD,1,Hombre,Ventanilla,151,248,399,8
+DB,1,Mujer,Apertura Cuenta,215,80,295,8
+NT,0,Otro,Otro,356,326,683,2
+NT,0,Otro,Otro,10,349,359,1
+TD,1,Hombre,Apertura Cuenta,99,121,221,9
+NT,0,Otro,Otro,319,497,816,8
+TD,1,Hombre,Ventanilla,110,220,331,4
+NT,0,Otro,Otro,305,96,401,8
+TD,1,Mujer,Servicio Cliente,214,494,708,1
+TD,1,Hombre,Ejecutivo,175,334,509,8
+TC,1,Hombre,Ejecutivo,60,103,163,8
+NT,0,Otro,Otro,115,594,709,8
+TD,1,Hombre,Ventanilla,68,266,335,10
+NT,0,Otro,Otro,60,296,356,8
+TD,1,Mujer,Ventanilla,130,266,397,5
+DB,1,Hombre,Ventanilla,117,184,301,9
+TC,1,Mujer,Apertura Cuenta,208,159,367,10
+NT,0,Otro,Otro,117,318,435,2
+TD,1,Hombre,Ventanilla,113,151,264,8
+TD,1,Mujer,Ejecutivo,104,363,468,5
+TD,1,Hombre,Servicio Cliente,511,267,779,4
+TD,1,Mujer,Ventanilla,96,191,287,10
+TD,1,Mujer,Ejecutivo,176,360,536,9
+NT,0,Otro,Otro,600,180,780,3
+TD,1,Mujer,Apertura Cuenta,194,80,274,6
+NT,0,Otro,Otro,494,209,704,1
+TC,1,Mujer,Ventanilla,76,275,351,10
+TC,1,Hombre,Ventanilla,83,202,286,10
+TD,1,Hombre,Ventanilla,214,208,422,8
+TC,1,Mujer,Ventanilla,95,20,115,10
+DB,1,Hombre,Ejecutivo,174,356,530,7
+DB,1,Hombre,Ventanilla,142,220,362,7
+NT,0,Otro,Otro,343,415,758,3
+TD,1,Mujer,Ventanilla,108,346,455,8
+DB,1,Hombre,Ejecutivo,154,196,350,10
+NT,0,Otro,Otro,234,426,660,1
+TD,1,Mujer,Ventanilla,95,255,350,8
+NT,0,Otro,Otro,138,10,148,9
+TC,1,Hombre,Ejecutivo,274,176,451,4
+TD,1,Hombre,Ejecutivo,69,108,177,10
+TD,1,Mujer,Servicio Cliente,382,395,777,4
+TC,1,Hombre,Ventanilla,97,180,277,10
+CQ,0,Otro,Otro,272,226,498,2
+TD,1,Hombre,Apertura Cuenta,265,264,529,2
+TD,1,Hombre,Ventanilla,81,196,278,10
+DB,1,Hombre,Ventanilla,160,264,425,7
+TD,1,Hombre,Ejecutivo,114,269,384,2
+TD,1,Hombre,Ventanilla,126,315,441,4
+NT,0,Otro,Otro,424,10,434,1
+TD,1,Mujer,Ventanilla,127,131,258,10
+NT,0,Otro,Otro,361,467,828,7
+TD,1,Mujer,Servicio Cliente,169,327,496,1
+TD,1,Mujer,Ventanilla,128,268,396,9
+TC,1,Hombre,Ventanilla,89,153,242,3
+TD,1,Mujer,Servicio Cliente,356,296,653,4
+TD,1,Mujer,Ventanilla,90,81,172,10
+TC,1,Mujer,Servicio Cliente,283,464,747,3
+TC,1,Mujer,Apertura Cuenta,191,227,419,9
+TD,1,Mujer,Servicio Cliente,250,218,469,8
+TC,1,Mujer,Ventanilla,181,72,253,10
+NT,0,Otro,Otro,294,10,304,9
+TC,1,Hombre,Servicio Cliente,331,564,896,5
+DB,1,Mujer,Servicio Cliente,278,527,806,1
+DB,1,Hombre,Servicio Cliente,322,202,524,3
+TD,1,Mujer,Servicio Cliente,221,193,415,3
+NT,0,Otro,Otro,86,450,537,8
+TD,1,Mujer,Ventanilla,79,250,329,6
+NT,0,Otro,Otro,252,130,383,7
+NT,0,Otro,Otro,10,494,504,5
+TD,1,Hombre,Servicio Cliente,205,90,295,5
+TD,1,Hombre,Ventanilla,153,202,356,8
+TC,1,Hombre,Servicio Cliente,426,557,983,3
+NT,0,Otro,Otro,342,71,414,5
+TD,1,Hombre,Ventanilla,116,91,207,5
+NT,0,Otro,Otro,51,335,386,4
+TD,1,Hombre,Ejecutivo,72,300,372,8
+TD,1,Hombre,Apertura Cuenta,80,548,628,9
+TD,1,Mujer,Servicio Cliente,348,403,751,6
+TD,1,Mujer,Servicio Cliente,165,569,735,1
+TD,1,Hombre,Ejecutivo,243,60,303,1
+TD,1,Hombre,Apertura Cuenta,206,636,843,2
+DB,1,Mujer,Ventanilla,91,186,278,4
+CQ,0,Otro,Otro,313,282,596,1
+TD,1,Mujer,Apertura Cuenta,222,203,425,10
+TD,1,Mujer,Ventanilla,125,182,307,9
+NT,0,Otro,Otro,10,10,20,10
+TD,1,Mujer,Apertura Cuenta,80,488,568,10
+CQ,0,Otro,Otro,371,10,381,5
+NT,0,Otro,Otro,182,93,275,3
+TD,1,Mujer,Apertura Cuenta,377,449,827,5
+TD,1,Mujer,Servicio Cliente,456,379,835,7
+NT,0,Otro,Otro,10,262,272,8
+TD,1,Hombre,Servicio Cliente,309,240,549,2
+NT,0,Otro,Otro,143,600,743,8
+TD,1,Mujer,Ventanilla,100,148,249,10
+TD,1,Hombre,Ventanilla,121,229,351,8
+DB,1,Hombre,Apertura Cuenta,386,632,1019,1
+TD,1,Hombre,Ejecutivo,124,283,408,7
+TC,1,Mujer,Servicio Cliente,500,547,1048,2
+CQ,0,Otro,Otro,343,594,937,6
+TC,1,Hombre,Ejecutivo,112,112,224,10
+NT,0,Otro,Otro,159,10,169,6
+NT,0,Otro,Otro,349,612,961,1
+TD,1,Mujer,Servicio Cliente,271,413,685,2
+NT,0,Otro,Otro,231,57,289,6
+TD,1,Hombre,Servicio Cliente,374,151,525,4
+TC,1,Mujer,Servicio Cliente,306,540,846,9
+TC,1,Mujer,Apertura Cuenta,332,408,740,5
+TD,1,Hombre,Ventanilla,151,234,385,7
+TD,1,Mujer,Ejecutivo,194,189,383,10
+TD,1,Hombre,Ejecutivo,195,257,453,8
+NT,0,Otro,Otro,301,276,577,8
+TC,1,Hombre,Apertura Cuenta,342,444,786,5
+TD,1,Hombre,Ejecutivo,300,393,693,8
+TC,1,Hombre,Apertura Cuenta,346,309,656,1
+TC,1,Hombre,Ventanilla,52,20,72,10
+TD,1,Mujer,Servicio Cliente,383,595,979,1
+DB,1,Hombre,Ventanilla,104,20,124,10
+TC,1,Mujer,Servicio Cliente,309,591,900,9
+NT,0,Otro,Otro,271,504,776,4
+TD,1,Hombre,Apertura Cuenta,80,157,237,6
+TC,1,Mujer,Ventanilla,79,370,450,9
+NT,0,Otro,Otro,43,371,415,10
+TD,1,Hombre,Ventanilla,107,116,224,8
+NT,0,Otro,Otro,182,232,414,0
+TC,1,Hombre,Ventanilla,87,239,326,9
+TC,1,Hombre,Ventanilla,78,222,301,8
+NT,0,Otro,Otro,10,295,305,5
+TD,1,Hombre,Ventanilla,90,190,281,10
+TC,1,Hombre,Apertura Cuenta,254,122,377,7
+DB,1,Hombre,Ventanilla,99,20,119,9
+TC,1,Mujer,Ventanilla,144,295,440,6
+TC,1,Hombre,Servicio Cliente,507,555,1062,1
+TC,1,Hombre,Ventanilla,156,365,522,6
+NT,0,Otro,Otro,308,629,938,6
+TD,1,Mujer,Ventanilla,110,304,415,9
+TD,1,Hombre,Ejecutivo,206,182,389,6
+NT,0,Otro,Otro,44,10,54,10
+TD,1,Mujer,Apertura Cuenta,327,315,643,2
+CQ,0,Otro,Otro,343,449,793,5
+TD,1,Hombre,Apertura Cuenta,425,293,719,8
+TC,1,Mujer,Ventanilla,166,243,409,8
+TD,1,Hombre,Ventanilla,151,213,364,8
+NT,0,Otro,Otro,285,81,366,1
+TC,1,Hombre,Ejecutivo,225,60,285,10
+NT,0,Otro,Otro,462,271,734,0
+NT,0,Otro,Otro,10,224,234,8
+TC,1,Hombre,Apertura Cuenta,392,336,728,8
+NT,0,Otro,Otro,165,478,644,7
+NT,0,Otro,Otro,253,344,598,3
+TD,1,Mujer,Servicio Cliente,294,625,920,3
+TD,1,Hombre,Servicio Cliente,523,399,922,4
+TC,1,Hombre,Ventanilla,125,347,473,7
+TC,1,Mujer,Ventanilla,177,183,360,10
+NT,0,Otro,Otro,355,481,836,6
+TD,1,Hombre,Apertura Cuenta,226,356,582,1
+NT,0,Otro,Otro,81,600,681,8
+DB,1,Hombre,Servicio Cliente,231,435,667,5
+DB,1,Hombre,Ventanilla,115,309,425,8
+TD,1,Hombre,Ejecutivo,94,300,394,7
+TD,1,Hombre,Ventanilla,58,186,244,10
+NT,0,Otro,Otro,283,588,872,4
+CQ,0,Otro,Otro,10,557,567,4
+TD,1,Mujer,Ejecutivo,140,160,300,2
+DB,1,Hombre,Ventanilla,203,198,401,9
+TC,1,Hombre,Servicio Cliente,408,408,817,1
+NT,0,Otro,Otro,389,392,782,2
+NT,0,Otro,Otro,10,661,671,9
+TC,1,Hombre,Ventanilla,135,315,451,7
+TC,1,Mujer,Ejecutivo,248,139,388,9
+CQ,0,Otro,Otro,311,494,805,8
+DB,1,Hombre,Apertura Cuenta,164,481,645,2
+NT,0,Otro,Otro,10,300,310,8
+TC,1,Mujer,Ventanilla,162,286,448,9
+TD,1,Mujer,Ventanilla,112,152,265,10
+TD,1,Mujer,Ventanilla,83,119,203,7
+TC,1,Mujer,Ventanilla,137,305,443,8
+TD,1,Hombre,Ventanilla,124,246,370,3
+TC,1,Mujer,Ventanilla,78,226,305,10
+TD,1,Hombre,Ventanilla,157,165,323,9
+NT,0,Otro,Otro,108,278,387,0
+TD,1,Mujer,Ejecutivo,300,274,574,8
+TD,1,Mujer,Apertura Cuenta,181,340,522,1
+TD,1,Hombre,Servicio Cliente,459,395,854,9
+NT,0,Otro,Otro,10,317,327,3
+NT,0,Otro,Otro,10,10,20,10
+NT,0,Otro,Otro,375,10,385,9
+NT,0,Otro,Otro,358,377,736,0
+TC,1,Hombre,Ventanilla,78,281,359,9
+TC,1,Hombre,Servicio Cliente,333,198,531,2
+TC,1,Mujer,Ventanilla,71,161,232,10
+NT,0,Otro,Otro,332,564,896,5
+TC,1,Mujer,Servicio Cliente,336,482,818,3
+TC,1,Hombre,Ventanilla,133,286,419,8
+TC,1,Hombre,Ejecutivo,236,294,530,7
+TC,1,Hombre,Ventanilla,110,124,234,10
+TD,1,Hombre,Ventanilla,110,217,328,6
+CQ,0,Otro,Otro,206,92,299,9
+NT,0,Otro,Otro,274,69,343,10
+NT,0,Otro,Otro,460,233,693,7
+CQ,0,Otro,Otro,369,10,379,9
+TD,1,Mujer,Ventanilla,189,206,396,8
+TD,1,Mujer,Ventanilla,90,256,347,9
+TC,1,Hombre,Apertura Cuenta,341,390,731,1
+TC,1,Hombre,Ventanilla,118,204,323,7
+TD,1,Hombre,Ejecutivo,169,374,544,7
+TC,1,Mujer,Ejecutivo,185,397,583,3
+DB,1,Hombre,Ventanilla,140,234,374,9
+CQ,0,Otro,Otro,145,659,805,1
+TD,1,Hombre,Ventanilla,133,354,487,1
+TC,1,Hombre,Ejecutivo,60,351,411,1
+NT,0,Otro,Otro,267,205,472,4
+TC,1,Mujer,Ventanilla,167,296,464,5
+TD,1,Hombre,Ejecutivo,115,278,393,4
+TC,1,Hombre,Ejecutivo,128,120,249,1
+TD,1,Mujer,Ventanilla,165,160,325,8
+TD,1,Hombre,Ventanilla,101,183,285,6
+TD,1,Hombre,Ejecutivo,232,239,471,2
+TD,1,Mujer,Apertura Cuenta,249,437,687,9
+TD,1,Mujer,Ventanilla,167,133,300,7
+TD,1,Mujer,Ventanilla,179,197,377,10
+TC,1,Hombre,Ventanilla,134,194,328,2
+NT,0,Otro,Otro,117,63,180,7
+TD,1,Hombre,Ejecutivo,132,155,287,9
+NT,0,Otro,Otro,568,469,1038,1
+TD,1,Hombre,Ventanilla,112,228,341,8
+TC,1,Hombre,Ventanilla,72,184,256,10
+TC,1,Hombre,Apertura Cuenta,355,482,837,4
+NT,0,Otro,Otro,600,10,610,3
+TC,1,Mujer,Ventanilla,125,191,317,10
+TC,1,Hombre,Servicio Cliente,402,295,698,3
+TD,1,Mujer,Ventanilla,117,177,295,5
+TD,1,Hombre,Ventanilla,123,338,462,8
+NT,0,Otro,Otro,222,291,513,7
+TC,1,Hombre,Ventanilla,75,172,247,10
+TD,1,Hombre,Apertura Cuenta,319,256,575,6
+TC,1,Hombre,Ejecutivo,153,60,213,10
+TD,1,Mujer,Ventanilla,80,189,270,10
+NT,0,Otro,Otro,552,10,562,5
+CQ,0,Otro,Otro,10,481,491,3
+TC,1,Hombre,Apertura Cuenta,243,670,913,3
+TC,1,Hombre,Servicio Cliente,299,352,651,4
+NT,0,Otro,Otro,166,339,506,4
+DB,1,Hombre,Apertura Cuenta,184,80,264,3
+CQ,0,Otro,Otro,10,252,262,3
+NT,0,Otro,Otro,71,148,219,10
+TD,1,Mujer,Ventanilla,98,314,412,9
+NT,0,Otro,Otro,156,177,334,10
+TC,1,Hombre,Ventanilla,174,89,264,10
+TD,1,Hombre,Ejecutivo,60,194,254,4
+NT,0,Otro,Otro,129,344,474,9
+NT,0,Otro,Otro,344,189,533,4
+DB,1,Hombre,Ventanilla,88,328,416,9
+TD,1,Hombre,Servicio Cliente,262,211,473,4
+TC,1,Mujer,Servicio Cliente,385,356,741,4
+NT,0,Otro,Otro,41,50,91,8
+TD,1,Mujer,Ejecutivo,170,196,367,7
+TC,1,Mujer,Servicio Cliente,233,513,746,7
+TC,1,Hombre,Ejecutivo,165,164,329,5
+TD,1,Hombre,Apertura Cuenta,286,80,366,4
+DB,1,Hombre,Ventanilla,148,254,403,8
+TC,1,Hombre,Servicio Cliente,338,340,679,1
+TC,1,Hombre,Ventanilla,115,240,355,8
+TC,1,Mujer,Apertura Cuenta,200,444,645,8
+TD,1,Mujer,Ventanilla,138,257,395,8
+TD,1,Mujer,Apertura Cuenta,257,239,496,9
+NT,0,Otro,Otro,73,600,673,9
+TC,1,Hombre,Apertura Cuenta,80,271,351,5
+NT,0,Otro,Otro,120,503,624,6
+TC,1,Mujer,Apertura Cuenta,177,80,257,10
+TD,1,Mujer,Ventanilla,88,240,329,9
+TD,1,Mujer,Servicio Cliente,445,288,733,5
+NT,0,Otro,Otro,429,331,761,7
+NT,0,Otro,Otro,403,245,649,0
+DB,1,Hombre,Ventanilla,71,214,285,9
+NT,0,Otro,Otro,311,555,866,7
+NT,0,Otro,Otro,10,482,492,9
+TD,1,Hombre,Apertura Cuenta,340,298,639,9
+NT,0,Otro,Otro,60,416,477,9
+NT,0,Otro,Otro,321,296,617,0
+NT,0,Otro,Otro,276,518,795,3
+TC,1,Mujer,Apertura Cuenta,515,253,768,3
+TD,1,Hombre,Servicio Cliente,312,282,594,2
+NT,0,Otro,Otro,10,474,484,4
+DB,1,Hombre,Ventanilla,88,279,368,4
+NT,0,Otro,Otro,292,64,356,7
+NT,0,Otro,Otro,424,343,767,6
+TC,1,Hombre,Ventanilla,170,133,304,10
+TC,1,Hombre,Servicio Cliente,415,387,802,9
+CQ,0,Otro,Otro,223,298,521,2
+TC,1,Hombre,Servicio Cliente,312,223,535,4
+DB,1,Hombre,Servicio Cliente,465,567,1033,9
+TC,1,Hombre,Ejecutivo,173,402,576,5
+NT,0,Otro,Otro,370,238,608,8
+TD,1,Hombre,Apertura Cuenta,423,463,887,9
+TC,1,Hombre,Ejecutivo,197,155,353,9
+TC,1,Mujer,Apertura Cuenta,287,488,776,1
+TD,1,Mujer,Ventanilla,123,194,317,9
+NT,0,Otro,Otro,301,274,575,5
+DB,1,Hombre,Ventanilla,74,271,346,8
+TD,1,Hombre,Ventanilla,125,136,262,6
+TC,1,Hombre,Servicio Cliente,384,90,474,5
+NT,0,Otro,Otro,169,10,179,9
+TC,1,Hombre,Ventanilla,144,366,510,7
+TD,1,Hombre,Ejecutivo,300,60,360,9
+CQ,0,Otro,Otro,324,10,334,10
+CQ,0,Otro,Otro,443,10,453,4
+TC,1,Hombre,Ventanilla,92,224,316,9
+TD,1,Mujer,Servicio Cliente,320,316,637,3
+TD,1,Hombre,Ventanilla,105,201,307,8
+TC,1,Hombre,Ventanilla,125,220,345,8
+TC,1,Mujer,Servicio Cliente,251,386,638,1
+NT,0,Otro,Otro,442,10,452,9
+NT,0,Otro,Otro,585,327,913,6
+DB,1,Hombre,Apertura Cuenta,80,410,490,8
+TC,1,Hombre,Apertura Cuenta,345,80,425,5
+TC,1,Hombre,Ventanilla,144,147,291,10
+TC,1,Hombre,Servicio Cliente,391,518,909,3
+NT,0,Otro,Otro,199,402,601,8
+TD,1,Mujer,Ventanilla,140,270,411,9
+NT,0,Otro,Otro,69,374,444,1
+TD,1,Mujer,Ejecutivo,300,257,557,2
+NT,0,Otro,Otro,62,10,72,5
+NT,0,Otro,Otro,10,244,254,6
+TD,1,Mujer,Ventanilla,114,300,414,7
+TC,1,Hombre,Ventanilla,93,175,269,10
+NT,0,Otro,Otro,192,10,202,6
+TD,1,Hombre,Ventanilla,125,162,287,10
+TD,1,Hombre,Ventanilla,154,151,305,8
+NT,0,Otro,Otro,10,10,20,7
+TD,1,Mujer,Ventanilla,138,128,267,10
+TD,1,Hombre,Ejecutivo,239,322,562,1
+NT,0,Otro,Otro,600,359,959,4
+TD,1,Mujer,Ventanilla,110,331,442,8
+TD,1,Hombre,Servicio Cliente,425,275,701,1
+TC,1,Hombre,Ventanilla,118,334,452,3
+NT,0,Otro,Otro,551,201,753,4
+DB,1,Hombre,Ventanilla,125,176,302,9
+TD,1,Hombre,Ejecutivo,141,235,377,9
+TD,1,Mujer,Ventanilla,114,227,342,10
+TD,1,Hombre,Ventanilla,138,158,297,8
+TC,1,Hombre,Ventanilla,127,183,310,8
+TC,1,Hombre,Ejecutivo,143,60,203,8
+CQ,0,Otro,Otro,67,122,190,10
+TD,1,Mujer,Ventanilla,128,179,308,10
+TC,1,Hombre,Ejecutivo,122,274,396,3
+TC,1,Hombre,Apertura Cuenta,203,383,586,8
+CQ,0,Otro,Otro,90,502,592,7
+TC,1,Mujer,Ventanilla,73,20,93,9
+NT,0,Otro,Otro,10,375,385,4
+TC,1,Hombre,Apertura Cuenta,137,435,573,8
+TC,1,Hombre,Ejecutivo,106,161,268,5
+TD,1,Hombre,Ventanilla,96,149,246,10
+TD,1,Hombre,Ventanilla,52,276,328,5
+TD,1,Hombre,Ventanilla,98,184,283,10
+NT,0,Otro,Otro,180,10,190,1
+TC,1,Mujer,Ejecutivo,141,310,451,5
+NT,0,Otro,Otro,299,342,642,0
+NT,0,Otro,Otro,355,299,654,5
+TC,1,Mujer,Apertura Cuenta,219,80,299,9
+TD,1,Mujer,Ventanilla,158,102,261,4
+NT,0,Otro,Otro,10,124,134,10
+DB,1,Hombre,Ejecutivo,100,295,395,8
+TD,1,Mujer,Ventanilla,91,119,210,10
+TC,1,Mujer,Ventanilla,94,158,253,10
+NT,0,Otro,Otro,80,319,400,2
+TC,1,Hombre,Apertura Cuenta,80,577,657,7
+NT,0,Otro,Otro,294,117,411,9
+TD,1,Mujer,Ventanilla,145,207,352,9
+TD,1,Hombre,Servicio Cliente,317,261,579,3
+TC,1,Hombre,Servicio Cliente,274,178,452,6
+TC,1,Mujer,Ventanilla,113,101,214,10
+NT,0,Otro,Otro,386,194,580,10
+TC,1,Hombre,Ventanilla,136,304,441,7
+TC,1,Mujer,Apertura Cuenta,210,80,290,6
+NT,0,Otro,Otro,93,244,337,0
+TD,1,Hombre,Ventanilla,129,167,297,9
+TC,1,Mujer,Servicio Cliente,419,438,858,6
+DB,1,Hombre,Ventanilla,81,197,279,10
+TC,1,Hombre,Ejecutivo,300,300,600,8
+DB,1,Hombre,Apertura Cuenta,330,271,601,9
+NT,0,Otro,Otro,342,10,352,10
+TD,1,Hombre,Ejecutivo,84,273,357,3
+DB,1,Hombre,Ventanilla,118,169,288,9
+TD,1,Mujer,Ventanilla,161,217,379,1
+TD,1,Hombre,Apertura Cuenta,181,540,721,9
+TD,1,Hombre,Apertura Cuenta,270,475,746,3
+TD,1,Mujer,Ventanilla,59,211,270,9
+TC,1,Hombre,Servicio Cliente,331,426,758,1
+TD,1,Hombre,Ventanilla,121,241,363,8
+TC,1,Mujer,Ventanilla,132,192,325,10
+TC,1,Hombre,Ventanilla,141,268,409,9
+NT,0,Otro,Otro,476,346,823,6
+TD,1,Mujer,Servicio Cliente,227,266,493,5
+TD,1,Mujer,Apertura Cuenta,168,186,354,7
+TC,1,Mujer,Ventanilla,77,240,317,9
+DB,1,Hombre,Ventanilla,142,173,316,10
+NT,0,Otro,Otro,72,393,466,9
+NT,0,Otro,Otro,10,326,336,9
+TD,1,Mujer,Ventanilla,149,240,389,8
+TD,1,Hombre,Ventanilla,99,186,285,8
+TD,1,Hombre,Ejecutivo,234,342,577,7
+NT,0,Otro,Otro,10,394,404,8
+NT,0,Otro,Otro,262,440,702,6
+TD,1,Mujer,Ventanilla,131,277,409,10
+TD,1,Hombre,Apertura Cuenta,382,301,683,8
+DB,1,Hombre,Ejecutivo,102,300,402,7
+TD,1,Mujer,Ventanilla,40,373,413,10
+CQ,0,Otro,Otro,24,487,511,5
+TD,1,Mujer,Ventanilla,129,279,408,7
+TD,1,Mujer,Ventanilla,87,162,250,10
+TD,1,Hombre,Apertura Cuenta,255,558,814,3
+TC,1,Mujer,Ventanilla,119,149,268,10
+NT,0,Otro,Otro,10,238,248,1
+TC,1,Mujer,Servicio Cliente,293,296,589,9
+TC,1,Mujer,Apertura Cuenta,227,358,585,6
+NT,0,Otro,Otro,28,10,38,8
+TD,1,Mujer,Ventanilla,112,82,195,10
+TD,1,Hombre,Ejecutivo,273,347,620,3
+TC,1,Hombre,Ventanilla,115,319,434,8
+TC,1,Hombre,Servicio Cliente,404,621,1025,1
+TD,1,Mujer,Apertura Cuenta,256,217,474,4
+TD,1,Hombre,Apertura Cuenta,175,488,663,7
+TC,1,Mujer,Ventanilla,99,174,274,6
+TC,1,Hombre,Apertura Cuenta,540,593,1133,4
+NT,0,Otro,Otro,297,342,639,5
+DB,1,Hombre,Servicio Cliente,287,520,808,1
+DB,1,Hombre,Ejecutivo,74,296,371,6
+DB,1,Hombre,Ventanilla,121,297,418,8
+CQ,0,Otro,Otro,209,426,635,7
+DB,1,Hombre,Servicio Cliente,166,428,594,7
+TC,1,Hombre,Ejecutivo,236,217,454,2
+TC,1,Hombre,Servicio Cliente,327,530,858,7
+TC,1,Mujer,Ventanilla,112,179,291,9
+TD,1,Mujer,Ejecutivo,176,225,402,9
+NT,0,Otro,Otro,600,535,1135,3
+NT,0,Otro,Otro,125,248,374,2
+TC,1,Mujer,Apertura Cuenta,112,397,510,6
+TD,1,Mujer,Ventanilla,21,356,377,10
+DB,1,Hombre,Ejecutivo,168,300,468,1
+NT,0,Otro,Otro,209,392,601,7
+NT,0,Otro,Otro,349,467,816,0
+DB,1,Hombre,Ventanilla,130,179,309,10
+TD,1,Hombre,Servicio Cliente,232,542,774,1
+NT,0,Otro,Otro,65,600,665,5
+DB,1,Hombre,Apertura Cuenta,80,80,160,10
+NT,0,Otro,Otro,506,449,956,3
+TC,1,Hombre,Apertura Cuenta,223,431,654,3
+TC,1,Hombre,Apertura Cuenta,123,80,203,5
+NT,0,Otro,Otro,10,10,20,6
+DB,1,Hombre,Ventanilla,101,76,178,10
+TD,1,Mujer,Ventanilla,133,174,308,10
+TC,1,Hombre,Ventanilla,140,210,351,7
+TD,1,Hombre,Ventanilla,106,298,404,8
+NT,0,Otro,Otro,10,292,302,4
+NT,0,Otro,Otro,371,600,971,2
+DB,1,Hombre,Ventanilla,142,225,368,8
+TD,1,Mujer,Ejecutivo,68,335,404,6
+NT,0,Otro,Otro,266,294,560,4
+TD,1,Hombre,Ventanilla,64,157,221,7
+NT,0,Otro,Otro,352,145,497,7
+TD,1,Hombre,Ventanilla,112,202,315,9
+NT,0,Otro,Otro,10,404,414,3
+DB,1,Mujer,Apertura Cuenta,313,466,780,5
+TC,1,Mujer,Servicio Cliente,394,315,710,4
+TD,1,Mujer,Ventanilla,135,115,250,10
+DB,1,Hombre,Ventanilla,70,201,271,9
+TC,1,Hombre,Ejecutivo,162,169,332,5
+TD,1,Mujer,Servicio Cliente,249,737,987,8
+NT,0,Otro,Otro,332,483,816,7
+NT,0,Otro,Otro,10,141,151,7
+DB,1,Hombre,Apertura Cuenta,193,285,478,5
+DB,1,Hombre,Ejecutivo,300,141,441,10
+TC,1,Hombre,Ejecutivo,159,206,366,2
+TD,1,Hombre,Servicio Cliente,432,581,1013,2
+TD,1,Hombre,Ventanilla,66,206,272,8
+TC,1,Mujer,Ejecutivo,285,247,532,1
+DB,1,Hombre,Ejecutivo,108,176,284,1
+TC,1,Hombre,Ventanilla,118,193,312,8
+TC,1,Mujer,Ventanilla,109,20,129,10
+TD,1,Mujer,Ventanilla,131,308,440,8
+TC,1,Hombre,Servicio Cliente,301,517,818,7
+NT,0,Otro,Otro,121,141,263,1
+TD,1,Mujer,Apertura Cuenta,472,554,1026,5
+DB,1,Hombre,Ventanilla,149,245,395,7
+NT,0,Otro,Otro,428,474,902,3
+TD,1,Hombre,Servicio Cliente,367,532,899,4
+TD,1,Hombre,Ejecutivo,60,341,401,5
+TD,1,Mujer,Ventanilla,92,287,379,9
+CQ,0,Otro,Otro,130,558,689,4
+TD,1,Mujer,Ventanilla,131,183,314,10
+TC,1,Hombre,Ventanilla,124,204,329,3
+TC,1,Hombre,Ventanilla,95,246,342,8
+DB,1,Hombre,Servicio Cliente,177,446,624,4
+CQ,0,Otro,Otro,469,111,580,10
+TC,1,Hombre,Ventanilla,91,224,316,7
+TD,1,Hombre,Ejecutivo,239,431,671,6
+TC,1,Mujer,Apertura Cuenta,88,572,660,6
+NT,0,Otro,Otro,11,483,495,8
+TD,1,Hombre,Ventanilla,171,178,350,8
+TD,1,Hombre,Apertura Cuenta,205,264,470,6
+TD,1,Hombre,Servicio Cliente,158,307,465,3
+TC,1,Mujer,Ventanilla,127,133,260,6
+TD,1,Hombre,Apertura Cuenta,400,430,831,8
+TC,1,Hombre,Ventanilla,158,82,241,10
+TD,1,Hombre,Servicio Cliente,219,366,585,3
+TC,1,Mujer,Ejecutivo,300,409,709,3
+DB,1,Hombre,Ventanilla,130,158,289,9
+TD,1,Hombre,Ejecutivo,180,300,480,5
+TC,1,Hombre,Apertura Cuenta,259,342,602,5
+DB,1,Hombre,Ventanilla,90,236,327,7
+TD,1,Mujer,Ventanilla,132,363,496,7
+TC,1,Mujer,Ejecutivo,255,342,598,10
+NT,0,Otro,Otro,272,600,872,8
+NT,0,Otro,Otro,98,10,108,10
+TC,1,Hombre,Ejecutivo,247,233,480,8
+NT,0,Otro,Otro,427,10,437,7
+TD,1,Mujer,Servicio Cliente,182,389,572,1
+CQ,0,Otro,Otro,480,484,965,2
+TD,1,Mujer,Apertura Cuenta,98,495,594,8
+CQ,0,Otro,Otro,386,600,986,6
+TD,1,Hombre,Ventanilla,109,284,393,1
+DB,1,Hombre,Servicio Cliente,423,451,875,1
+NT,0,Otro,Otro,289,137,427,4
+TD,1,Mujer,Ventanilla,131,308,439,8
+TD,1,Mujer,Apertura Cuenta,260,469,730,7
+TD,1,Hombre,Apertura Cuenta,191,80,271,7
+NT,0,Otro,Otro,184,10,194,9
+TD,1,Mujer,Servicio Cliente,375,432,807,8
+TC,1,Hombre,Ejecutivo,187,300,487,8
+NT,0,Otro,Otro,398,10,408,3
+TD,1,Hombre,Ejecutivo,87,60,147,3
+TC,1,Mujer,Apertura Cuenta,277,360,638,5
+TC,1,Hombre,Ventanilla,102,289,392,7
+NT,0,Otro,Otro,147,292,440,6
+TD,1,Mujer,Ventanilla,144,164,308,10
+TC,1,Mujer,Ventanilla,121,232,354,8
+TC,1,Mujer,Ventanilla,98,312,411,2
+NT,0,Otro,Otro,254,189,443,3
+TD,1,Mujer,Apertura Cuenta,459,451,910,1
+TC,1,Mujer,Apertura Cuenta,204,80,284,10
+DB,1,Hombre,Ejecutivo,186,184,370,7
+TC,1,Hombre,Ejecutivo,226,211,437,8
+TD,1,Hombre,Servicio Cliente,325,298,623,3
+TC,1,Hombre,Ventanilla,130,247,377,9
+TC,1,Mujer,Ventanilla,139,259,398,9
+TC,1,Hombre,Apertura Cuenta,457,540,997,4
+TD,1,Hombre,Ejecutivo,227,362,589,6
+DB,1,Mujer,Servicio Cliente,286,329,616,6
+TD,1,Mujer,Apertura Cuenta,204,372,576,4
+NT,0,Otro,Otro,53,121,174,10
+NT,0,Otro,Otro,358,644,1002,5
+TC,1,Hombre,Ventanilla,158,194,353,3
+NT,0,Otro,Otro,150,343,493,6
+DB,1,Hombre,Apertura Cuenta,361,374,735,1
+TD,1,Hombre,Ventanilla,71,147,218,8
+TD,1,Mujer,Servicio Cliente,252,399,652,5
+TD,1,Mujer,Ventanilla,156,201,357,8
+NT,0,Otro,Otro,206,10,216,1
+NT,0,Otro,Otro,243,471,715,7
+TC,1,Hombre,Ventanilla,184,212,397,7
+TD,1,Mujer,Ventanilla,98,188,286,10
+CQ,0,Otro,Otro,26,665,692,6
+TC,1,Hombre,Ventanilla,104,326,430,8
+TC,1,Hombre,Apertura Cuenta,137,567,704,7
+NT,0,Otro,Otro,190,193,384,6
+NT,0,Otro,Otro,10,451,461,8
+TD,1,Hombre,Ventanilla,125,230,355,10
+NT,0,Otro,Otro,26,483,509,2
+TD,1,Hombre,Ventanilla,112,234,347,8
+NT,0,Otro,Otro,163,164,328,2
+TD,1,Mujer,Ventanilla,131,377,509,9
+TD,1,Mujer,Ventanilla,78,88,167,10
+NT,0,Otro,Otro,10,472,482,7
+TD,1,Hombre,Ventanilla,124,238,362,6
+CQ,0,Otro,Otro,10,533,543,6
+TC,1,Mujer,Apertura Cuenta,122,80,202,5
+TD,1,Hombre,Ejecutivo,298,342,641,7
+TC,1,Hombre,Ejecutivo,95,320,415,5
+TD,1,Mujer,Ventanilla,128,264,392,9
+TD,1,Hombre,Ejecutivo,283,421,704,7
+TD,1,Mujer,Ventanilla,120,202,323,8
+TD,1,Hombre,Ventanilla,128,148,277,2
+NT,0,Otro,Otro,374,665,1040,6
+TD,1,Hombre,Ventanilla,115,177,293,5
+NT,0,Otro,Otro,166,175,341,10
+TD,1,Hombre,Ventanilla,81,255,336,10
+DB,1,Hombre,Ventanilla,115,240,355,9
+TC,1,Hombre,Apertura Cuenta,226,318,544,7
+NT,0,Otro,Otro,176,604,781,3
+TD,1,Hombre,Apertura Cuenta,182,200,383,2
+TD,1,Hombre,Apertura Cuenta,328,161,489,6
+TC,1,Hombre,Apertura Cuenta,284,483,768,9
+TC,1,Hombre,Ventanilla,143,142,286,9
+TC,1,Hombre,Ventanilla,128,223,352,8
+TD,1,Hombre,Ventanilla,176,322,498,1
+TD,1,Hombre,Servicio Cliente,268,472,741,4
+TC,1,Hombre,Ventanilla,153,364,517,1
+TC,1,Hombre,Ejecutivo,60,227,287,9
+NT,0,Otro,Otro,56,540,596,5
+NT,0,Otro,Otro,152,507,660,8
+TC,1,Hombre,Servicio Cliente,375,517,893,1
+TD,1,Hombre,Apertura Cuenta,309,262,572,2
+TD,1,Hombre,Ventanilla,200,227,427,9
+DB,1,Hombre,Ventanilla,126,240,366,7
+TC,1,Hombre,Servicio Cliente,262,441,703,1
+TD,1,Mujer,Servicio Cliente,244,442,687,1
+NT,0,Otro,Otro,281,10,291,10
+TD,1,Mujer,Servicio Cliente,311,535,847,9
+CQ,0,Otro,Otro,10,536,546,0
+TD,1,Hombre,Ventanilla,89,77,166,10
+TC,1,Hombre,Ventanilla,99,151,250,9
+CQ,0,Otro,Otro,259,566,826,8
+TD,1,Hombre,Ventanilla,92,261,353,8
+TD,1,Hombre,Ventanilla,88,173,261,10
+NT,0,Otro,Otro,286,226,512,7
+NT,0,Otro,Otro,211,52,263,2
+TD,1,Hombre,Ventanilla,118,131,250,9
+TC,1,Hombre,Ventanilla,122,162,284,8
+DB,1,Hombre,Ventanilla,125,296,422,7
+TD,1,Mujer,Ejecutivo,90,300,390,8
+TD,1,Mujer,Ventanilla,157,88,245,10
+TD,1,Hombre,Servicio Cliente,371,710,1081,1
+TD,1,Hombre,Ventanilla,121,254,376,8
+TD,1,Hombre,Servicio Cliente,273,136,410,4
+NT,0,Otro,Otro,10,596,606,2
+NT,0,Otro,Otro,577,100,677,10
+TD,1,Hombre,Ventanilla,153,257,410,1
+NT,0,Otro,Otro,368,217,586,3
+TC,1,Hombre,Ventanilla,175,84,259,10
+TC,1,Hombre,Ventanilla,191,198,389,10
+TD,1,Mujer,Ejecutivo,162,352,514,8
+TC,1,Hombre,Ventanilla,75,311,387,9
+TC,1,Hombre,Apertura Cuenta,232,495,727,6
+CQ,0,Otro,Otro,10,393,403,2
+TC,1,Mujer,Ventanilla,105,354,460,10
+TD,1,Mujer,Servicio Cliente,370,308,679,7
+TC,1,Hombre,Servicio Cliente,118,407,525,7
+TC,1,Mujer,Servicio Cliente,232,348,580,4
+TD,1,Hombre,Apertura Cuenta,80,316,396,8
+TC,1,Hombre,Ventanilla,104,258,362,7
+TD,1,Mujer,Ventanilla,130,146,276,3
+TD,1,Hombre,Ventanilla,99,186,285,10
+TD,1,Mujer,Ventanilla,127,127,254,10
+TD,1,Mujer,Apertura Cuenta,80,302,382,5
+DB,1,Hombre,Ventanilla,118,215,334,8
+NT,0,Otro,Otro,26,537,564,2
+TC,1,Hombre,Apertura Cuenta,285,80,365,9
+TD,1,Hombre,Ejecutivo,60,227,287,6
+DB,1,Hombre,Servicio Cliente,319,682,1001,2
+TC,1,Mujer,Apertura Cuenta,170,296,466,1
+TD,1,Hombre,Apertura Cuenta,128,486,614,4
+TC,1,Mujer,Servicio Cliente,310,184,494,6
+NT,0,Otro,Otro,86,532,619,8
+DB,1,Hombre,Ventanilla,99,20,119,9
+TC,1,Hombre,Ejecutivo,74,300,374,5
+TD,1,Mujer,Apertura Cuenta,249,387,636,3
+TD,1,Hombre,Servicio Cliente,545,308,853,7
+NT,0,Otro,Otro,272,293,566,0
+TC,1,Mujer,Ventanilla,139,312,451,8
+TD,1,Mujer,Ventanilla,143,163,307,10
+NT,0,Otro,Otro,367,91,459,4
+TD,1,Mujer,Ventanilla,92,178,270,10
+TC,1,Hombre,Ventanilla,137,160,297,4
+TC,1,Hombre,Servicio Cliente,456,590,1047,1
+TD,1,Hombre,Ventanilla,88,249,337,9
+TD,1,Hombre,Ejecutivo,170,341,512,8
+TC,1,Hombre,Ejecutivo,197,300,497,3
+TC,1,Hombre,Ventanilla,110,85,195,8
+TC,1,Hombre,Ventanilla,117,190,308,10
+NT,0,Otro,Otro,242,289,531,3
+TD,1,Mujer,Ventanilla,110,199,309,10
+TC,1,Mujer,Servicio Cliente,423,585,1008,5
+NT,0,Otro,Otro,443,95,538,10
+NT,0,Otro,Otro,486,579,1066,6
+NT,0,Otro,Otro,70,305,375,4
+NT,0,Otro,Otro,299,617,916,6
+TD,1,Hombre,Ventanilla,136,326,463,5
+TD,1,Hombre,Ventanilla,107,266,373,7
+TD,1,Mujer,Ventanilla,83,294,377,9
+TD,1,Mujer,Ventanilla,90,151,241,5
+NT,0,Otro,Otro,396,380,777,0
+NT,0,Otro,Otro,415,380,795,1
+DB,1,Hombre,Apertura Cuenta,332,517,849,8
+TC,1,Hombre,Ventanilla,139,286,425,9
+NT,0,Otro,Otro,373,255,629,8
+NT,0,Otro,Otro,320,10,330,10
+TD,1,Hombre,Servicio Cliente,269,533,803,3
+TD,1,Mujer,Servicio Cliente,334,224,559,4
+NT,0,Otro,Otro,145,10,155,9
+TC,1,Hombre,Servicio Cliente,208,493,701,7
+CQ,0,Otro,Otro,218,10,228,7
+NT,0,Otro,Otro,11,536,548,0
+TD,1,Mujer,Ventanilla,90,362,452,9
+NT,0,Otro,Otro,252,110,363,5
+NT,0,Otro,Otro,189,10,199,10
+DB,1,Hombre,Ventanilla,108,104,213,9
+TC,1,Hombre,Ventanilla,111,280,392,8
+NT,0,Otro,Otro,369,299,669,3
+TC,1,Mujer,Apertura Cuenta,225,570,796,3
+TD,1,Mujer,Ventanilla,101,134,235,10
+TD,1,Hombre,Ventanilla,105,227,332,7
+TC,1,Hombre,Ventanilla,97,173,270,9
+NT,0,Otro,Otro,556,340,896,8
+NT,0,Otro,Otro,10,362,372,5
+TC,1,Mujer,Ventanilla,121,205,327,9
+NT,0,Otro,Otro,10,326,336,1
+NT,0,Otro,Otro,10,334,344,9
+NT,0,Otro,Otro,214,333,547,4
+TD,1,Hombre,Ventanilla,88,253,342,9
+TC,1,Mujer,Ventanilla,85,186,271,10
+TC,1,Hombre,Servicio Cliente,288,294,583,4
+TD,1,Hombre,Servicio Cliente,463,598,1062,2
+TC,1,Mujer,Ventanilla,109,262,371,8
+DB,1,Hombre,Ventanilla,110,177,288,8
+TC,1,Hombre,Servicio Cliente,420,90,510,1
+TD,1,Mujer,Ejecutivo,210,212,423,10
+NT,0,Otro,Otro,81,246,328,4
+TC,1,Hombre,Ventanilla,92,154,247,10
+TD,1,Hombre,Ventanilla,180,20,200,10
+TC,1,Hombre,Ejecutivo,60,167,227,7
