@@ -4,6 +4,22 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{caption}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{xcolor}
+
+% Define Python listing style
+\lstdefinestyle{python}{
+    language=Python,
+    basicstyle=\scriptsize\ttfamily,
+    keywordstyle=\color{blue}\bfseries,
+    stringstyle=\color{red},
+    commentstyle=\color{gray}\itshape,
+    showstringspaces=false,
+    frame=single,
+    breaklines=true,
+    columns=fullflexible
+}
 
 \renewcommand{\figurename}{Figura}
 
@@ -415,14 +431,14 @@ def reporteCorte(codigo, leyenda):
 def reporteFin(codigo, leyenda):
     print(f"-------------- {codigo} / {leyenda} --------------")
 
-def reporteBalanceDiaInicio(valance):
+def reporteBalanceDiaInicio(balance):
     reporteTitulo("BIN", "Balance al Inicio del Día")
-    print(f"$ {valance:.2f}")
+    print(f"$ {balance:.2f}")
     reporteFin("BIN", "Balance al Inicio del Día")
 
-def reporteBalanceDiaFin(valance):
+def reporteBalanceDiaFin(balance):
     reporteTitulo("B-OUT", "Balance al Final del Día")
-    print(f"$ {valance:.2f}")
+    print(f"$ {balance:.2f}")
     reporteFin("B-OUT", "Balance al Final del Día")
 
 def reporteTotalOperacionesDia(numOperaciones):
@@ -541,11 +557,163 @@ Un banco financió un proyecto durante 48 meses por \textbf{\$ 6,232,800.00}, co
 
 \subsection*{Problema 1 | Probabilidad de un Evento Simple} 
 
+Una financiera posee una tabla con el género de sus clientes, si tiene trabajo, si está casado y si tiene alguna deuda.
+\\[12pt]
+En la Figura \ref{fig:p201} se muestra la tabla con el género, trabajo, casado y deuda de los clientes.
+\begin{figure}[!h]
+    \centering
+    \begin{minipage}{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/p201.png}
+    \end{minipage}
+    \captionsetup{width=0.9\textwidth}
+    \caption{Tabla de deuda por género, trabajo y casado}
+    \label{fig:p201}
+\end{figure}
+\\
+(a) Calcula la probabilidad de ser hombre
+\\[6pt]
+(b) Calcula la probabilidad de ser mujer
+\\[6pt]
+(c) Calcula la probabilidad de tener trabajo
+\\[6pt]
+(d) Calcula la probabilidad de no tener trabajo
+\\[6pt]
+(e) Calcula la probabilidad de estar casado
+\\[6pt]
+(f) Calcula la probabilidad de no estar casado
+\\[6pt]
+(g) Calcula la probabilidad de tener deuda
+\\[6pt]
+(h) Calcula la probabilidad de no tener deuda
+
+\clearpage
+
 \subsection*{Problema 2 | Tabla conjunta de Dos Eventos}
+
+Un restaurante está inspeccionando la bebidas asociadas al pago con tarjeta de sus clientes, porque sospecha que los clientes que pagan con tarjeta de crédito consumen más cerveza que aquellos que pagan con tarjeta de débito.
+\\[12pt]
+En la Figura \ref{fig:p202} se muestra la tabla con los datos de los clientes si utilizaron tarjeta de crédito o débito y el tipo de bebida que consumieron.
+\begin{figure}[!h]
+    \centering
+    \begin{minipage}{\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{figures/p202.png}
+    \end{minipage}
+    \captionsetup{width=0.9\textwidth}
+    \caption{Tabla de tipo bebida consumida asociada al tipo de tarjeta}
+    \label{fig:p202}
+\end{figure}
+\\
+
+\break
+\noindent
+(a) Genera la tabla conjunta donde las filas sean el tipo de tarjeta (Débito, Crédito) y las columnas el tipo de bebida (Refresco, Cerveza). En cada celda pon el número total de registros que cumplen la fila y la columna, por ejemplo, para la fila Débito y la columna Refresco, hay 6 registros.
+\\[6pt]
+(b) Agrega una columna adicional con los totales marginales para la fila, sumando todas las columnas.
+\\[6pt]
+(c) Agrega una fila adicional para los totales marginales para la columna, sumando todas las filas.
+\\[6pt]
+(d) Indica el total de registros en la intersección de la columna marginal y la fila marginal.
+\\[6pt]
+(e) Genera la tabla de probabilidad conjunta, que es la misma que la tabla conjunta, solo que cada valor está dividido sobre el total de registros.
+\\[6pt]
+(f) Calcula la probabilidad de tener una tarjeta de débito
+\\[6pt]
+(g) Calcula la probabilidad de tener una tarjeta de crédito
+\\[6pt]
+(h) Calcula la probabilidad de haber consumido refresco
+\\[6pt]
+(i) Calcula la probabilidad de tener consumido cerveza
+
+\clearpage
 
 \subsection*{Problema 3 | Probabilidad Conjunta de Dos Eventos}
 
+Una empresa ha recuperado la tabla conjunta del personal que fue promovido a un mejor puesto y los que no a lo largo de 3 años. La tabla divide los hombres y mujeres contra si fueron o no promovidos, también cuenta con sus totales marginales. La empresa necesita encontrar la probabilidad conjunta de que los hombres hayan sido promividos o no.
+\\[12pt]
+En la Figura \ref{fig:p203} se muestra la tabla conjunta de promoción del personal por género.
+\begin{figure}[!h]
+    \centering
+    \begin{minipage}{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/p203.png}
+    \end{minipage}
+    \captionsetup{width=0.9\textwidth}
+    \caption{Tabla conjunta de promoción del personal por género}
+    \label{fig:p203}
+\end{figure}
+\\
+(a) Divide cada valor de la tabla conjunta por el total marginal de $464$.
+\\[6pt]
+(b) Indica cual es la probabilidad total de que un hombre haya sido promovido.
+\\[6pt]
+(c) Indica cual es la probabilidad total de que un hombre no haya sido promovido.
+\\[6pt]
+(d) Indica cual es la probabilidad total de que una mujer haya sido promovida.
+\\[6pt]
+(e) Indica cual es la probabilidad total de que una mujer no haya sido promovida.
+\\[6pt]
+(f) Indica cual es la probabilidad total de que alguien sea hombre.
+\\[6pt]
+(g) Indica cual es la probabilidad total de que alguien sea mujer.
+\\[6pt]
+(h) Indica cual es la probabilidad total de que alguien sea promovido.
+\\[6pt]
+(i) Indica cual es la probabilidad total de que alguien no sea promovido.
+
+\clearpage
+
 \subsection*{Problema 4 | Probabilidad Condicional de Dos Eventos}
+
+Una fábrica de cosméticos está diseñando un nuevo programa para que sus empleados trabajen dos horas menos de lo convencional. Para determinar si su modelo funciona, ha contratado empleados temporales, a los cuales se les pregunta si quieren ganar \textbf{\$ 2,800} por 6 horas diarias durante los 6 días de jornada de la semana, o ganar \textbf{\$ 4,080} por 8 horas. Al cabo de la semana, el empleado temporal tiene la oportunidad de tener un contrato de 3 meses o renunciar.
+\\[12pt]
+Después de construir la tabla conjunta con el número de empleados que trabajaron 6 horas u 8 horas y que renunciaron o no renunciaron, la empresa decide generar la tabla de probabilidad conjunta para no exponer los números netos sobre los empleados que contrató. Ahora requiere calcular la probabilidad de haber trabajado 6 horas dado que renunció y haber trabajado 8 horas dado que renunció, para poder entender cuál era turno que eligió una persona que decidió renunciar al final.
+\\[12pt]
+Además la empresa necesita saber cuál es la probabilidad de renunciar, dado que se trabaja 6 horas y la probabilidad de renunciar dado que se trabaja 8 horas, para entender quién tiene mayor probabilidad de renunciar y decidir si vale la pena mantener un turno de 8 horas en el futuro.
+\\[12pt]
+En la Figura \ref{fig:p204} se muestra la tabla de probabilidad de los empleados que deciden renunciar o no en turnos de 6 y 8 horas.
+\begin{figure}[!h]
+    \centering
+    \begin{minipage}{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/p204.png}
+    \end{minipage}
+    \captionsetup{width=0.9\textwidth}
+    \caption{Tabla de probabilidad de renuncia por turno}
+    \label{fig:p204}
+\end{figure}
+\\
+
+\break
+\noindent
+(a) Indica cual es la probabilidad que alguien renuncie $P(Renuncia)$
+\\[6pt]
+(b) Indica la probabilidad de que alguien trabaje 6 horas $P(6h)$
+\\[6pt]
+(c) Indica la probabilidad de que alguien trabaje 8 horas $P(8h)$
+\\[6pt]
+(d) Indica la probabilidad de que alguien trabaje trabaje 6 horas y renuncie $P(6h \cap Renuncia)$
+\\[6pt]
+(e) Indica la probabilidad de que alguien trabaje trabaje 8 horas y renuncie $P(8h \cap Renuncia)$
+\\[6pt]
+(f) Calcula la probabilidad de trabajar 6 horas dado que se renuncia 
+\\[6pt]
+$P(6h|Renuncia) = \frac{P(6h \cap Renuncia)}{P(Renuncia)}$.
+\\[6pt]
+(g) Calcula la probabilidad de trabajar 8 horas dado que se renuncia
+\\[6pt]
+$P(8h|Renuncia) = \frac{P(8h \cap Renuncia)}{P(Renuncia)}$.
+\\[6pt]
+(h) Calcula la probabilidad de renunciar dado que se trabajó 6 horas 
+\\[6pt]
+$P(Renuncia|6h) = \frac{P(6h \cap Renuncia)}{P(6h)}$.
+\\[6pt]
+(i) Calcula la probabilidad de renunciar dado que se trabajó 6 horas 
+\\[6pt]
+$P(Renuncia|8h) = \frac{P(8h \cap Renuncia)}{P(8h)}$.
+
+\clearpage
 
 \subsection*{Problema 5 | Probabilidad Conjunta de Tres Eventos}
 
@@ -565,70 +733,580 @@ Un banco financió un proyecto durante 48 meses por \textbf{\$ 6,232,800.00}, co
 
 \subsection*{Problema 1 | Estructuración de un Dataset en Excel}
 
-\subsection*{Problema 2 | Dataset de indicadores en CSV}
+Crea un archivo Excel que represente la siguiente información:
 
-\subsection*{Problema 3 | Adquisición de un CSV en Python}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        País & Año & Población (millones) & PIB per cápita (USD) \\
+        \hline
+        México & 2022 & 126 & 10000 \\
+        Estados Unidos & 2022 & 331 & 63000 \\
+        Canadá & 2022 & 38 & 48000 \\
+        Brasil & 2022 & 213 & 7500 \\
+        Japón & 2022 & 126 & 40000 \\
+        \hline
+    \end{tabular}
+    \caption{Datos para estructurar}
+\end{table}
 
-\subsection*{Problema 4 | Indicadores en Series de Pandas}
-
-\subsection*{Problema 5 | Indicadores en DataFrames de Pandas}
-
-\subsection*{Problema 6 | Filtrar columnas en DataFrames}
-
-\subsection*{Problema 7 | Filtrar filas en DataFrames}
-
-\subsection*{Problema 8 | Agrupación de datos en DataFrames}
-
-\subsection*{Problema 9 | Combinación de datos en DataFrames}
-
-\subsection*{Problema 10 | Viasualización de datos}
+Guarda el archivo con el nombre \texttt{indicadores.xlsx}.
 
 \clearpage
 
+\subsection*{Problema 2 | Dataset de indicadores en CSV}
+
+Convierte el archivo \texttt{indicadores.xlsx} del Problema 1 en un archivo CSV llamado \texttt{indicadores.csv}. Usa el siguiente formato de columnas:
+
+\begin{verbatim}
+País,Año,Población,PIB_per_capita
+México,2022,126,10000
+Estados Unidos,2022,331,63000
+Canadá,2022,38,48000
+Brasil,2022,213,7500
+Japón,2022,126,40000
+\end{verbatim}
+
+\clearpage
+
+\subsection*{Problema 3 | Adquisición de un CSV en Python}
+
+Escribe un script en Python que lea el archivo \texttt{indicadores.csv} del Problema 2 y lo muestre en la consola. Completa el siguiente código:
+
+\begin{lstlisting}[style=python]
+import pandas as pd
+
+# Ruta del archivo
+file_path = "..."
+
+# Cargar el CSV
+df = pd.read_csv(file_path)
+
+# Mostrar el DataFrame
+print(...)
+\end{lstlisting}
+
+\clearpage
+
+\subsection*{Problema 4 | Indicadores en Series de Pandas}
+
+Usando el DataFrame cargado en el Problema 3, crea una Serie con los valores del PIB per cápita. Completa el siguiente código:
+
+\begin{lstlisting}[style=python]
+# Crear la Serie
+pib_per_capita = ...
+
+# Mostrar la Serie
+print(pib_per_capita)
+\end{lstlisting}
+
+\clearpage
+
+\subsection*{Problema 5 | Indicadores en DataFrames de Pandas}
+
+Agrega una nueva columna llamada \texttt{PIB\_total} que calcule el PIB total como el producto de \texttt{Población} y \texttt{PIB per cápita}. Completa el código:
+
+\begin{lstlisting}[style=python]
+# Agregar la columna
+df['PIB_total'] = ...
+
+# Mostrar el DataFrame
+print(df)
+\end{lstlisting}
+
+\clearpage
+
+\subsection*{Problema 6 | Filtrar columnas en DataFrames}
+
+Filtra únicamente las columnas \texttt{País} y \texttt{PIB\_total}. Completa el código:
+
+\begin{lstlisting}[style=python]
+# Filtrar columnas
+filtered_df = df[...]
+
+# Mostrar las columnas filtradas
+print(filtered_df)
+\end{lstlisting}
+
+\clearpage
+
+\subsection*{Problema 7 | Filtrar filas en DataFrames}
+
+Filtra las filas donde el PIB total sea mayor a 1 billón de USD (\texttt{1e12}). Completa el código:
+
+\begin{lstlisting}[style=python]
+# Filtrar filas
+high_pib = df[...]
+
+# Mostrar las filas filtradas
+print(high_pib)
+\end{lstlisting}
+
+\clearpage
+
+\subsection*{Problema 8 | Agrupación de datos en DataFrames}
+
+Agrupa los datos por año y calcula el promedio de PIB per cápita. Completa el código:
+
+\begin{lstlisting}[style=python]
+# Agrupar y calcular promedio
+average_pib = df.groupby(...)[...].mean()
+
+# Mostrar el resultado
+print(average_pib)
+\end{lstlisting}
+
+\clearpage
+
+\subsection*{Problema 9 | Combinación de datos en DataFrames}
+
+Combina el DataFrame actual con otro que contenga información adicional, como índice de desarrollo humano (IDH). Completa el código:
+
+\begin{lstlisting}[style=python]
+# Crear otro DataFrame
+idh_data = {
+    "Pais": ["Mexico", "Estados Unidos", "Canada", "Brasil", "Japon"],
+    "IDH": [0.758, 0.926, 0.929, 0.765, 0.919]
+}
+idh_df = pd.DataFrame(idh_data)
+
+# Combinar DataFrames
+combined_df = pd.merge(df, idh_df, on=...)
+
+# Mostrar el resultado
+print(combined_df)
+\end{lstlisting}
+
+\clearpage
+
+\subsection*{Problema 10 | Visualización de datos}
+
+Crea un gráfico de barras que muestre el PIB total por país usando la librería \texttt{matplotlib}. Completa el código:
+
+\begin{lstlisting}[style=python]
+import matplotlib.pyplot as plt
+
+# Crear grafico de barras
+plt.bar(..., ...)
+
+# Configurar etiquetas
+plt.xlabel("Pais")
+plt.ylabel("PIB Total (USD)")
+plt.title("PIB Total por Pais")
+
+# Mostrar grafico
+plt.show()
+\end{lstlisting}
+
 \section*{Módulo IV | Machine Learning}
 
+
+% Problema 1
 \subsection*{Problema 1 | Aprendizaje Supervisado}
 
+Dado el siguiente conjunto de datos en formato CSV:
+
+\begin{verbatim}
+Edad,Salario,Compra
+25,50000,No
+35,60000,Sí
+45,80000,Sí
+30,70000,No
+40,85000,Sí
+\end{verbatim}
+
+Carga estos datos en un DataFrame de pandas y utiliza la librería \texttt{sklearn} para entrenar un modelo de clasificación que prediga si una persona comprará un producto basado en su edad y salario.
+
+\begin{lstlisting}[style=python]
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
+import pandas as pd
+
+# Cargar los datos
+data = ...
+
+# Separar variables independientes y dependientes
+X = ...
+y = ...
+
+# Dividir los datos en conjuntos de entrenamiento y prueba
+X_train, X_test, y_train, y_test = train_test_split(...)
+
+# Entrenar el modelo
+model = DecisionTreeClassifier()
+model.fit(...)
+
+# Evaluar el modelo
+accuracy = model.score(...)
+print(f"Accuracy: {accuracy}")
+\end{lstlisting}
+
+\clearpage
+
+% Problema 2
 \subsection*{Problema 2 | Regresión Simple}
 
+Usa el siguiente conjunto de datos para predecir el precio de una casa basado en su tamaño en pies cuadrados:
+
+\begin{verbatim}
+Tamaño,Precio
+1000,150000
+1500,200000
+2000,250000
+2500,300000
+3000,350000
+\end{verbatim}
+
+Crea un modelo de regresión lineal y muestra la ecuación de la recta ajustada.
+
+\begin{lstlisting}[style=python]
+from sklearn.linear_model import LinearRegression
+
+# Datos
+X = ...
+y = ...
+
+# Crear modelo
+model = LinearRegression()
+model.fit(...)
+
+# Mostrar ecuacion de la recta
+print(f"Coeficiente: {model.coef_}")
+print(f"Intercepto: {model.intercept_}")
+\end{lstlisting}
+
+\clearpage
+
+% Problema 3
 \subsection*{Problema 3 | Regresión Múltiple}
 
+Amplía los datos del Problema 2 agregando una columna de número de habitaciones:
+
+\begin{verbatim}
+Tamaño,Habitaciones,Precio
+1000,2,150000
+1500,3,200000
+2000,4,250000
+2500,4,300000
+3000,5,350000
+\end{verbatim}
+
+Entrena un modelo de regresión múltiple para predecir el precio de una casa.
+
+\clearpage
+
+% Problema 4
 \subsection*{Problema 4 | Clasificación Simple}
 
+Utilizando el conjunto de datos del Problema 1, usa una regresión logística para predecir la compra de un producto.
+
+\begin{lstlisting}[style=python]
+from sklearn.linear_model import LogisticRegression
+
+# Crear modelo
+model = LogisticRegression()
+model.fit(...)
+
+# Prediccion
+pred = model.predict(...)
+print(f"Predicciones: {pred}")
+\end{lstlisting}
+
+\clearpage
+
+% Problema 5
 \subsection*{Problema 5 | Clasificación Múltiple}
 
+Dado el siguiente conjunto de datos, crea un modelo de clasificación que prediga la categoría del cliente (A, B o C) basado en el ingreso y la edad:
+
+\begin{verbatim}
+Edad,Ingreso,Categoría
+25,30000,A
+35,50000,B
+45,70000,C
+30,40000,A
+40,60000,B
+\end{verbatim}
+
+\clearpage
+
+% Problema 6
 \subsection*{Problema 6 | Aprendizaje No Supervisado}
 
+Usa el siguiente conjunto de datos para aplicar el algoritmo de K-Means y agrupar los puntos en 2 clústeres:
+
+\begin{verbatim}
+X,Y
+1,2
+2,1
+3,4
+5,6
+6,5
+\end{verbatim}
+
+\begin{lstlisting}[style=python]
+from sklearn.cluster import KMeans
+
+# Datos
+X = ...
+
+# Crear modelo
+kmeans = KMeans(n_clusters=2)
+kmeans.fit(...)
+
+# Mostrar centroides
+print(f"Centroides: {kmeans.cluster_centers_}")
+\end{lstlisting}
+
+\clearpage
+
+% Problema 7
 \subsection*{Problema 7 | Reducción de Dimensionalidad}
 
+Aplica PCA (Análisis de Componentes Principales) a un dataset con 3 dimensiones y reduce el espacio a 2 dimensiones. Usa datos sintéticos generados con \texttt{numpy}.
+
+\clearpage
+
+% Problema 8
 \subsection*{Problema 8 | Matriz de Adyacencia}
 
+Crea una matriz de adyacencia que represente el siguiente grafo:
+
+\[
+A \leftrightarrow B, \; A \leftrightarrow C, \; B \leftrightarrow D, \; C \leftrightarrow D
+\]
+
+\begin{lstlisting}[style=python]
+import numpy as np
+
+# Matriz de adyacencia
+adj_matrix = np.array([
+    [0, 1, 1, 0],
+    [1, 0, 0, 1],
+    [1, 0, 0, 1],
+    [0, 1, 1, 0]
+])
+
+print(adj_matrix)
+\end{lstlisting}
+
+\clearpage
+
+% Problema 9
 \subsection*{Problema 9 | Matriz de Similitud}
 
+Dado un conjunto de puntos en un espacio 2D, calcula una matriz de similitud basada en la distancia euclidiana inversa.
+
+\clearpage
+
+% Problema 10
 \subsection*{Problema 10 | Clusterización}
+
+Aplica el algoritmo DBSCAN para encontrar clústeres en el siguiente conjunto de datos:
+
+\begin{verbatim}
+X,Y
+1,2
+2,2
+3,3
+8,8
+8,9
+25,30
+\end{verbatim}
+
+\begin{lstlisting}[style=python]
+from sklearn.cluster import DBSCAN
+
+# Datos
+X = ...
+
+# Aplicar DBSCAN
+dbscan = DBSCAN(eps=2, min_samples=2)
+dbscan.fit(...)
+
+# Mostrar etiquetas de cluster
+print(f"Etiquetas: {dbscan.labels_}")
+\end{lstlisting}
 
 \clearpage
 
 \section*{Módulo IV | Deep Learning}
 
+% Problema 1
 \subsection*{Problema 1 | Modelo Generalizado}
 
+Construye un modelo generalizado con Keras que tenga:
+
+- Una capa de entrada con 10 neuronas.
+- Una capa oculta con 16 neuronas y activación ReLU.
+- Una capa de salida con una sola neurona y activación sigmoidal.
+
+\begin{lstlisting}[style=python]
+from keras.models import Sequential
+from keras.layers import Dense
+
+# Crear el modelo
+model = Sequential([
+    Dense(16, activation='relu', input_shape=(10,)),
+    ...
+])
+
+# Compilar el modelo
+model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
+\end{lstlisting}
+
+\clearpage
+
+% Problema 2
 \subsection*{Problema 2 | Perceptrón Simple}
 
+Implementa un perceptrón simple para resolver el problema lógico AND:
+
+\begin{verbatim}
+Input: [0,0], [0,1], [1,0], [1,1]
+Output: [0, 0, 0, 1]
+\end{verbatim}
+
+\begin{lstlisting}[style=python]
+import numpy as np
+from keras.models import Sequential
+from keras.layers import Dense
+
+# Datos
+X = np.array([[0,0], [0,1], [1,0], [1,1]])
+y = np.array([[0], [0], [0], [1]])
+
+# Modelo
+model = Sequential([
+    Dense(1, activation='sigmoid', input_shape=(2,))
+])
+
+model.compile(optimizer='sgd', loss='binary_crossentropy', metrics=['accuracy'])
+
+# Entrenar
+model.fit(X, y, epochs=100, verbose=1)
+\end{lstlisting}
+
+\clearpage
+
+% Problema 3
 \subsection*{Problema 3 | Capa de Perceptrones Múltiples}
 
+Crea un modelo con tres capas densas: la primera de 8 neuronas, la segunda de 4 neuronas, y la tercera de 2 neuronas, todas con activación ReLU.
+
+\begin{lstlisting}[style=python]
+model = Sequential([
+    Dense(8, activation='relu', input_shape=(10,)),
+    Dense(4, activation='relu'),
+    Dense(2, activation='relu')
+])
+\end{lstlisting}
+
+\clearpage
+
+% Problema 4
 \subsection*{Problema 4 | Modelo Secuencial Simple}
 
+Entrena un modelo secuencial para predecir el precio de una casa basada en el tamaño:
+
+\begin{verbatim}
+Tamaño (m²): [50, 60, 70, 80, 90]
+Precio (USD): [100, 120, 140, 160, 180]
+\end{verbatim}
+
+\begin{lstlisting}[style=python]
+X = np.array([[50], [60], [70], [80], [90]])
+y = np.array([[100], [120], [140], [160], [180]])
+
+model = Sequential([
+    Dense(1, activation='linear', input_shape=(1,))
+])
+
+model.compile(optimizer='sgd', loss='mean_squared_error')
+model.fit(X, y, epochs=100, verbose=1)
+\end{lstlisting}
+
+\clearpage
+
+% Problema 5
 \subsection*{Problema 5 | Capas Densas Ocultas}
 
+Modifica el modelo del problema 4 para agregar una capa oculta con 10 neuronas y activación ReLU.
+
+\clearpage
+
+% Problema 6
 \subsection*{Problema 6 | Regresión Generalizada}
 
+Entrena un modelo para realizar una regresión en el siguiente conjunto de datos:
+
+\begin{verbatim}
+X: [1, 2, 3, 4, 5]
+y: [2.1, 4.2, 6.3, 8.4, 10.5]
+\end{verbatim}
+
+Ajusta la salida usando una función de pérdida \texttt{mean\_absolute\_error}.
+
+\clearpage
+
+% Problema 7
 \subsection*{Problema 7 | Clasificación Generalizada}
 
+Usa un modelo de clasificación para identificar si un punto en el plano pertenece al primer cuadrante. Los datos son:
+
+\begin{verbatim}
+X: [(1,1), (-1,1), (1,-1), (-1,-1)]
+y: [1, 0, 0, 0]
+\end{verbatim}
+
+Entrena el modelo usando activación sigmoidal y optimizador Adam.
+
+\clearpage
+
+% Problema 8
 \subsection*{Problema 8 | Exportación de una Red Neuronal}
 
+Guarda el modelo creado en el Problema 7 en un archivo llamado \texttt{modelo.h5}.
+
+\begin{lstlisting}[style=python]
+model.save('modelo.h5')
+\end{lstlisting}
+
+\clearpage
+
+% Problema 9
 \subsection*{Problema 9 | Importación de una Red Neuronal}
 
+Carga el modelo guardado en el Problema 8 y realiza predicciones en los datos:
+
+\begin{lstlisting}[style=python]
+from keras.models import load_model
+
+# Cargar modelo
+model = load_model('modelo.h5')
+
+# Predicciones
+pred = model.predict([[1,1]])
+print(pred)
+\end{lstlisting}
+
+\clearpage
+
+% Problema 10
 \subsection*{Problema 10 | Predicción y Evaluación}
+
+Evalúa el modelo del Problema 9 usando los siguientes datos de prueba:
+
+\begin{verbatim}
+X_test: [(1,1), (0,0), (-1,-1)]
+y_test: [1, 0, 0]
+\end{verbatim}
+
+\begin{lstlisting}[style=python]
+# Evaluar modelo
+loss, accuracy = model.evaluate(X_test, y_test)
+print(f"Loss: {loss}, Accuracy: {accuracy}")
+\end{lstlisting}
 
 \end{document}
