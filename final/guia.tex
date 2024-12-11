@@ -470,6 +470,40 @@ def reporteTotalOperacionesRelativasMes(numOperacionesDia, numOperacionesMes):
 (d) Reporta el balance de fin del día con \textbf{\$ 232,827.71}
 \\[6pt]
 
+\clearpage
+
+\subsubsection*{Solución al Problema 4}
+
+En este problema se presetan una serie de funciones que hacen impresiones en la pantalla con los parámetros que se les mande. Las funciones son sencillas y solo reciben parámetros de texto o números para imprimir en la pantalla algunos cortes.
+\\[12pt]
+En la Figura \ref{fig:s104-1} se muestra el código completado donde hemos colocado los \texttt{print} faltantes para que se muestren los reportes correctamente.
+\begin{figure}[!ht]
+    \centering
+    \begin{minipage}{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/s104-1.png}
+    \end{minipage}
+    \captionsetup{width=0.9\textwidth}
+    \caption{Código solucionado, se agregan impresiones faltantes}
+    \label{fig:s104-1}
+\end{figure}
+
+\break
+\noindent
+En la Figura \ref{fig:s104-2} se muestra el código para resolver los incisos (a), (b), (c) y (d) que únicamente solicitan llamar a las funciones con los valores establecidos en cada inciso.
+\begin{figure}[!ht]
+    \centering
+    \begin{minipage}{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/s104-2.png}
+    \end{minipage}
+    \captionsetup{width=0.9\textwidth}
+    \caption{Código para resolver los incisos}
+    \label{fig:s104-2}
+\end{figure}
+
+\clearpage
+
 \subsection*{Problema 5 | Interés Simple}
 
 Una financiera posee montos de préstamos a proyectos y la tasa anual fija que le cobrará sus clientes. La financiera requiere calcular la suma de montos y proponer una misma tasa de interés anual única para todos los proyectos, así como encontrar la tasa anual en caso de perder el monto por algún proyecto.
@@ -496,6 +530,40 @@ En la Figura \ref{fig:p105} se muestran los montos y la tasa anual de los montos
 \\[6pt]
 (d) ¿Cuál debería ser la tasa anual de todos los montos, si no existiera el monto de \textbf{\$ 25,400.00} para que la suma del interés sea la misma a las anteriores?
 
+\clearpage
+
+\subsubsection*{Solución al Problema 5}
+
+En este problema nos muestran una tabla de montos y tasas anuales y debemos cacular el interés de cada monto según su tasa y la suma de estos intereses.
+\\[12pt]
+En la Figura \ref{fig:s105-1} se muestra el código que define los montos y tasas como listas, luego inicializa un total que sumará los intereses comenzando en cero, y luego se recorre cada pareja de monto y tasa usando la función de agrupado o embolsado llamada \texttt{zip}. Luego, dentro del iterador, calculamos los intereses del monto, según su tasa y los acumulamos en el total, finalmente se hacen las impresiones necesarias para reportar el monto, su tasa, el interés y al final la suma de todos los intereses.
+\begin{figure}[!ht]
+    \centering
+    \begin{minipage}{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/s105-1.png}
+    \end{minipage}
+    \captionsetup{width=0.9\textwidth}
+    \caption{Código para reportar el interés de montos y tasas con su total final, resultado de la suma de intereses}
+    \label{fig:s105-1}
+\end{figure}
+
+\break
+\noindent
+En la Figura \ref{fig:s105-2} se muestra el código que resuelve los incisos (b), (c) y (d). Observa que al promediar la suma de intereses no es igual y que podemos calcular la tasa promedio analíticamente.
+\begin{figure}[!ht]
+    \centering
+    \begin{minipage}{\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{figures/s105-2.png}
+    \end{minipage}
+    \captionsetup{width=0.9\textwidth}
+    \caption{Código para resolver los incisos}
+    \label{fig:s105-2}
+\end{figure}
+
+\clearpage
+
 \subsection*{Problema 6 | Interés Compuesto}
 
 Una financiera desea calcular el interés compuesto que generaría un monto de \textbf{\$ 4,312,939.83} con una tasa anual de \textbf{8\%}, si se tuviera que pagar mensualmente a una tasa compuesta de \textbf{0.67\%} y si tuviera que pagar a tasa compuesta de \textbf{0.34\%}.
@@ -503,6 +571,52 @@ Una financiera desea calcular el interés compuesto que generaría un monto de \
 (a) Calcula el interés compuesto a 12 meses con una tasa mensual de \textbf{0.67\%}. 
 \\[6pt]
 (b) Calcula el interés compuesto a 24 quincenas con una tasa quincenal de \textbf{0.34\%}
+
+\clearpage
+
+\subsubsection*{Solución al Problema 6}
+
+En este problema nos pide calcular el interés compuesto al 12 meses y 24 quincenas para compararlo con el interés simple. El interés calcula los intereses periodo por periodo y los va acumulando en un nuevo monto sobre el que se calculará el nuevo interés. Este procedimiento es importante para algunas financieras que contemplan incrementos al monto por pagos tardíos o penalizaciones haciendo que se recupere el riesgo ocurrido en cada periodo sin tener que fijar un único interés sobre todo el el monto inicial.
+\\[12pt]
+En la Figura \ref{fig:s106-1} se muestra el código para calcular el interés simple del monto respecto a la tasa anual, y luego el codigo para ir calculando mes por mes el interés compuesto. El código se puede adaptar fácilmente para calcular los intereses quincenales en lugar de los mensuales, considerando ahora 24 periodos. Observa como se define una variable que guarde el monto acumulado y como se calcula el interés mes por mes para ese monto acumulado. También se usa \texttt{mes + 1} porque \texttt{range(12)} genera 12 iteraciones desde 0 hasta 11.
+\begin{figure}[!ht]
+    \centering
+    \begin{minipage}{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/s106-1.png}
+    \end{minipage}
+    \captionsetup{width=0.9\textwidth}
+    \caption{Código para generar los intereses mensuales compuestos}
+    \label{fig:s106-1}
+\end{figure}
+
+\break
+\noindent
+En la Figura \ref{fig:s106-2} se muestra el reporte generado por el código, mostrando cual es el monto acumulado al inicio y al final y el interes que se calcula. Además se muestra al final el último interés calculado que es el interés compuesto final.
+\begin{figure}[!ht]
+    \centering
+    \begin{minipage}{\textwidth}
+        \centering
+        \includegraphics[width=0.8\textwidth]{figures/s106-2.png}
+    \end{minipage}
+    \captionsetup{width=0.9\textwidth}
+    \caption{Reporte de intereses acumulados en 12 meses}
+    \label{fig:s106-2}
+\end{figure}
+
+\break
+\noindent
+En la Figura \ref{fig:s106-3} se muestra el código para generar de forma analítica el interés compuesto a 12 meses. Luego se muestra la solución al inciso (b) ya sin generar la tabla, solo reportar el interés compuesto para las 24 quincenas.
+\begin{figure}[!ht]
+    \centering
+    \begin{minipage}{\textwidth}
+        \centering
+        \includegraphics[width=0.8\textwidth]{figures/s106-3.png}
+    \end{minipage}
+    \captionsetup{width=0.9\textwidth}
+    \caption{Intereses acumuladoss en 12 meses y en 24 quincenas}
+    \label{fig:s106-3}
+\end{figure}
 
 \clearpage
 
@@ -516,6 +630,38 @@ Una financiera desea calcular el interés que generaría un monto de \textbf{\$ 
 
 \clearpage
 
+\subsubsection*{Solución al Problema 7}
+
+En este problema nos pide calcular el interés variable donde mes con més el interés varía según alguna regla establecida, por ejemplo, para que los primeros meses el interés sea alto y luego se regule. Esto ayuda a financieras y prestamistas para que recuperen rápidamente el capital invertido en los primeros meses y luego se arrieguen a que el cliente que ya no pague no genere una pérdida fuerte para la empresa tras quedarse el bien adquirido a meses.
+\\[12pt]
+En la Figura \ref{fig:s107-1} se muestra el código para calcular el interés variable que se va acumulando, muy similar al problema del interés acumulado, pero ahora considerando la regla de variación del interés dada por el contador y la condición especial para que a partir del mes 7 equivalente a que el contador llegue a cero, de que el interés se regule.
+\begin{figure}[!ht]
+    \centering
+    \begin{minipage}{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/s107-1.png}
+    \end{minipage}
+    \captionsetup{width=\textwidth}
+    \caption{Código para generar los intereses variables compuestos mensuales}
+    \label{fig:s107-1}
+\end{figure}
+
+\break
+\noindent
+En la Figura \ref{fig:s107-2} se muestra el reporte generado por el código, mostrando el monto acumulado y el interés que va variando mes con mes hasta regularizarse en los últimos meses como lo pide el problema.
+\begin{figure}[!ht]
+    \centering
+    \begin{minipage}{\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{figures/s107-2.png}
+    \end{minipage}
+    \captionsetup{width=0.9\textwidth}
+    \caption{Reporte de intereses variables acumulados en 12 meses}
+    \label{fig:s107-2}
+\end{figure}
+
+\clearpage
+
 \subsection*{Problema 8 | Tabla de Amortización Simple}
 
 Una financiera desea calcular una tabla de amortización para un monto financiado de \textbf{\$ 6,500.00}, con un enganche inicial de \textbf{\$ 2,300.00}, el cual pagará los intereses amortizados. Los intereses están diseñados para que bajen linealmente durante 48 semanas y recuperen \textbf{80\%} del monto financiado. Es decir, se necesitan recuperar intereses por el \textbf{80\%} de los \textbf{\$ 6,500.00}, diseñando intereses que se reduzcan linealmente en 48 pagos y luego se considere el enganche inicial como descuento inmediato a los primeros intereses.
@@ -525,6 +671,52 @@ Una financiera desea calcular una tabla de amortización para un monto financiad
 (b) ¿Cuántos pagos iniciales cubre el enganche?
 \\[6pt]
 (c) Determina un abono fijo para terminar de pagar los intereses más el monto financiado en 48 semanas.
+
+\clearpage
+
+\subsubsection*{Solución al Problema 8}
+
+En este problema nos pide construir una tabla de amortización indicando el abono fijo y la parte de intereses.
+\\[12pt]
+En la Figura \ref{fig:s108-1} se muestra el código para describir el problema, especificar el monto y calcular los intereses esperados por el cliente y el total que terminará pagando, así como reporte generado.
+\begin{figure}[!ht]
+    \centering
+    \begin{minipage}{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/s108-1.png}
+    \end{minipage}
+    \captionsetup{width=\textwidth}
+    \caption{Código para describir el problema de la amortización}
+    \label{fig:s108-1}
+\end{figure}
+
+\break
+\noindent
+En la Figura \ref{fig:s108-2} se muestra el código que calcula el abono fijo sobre el monto que se distribuirá en los 48 meses, luego el monto acumulado, seguido de un valor de amortización, este valor puede ser cualquiera, y se debe ir ajustando hasta que el monto acumulado sea el mismo al total esperado que se desea alcanzar al mes 48, en este caso se partió de un valor inicial de \textbf{\$1,000}, el cual se pasaba y se fue ajustando hasta encontrar el valor de \textbf{\$285.233} que daba una solución exacta a dos dígitos para alcanzar los \textbf{\$11,700.00} esperados. Se describe también el factor de amortización, que será el que determine cuánto se reducirán los intereses mes con mes, en este caso el mes siguiente tendrá intereses por el \textbf{95\%} del mes anterior. Dentro del iterador se calcula el pago que deberá realizar el cliente en cada mes, el monto que se va acumulando y el interés amortizado actualizado.
+\begin{figure}[!ht]
+    \centering
+    \begin{minipage}{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/s108-2.png}
+    \end{minipage}
+    \captionsetup{width=0.9\textwidth}
+    \caption{Código para generar la tabla de amortización con sus primeros resultados}
+    \label{fig:s108-2}
+\end{figure}
+
+\break
+\noindent
+En la Figura \ref{fig:s108-3} se muestra la otra parte del reporte para los últimos meses, observando que efectivamente al mes 48 el cliente ha pagado un acumulado de \textbf{\$11,700.00}.
+\begin{figure}[!ht]
+    \centering
+    \begin{minipage}{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/s108-3.png}
+    \end{minipage}
+    \captionsetup{width=0.9\textwidth}
+    \caption{Reporte de amortización para los últimos meses}
+    \label{fig:s108-3}
+\end{figure}
 
 \clearpage
 
@@ -542,6 +734,38 @@ Un banco financió un proyecto durante 36 meses por \textbf{\$ 8,496,500.00}, co
 
 \clearpage
 
+\subsubsection*{Solución al Problema 9}
+
+En este problema nos pide calcular el interés futuruo para el mes 25 y 30 usando el interés simple. Esto lo podemos hacer proyectando los meses futuros entre 12 meses que tiene el año ya que la tasa es anual. 
+\\[12pt]
+En la Figura \ref{fig:s109-1} se muestra el código que calcula los intereses anuales y los futuros para el total de meses. Observa que con una proyección de los periodos entre 12 se consigue.
+\begin{figure}[!ht]
+    \centering
+    \begin{minipage}{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/s109-1.png}
+    \end{minipage}
+    \captionsetup{width=\textwidth}
+    \caption{Código para calcular los intereses futuros}
+    \label{fig:s109-1}
+\end{figure}
+
+\break
+\noindent
+En la Figura \ref{fig:s109-2} se muestra el código que calcula todos los intereses futuros, mes con mes, para determinar que los intereses superarán los \textbf{\$ 40,000.00} a partir del quinto mes. También se calcula la cuota fija que considera los intereses futuros y el descuento inicial al monto del \textbf{10\%}.
+\begin{figure}[!ht]
+    \centering
+    \begin{minipage}{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/s109-2.png}
+    \end{minipage}
+    \captionsetup{width=0.9\textwidth}
+    \caption{Código para generar la tabla de intereses futuros mes por mes}
+    \label{fig:s109-2}
+\end{figure}
+
+\clearpage
+
 \subsection*{Problema 10 | Punto de Liquidación}
 
 Un banco financió un proyecto durante 48 meses por \textbf{\$ 6,232,800.00}, con una tasa anual fija y simple del \textbf{12\%} y desea calcular el valor de liquidación que considere pagar los intereses futuros y la deuda total, la liquidación se llevará a cabo en el mes 28.
@@ -551,6 +775,52 @@ Un banco financió un proyecto durante 48 meses por \textbf{\$ 6,232,800.00}, co
 (b) Calcula los intereses faltantes a partir del mes 28.
 \\[6pt]
 (c) Calcula la deuda de liquidación para el mes 28.
+
+\clearpage
+
+\subsubsection*{Solución al Problema 10}
+
+En este problema nos pide calcular el punto de liquidación, que consiste en calcular los intereses futuros y la suma de cuotas pendientes a partir de cierto mes. En este caso queremos sumar los intereses futuros a partir del mes 29 hasta el mes 48 y las cuotas pendientes para hacer una liquidación. 
+\\[12pt]
+En la Figura \ref{fig:s110-1} se muestra el código que define el monto, periodos, tasa, mes de corte y resta de los meses faltantes, luego reporta el monto, el abono mensual, lo que se lleva pagado hasta el mes 28 y lo que se debe del monto hasta el mes 48 sin considerar los intereses. Observa que se calculan los montos pagados y la diferencia al monto total.
+\begin{figure}[!ht]
+    \centering
+    \begin{minipage}{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/s110-1.png}
+    \end{minipage}
+    \captionsetup{width=\textwidth}
+    \caption{Código para reportar los montos futuros}
+    \label{fig:s110-1}
+\end{figure}
+
+\break
+\noindent
+En la Figura \ref{fig:s110-2} se muestra el código que reporta ahora los intereses totales, los intereses mensuales, el interés pagado hasta el mes de corte y la diferencia entre el total y al corte que será el interés pendiente. Finalmente se calcula el monto de liquidación como lo pendiente entre el monto más los interés pendientes.
+\begin{figure}[!ht]
+    \centering
+    \begin{minipage}{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/s110-2.png}
+    \end{minipage}
+    \captionsetup{width=0.9\textwidth}
+    \caption{Código para reportar los intereses futuros}
+    \label{fig:s110-2}
+\end{figure}
+
+\break
+\noindent
+En la Figura \ref{fig:s110-3} se muestra el reporte generado que explica los montos e intereses hasta llegar al monto de liquidación.
+\begin{figure}[!ht]
+    \centering
+    \begin{minipage}{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/s110-3.png}
+    \end{minipage}
+    \captionsetup{width=0.9\textwidth}
+    \caption{Reporte de los montos e intereses y el punto de liquidación}
+    \label{fig:s110-3}
+\end{figure}
 
 \clearpage
 
