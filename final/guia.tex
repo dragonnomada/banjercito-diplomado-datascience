@@ -61,7 +61,7 @@ En esta guía repasaremos los fundamentos de cada módulo, a través de pregunta
 Una empresa financiera posee una tabla con los montos de créditos que ha aprobado a sus clientes. La tabla posee el género de cada cliente y se desea calcular el monto total de los créditos aprobados para hombres y mujeres.
 \\[12pt]
 En la Figura \ref{fig:p101-1} se muestra la tabla con el cliente, género, crédito y monto aprobado.
-\begin{figure}[!h]
+\begin{figure}[!ht]
     \centering
     \begin{minipage}{\textwidth}
         \centering
@@ -91,7 +91,7 @@ Para el inciso (a) utilizamos las fórmulas
 \texttt{=SUMAR.SI(B2:B7,"HOMBRE",D2:D7)}
 \\[0pt]
 \texttt{=SUMAR.SI(B2:B7,"MUJER",D2:D7)}
-\begin{figure}[!h]
+\begin{figure}[!ht]
     \centering
     \begin{minipage}{\textwidth}
         \centering
@@ -113,7 +113,7 @@ Para el inciso (b) utilizamos las fórmulas
 \texttt{=SUMA(FILTRAR(D2:D7,B2:B7="HOMBRE"))}
 \\[0pt]
 \texttt{=SUMA(FILTRAR(D2:D7,B2:B7="MUJER"))}
-\begin{figure}[!h]
+\begin{figure}[!ht]
     \centering
     \begin{minipage}{\textwidth}
         \centering
@@ -137,7 +137,7 @@ Nota: Si se utilizamos las fórmulas
 \texttt{=FILTRAR(A2:D7,B2:B7="HOMBRE")}
 \\[12pt]
 Se generará la tabla virtual con todos los créditos correspondientes a las filas de los hombres o de las mujeres.
-\begin{figure}[!h]
+\begin{figure}[!ht]
     \centering
     \begin{minipage}{\textwidth}
         \centering
@@ -165,7 +165,7 @@ Se generará la tabla virtual con todos los créditos correspondientes a las fil
 Una empresa financiera posee una tabla con los montos de créditos que ha aprobado a sus clientes y su deuda actual. La tabla posee el género de cada cliente y se desea calcular la deuda total y deuda promedio.
 \\[12pt]
 En la Figura \ref{fig:p102} se muestra la tabla con el cliente, género, crédito, monto aprobado y deuda actual.
-\begin{figure}[!h]
+\begin{figure}[!ht]
     \centering
     \begin{minipage}{\textwidth}
         \centering
@@ -211,7 +211,7 @@ En la Figura \ref{fig:p102} se muestra la tabla con el cliente, género, crédit
 \subsubsection*{Solución al Problema 2}
 
 Para el inciso (a) creamos la tabla dinámica para el rango \texttt{A1:E9} y la insertamos en una celda de la misma hoja.
-\begin{figure}[!h]
+\begin{figure}[!ht]
     \centering
     \begin{minipage}{\textwidth}
         \centering
@@ -222,9 +222,10 @@ Para el inciso (a) creamos la tabla dinámica para el rango \texttt{A1:E9} y la 
     \label{fig:s102-1}
 \end{figure}
 
+\break
 \noindent
 Para el inciso (b) arrastramos los campos del género y cliente a las filas
-\begin{figure}[!h]
+\begin{figure}[!ht]
     \centering
     \begin{minipage}{\textwidth}
         \centering
@@ -237,7 +238,7 @@ Para el inciso (b) arrastramos los campos del género y cliente a las filas
 
 \noindent
 Para el inciso (c), (d), (e), (f), (g) arrastramos los campos como valores y configuramos cada campo si es recuento, suma o promedio
-\begin{figure}[!h]
+\begin{figure}[!ht]
     \centering
     \begin{minipage}{\textwidth}
         \centering
@@ -250,7 +251,7 @@ Para el inciso (c), (d), (e), (f), (g) arrastramos los campos como valores y con
 
 \noindent
 Para el inciso (h), (i), (j), (k), (l) observamos los valores en la tabla dinámica
-\begin{figure}[!h]
+\begin{figure}[!ht]
     \centering
     \begin{minipage}{\textwidth}
         \centering
@@ -271,7 +272,7 @@ Respuestas: (h) \textbf{C001 \$5,700}, (i) \textbf{C002 \$18,900}, (j) \textbf{C
 Una empresa financiera posee una tabla con los préstamos que ha aprobado a sus clientes indicando el monto, el estado y el valor. En cada préstamo se reporta el estado de sobre lo que se ha pagado del préstamo, lo que se debió haber cubierto actualmente (deuda) y lo que se debería cubrir en el futuro (pendiente). La financiera requiere una tabla que resuma de cada cliente sus préstamos y en cada préstamo se desglose la suma de cuánto adeuda, cuánto ha pagado y cuánto está pendiente, así como el total. También requiere un indicador que muestre la diferencia entre la suma del monto del préstamo y el valor del monto pagado, para saber cuánto se adeuda en total del préstamo, igualmente desglosado por cliente y préstamo. Finalmente la financiera requiere dos reportes visuales, un anillo que muestre el estado de los préstamos (pagado, pendiente y deuda) segmentado por cliente. Y un esquema jerárquico que permita desglosar el valor del préstamo por su estado, cliente y número de préstamo.
 \\[12pt]
 En la Figura \ref{fig:p103} se muestra la tabla de préstamos, con la columna del cliente, el número de préstamo, el monto, el estado (pagado, deuda, pendiente) y el valor asociado al estado.
-\begin{figure}[!h]
+\begin{figure}[!ht]
     \centering
     \begin{minipage}{\textwidth}
         \centering
@@ -312,7 +313,7 @@ para reportar la diferencia entre la suma del monto menos la suma del valor asoc
 \subsubsection*{Solución al Problema 3}
 
 Para el inciso (a) creamos una matriz que reporte las filas para el cliente y número de préstamo en ese orden, el estado como columna y la suma del valor en los valores.
-\begin{figure}[!h]
+\begin{figure}[!ht]
     \centering
     \begin{minipage}{\textwidth}
         \centering
@@ -330,7 +331,7 @@ Para el inciso (a) creamos una matriz que reporte las filas para el cliente y n�
 
 \noindent
 Para el inciso (b) abrimos el modelo de datos y dentro del modelo de datos creamos una nueva medida con la fórmula para calcular la diferencia.
-\begin{figure}[!h]
+\begin{figure}[!ht]
     \centering
     \begin{minipage}{\textwidth}
         \centering
@@ -354,7 +355,7 @@ Para el inciso (b) abrimos el modelo de datos y dentro del modelo de datos cream
 \break
 \noindent
 Para el inciso (c) creamos una matriz que reporte las filas para el cliente y número de préstamo en ese orden, el estado como columna y la suma del monto, suma del valor y suma de diferencia en los valores en ese orden. Reporta solo el estado Pagado en los filtros del objeto visual.
-\begin{figure}[!h]
+\begin{figure}[!ht]
     \centering
     \begin{minipage}{\textwidth}
         \centering
@@ -372,7 +373,7 @@ Para el inciso (c) creamos una matriz que reporte las filas para el cliente y n�
 
 \noindent
 Para el inciso (d) creamos una gráfica de anillo cuya leyenda este dada por el estado del préstamo, en valores reporte la suma del valor asociado al estado, y en detalles segmente al cliente.
-\begin{figure}[!h]
+\begin{figure}[!ht]
     \centering
     \begin{minipage}{\textwidth}
         \centering
@@ -390,7 +391,7 @@ Para el inciso (d) creamos una gráfica de anillo cuya leyenda este dada por el 
 
 \noindent
 Para el inciso (e) creamos un esquema jerárquico para analizar la suma del valor valor asociado al estado, explicado por el estado del préstamo, el cliente y el número de préstamo en ese orden.
-\begin{figure}[!h]
+\begin{figure}[!ht]
     \centering
     \begin{minipage}{\textwidth}
         \centering
@@ -474,7 +475,7 @@ def reporteTotalOperacionesRelativasMes(numOperacionesDia, numOperacionesMes):
 Una financiera posee montos de préstamos a proyectos y la tasa anual fija que le cobrará sus clientes. La financiera requiere calcular la suma de montos y proponer una misma tasa de interés anual única para todos los proyectos, así como encontrar la tasa anual en caso de perder el monto por algún proyecto.
 \\[12pt]
 En la Figura \ref{fig:p105} se muestran los montos y la tasa anual de los montos de préstamo destinados a proyectos financiados.
-\begin{figure}[!h]
+\begin{figure}[!ht]
     \centering
     \begin{minipage}{\textwidth}
         \centering
@@ -560,7 +561,7 @@ Un banco financió un proyecto durante 48 meses por \textbf{\$ 6,232,800.00}, co
 Una financiera posee una tabla con el género de sus clientes, si tiene trabajo, si está casado y si tiene alguna deuda.
 \\[12pt]
 En la Figura \ref{fig:p201} se muestra la tabla con el género, trabajo, casado y deuda de los clientes.
-\begin{figure}[!h]
+\begin{figure}[!ht]
     \centering
     \begin{minipage}{\textwidth}
         \centering
@@ -594,7 +595,7 @@ En la Figura \ref{fig:p201} se muestra la tabla con el género, trabajo, casado 
 Un restaurante está inspeccionando la bebidas asociadas al pago con tarjeta de sus clientes, porque sospecha que los clientes que pagan con tarjeta de crédito consumen más cerveza que aquellos que pagan con tarjeta de débito.
 \\[12pt]
 En la Figura \ref{fig:p202} se muestra la tabla con los datos de los clientes si utilizaron tarjeta de crédito o débito y el tipo de bebida que consumieron.
-\begin{figure}[!h]
+\begin{figure}[!ht]
     \centering
     \begin{minipage}{\textwidth}
         \centering
@@ -633,7 +634,7 @@ En la Figura \ref{fig:p202} se muestra la tabla con los datos de los clientes si
 Una empresa ha recuperado la tabla conjunta del personal que fue promovido a un mejor puesto y los que no a lo largo de 3 años. La tabla divide los hombres y mujeres contra si fueron o no promovidos, también cuenta con sus totales marginales. La empresa necesita encontrar la probabilidad conjunta de que los hombres hayan sido promividos o no.
 \\[12pt]
 En la Figura \ref{fig:p203} se muestra la tabla conjunta de promoción del personal por género.
-\begin{figure}[!h]
+\begin{figure}[!ht]
     \centering
     \begin{minipage}{\textwidth}
         \centering
@@ -673,7 +674,7 @@ Después de construir la tabla conjunta con el número de empleados que trabajar
 Además la empresa necesita saber cuál es la probabilidad de renunciar, dado que se trabaja 6 horas y la probabilidad de renunciar dado que se trabaja 8 horas, para entender quién tiene mayor probabilidad de renunciar y decidir si vale la pena mantener un turno de 8 horas en el futuro.
 \\[12pt]
 En la Figura \ref{fig:p204} se muestra la tabla de probabilidad de los empleados que deciden renunciar o no en turnos de 6 y 8 horas.
-\begin{figure}[!h]
+\begin{figure}[!ht]
     \centering
     \begin{minipage}{\textwidth}
         \centering
