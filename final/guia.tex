@@ -860,6 +860,23 @@ En la Figura \ref{fig:p201} se muestra la tabla con el género, trabajo, casado 
 
 \clearpage
 
+\noindent
+En la Figura \ref{fig:s201-1} se muestra el código que calcula las probabilidades, para los demás casos es similar.
+\begin{figure}[!ht]
+    \centering
+    \begin{minipage}{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/s201-1.png}
+    \end{minipage}
+    \captionsetup{width=0.9\textwidth}
+    \caption{Código para calcular la probabilidad simple por conteos}
+    \label{fig:s201-1}
+\end{figure}
+\\
+Observa que se filtran los elementos de la lista y se determina si el elemento de la lista cumple la condición, luego se coloca 1 en la nueva lista y se suman todos valores (la suma de los 1's dará el total), luego se divide por el número de elementos en la lista para determinar la probabilidad simple.
+
+\clearpage
+
 \subsection*{Problema 2 | Tabla conjunta de Dos Eventos}
 
 Un restaurante está inspeccionando la bebidas asociadas al pago con tarjeta de sus clientes, porque sospecha que los clientes que pagan con tarjeta de crédito consumen más cerveza que aquellos que pagan con tarjeta de débito.
@@ -886,16 +903,37 @@ En la Figura \ref{fig:p202} se muestra la tabla con los datos de los clientes si
 (c) Agrega una fila adicional para los totales marginales para la columna, sumando todas las filas.
 \\[6pt]
 (d) Indica el total de registros en la intersección de la columna marginal y la fila marginal.
-\\[6pt]
-(e) Genera la tabla de probabilidad conjunta, que es la misma que la tabla conjunta, solo que cada valor está dividido sobre el total de registros.
-\\[6pt]
-(f) Calcula la probabilidad de tener una tarjeta de débito
-\\[6pt]
-(g) Calcula la probabilidad de tener una tarjeta de crédito
-\\[6pt]
-(h) Calcula la probabilidad de haber consumido refresco
-\\[6pt]
-(i) Calcula la probabilidad de tener consumido cerveza
+
+\clearpage
+
+\noindent
+En la Figura \ref{fig:s202-1} se muestra el código que define los ejes de datos para las tarjetas y bebidas usando listas de python. Luego se crea una matriz de $2 \times 2$ usando listas para almacenar los conteos, después se calcula la suma de las parejas entre tarjetas y bebidas según la condición sobre la tarjeta $t$ y la bebida $b$, aquí se usa la lista generada que coloca un $1$ para cada tarjeta y bebida $(t, b)$ en la secuencia de embolsado $zip(X, Y)$ que recorre al mismo tiempo los elementos de $X$ y de $Y$, luego a esta lista de $1's$ se les callcula la suma y dicha suma será el total de elementos que cumplan ser una tarjeta y una bebida específica. En el índice $(0, 0)$ de la matriz se coloca cuántas tarjetas de Débito y bebida de refresco hubieron, similar para los demás. Finalmente se imprime la matriz de forma manual, mostrando las dos filas con sus dos columnas que representan las sumas y dejando los espacios necesarios para verse bien.
+\begin{figure}[!ht]
+    \centering
+    \begin{minipage}{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/s202-1.png}
+    \end{minipage}
+    \captionsetup{width=0.9\textwidth}
+    \caption{Código para calcular la tabla conjunta entre dos eventos}
+    \label{fig:s202-1}
+\end{figure}
+\\
+
+\break
+\noindent
+En la Figura \ref{fig:s202-2} se muestra el código para calcular los marginales, el código comienza por agregar una columna más a la primera fila, conteniendo la suma de las columnas anteriores (la columna $0$ y $1$), luego se repite para agregar una columna más en la segunda fila, con la suma de los anteriores sobre la misma fila. Después se agrega una fila más a la matriz, con dos columnas, que contienen la suma de las filas anteiores (la fila $0$ y $1$). Luego se agrega una tercera columna a esta tercera fila marginal con la suma de las columnas anteriores, aunque sería equivalente usar la suma de las filas anteriores de la última columna. Finalmente se genera el reporte agregando algunos símbolos que mejoran el aspecto y considerando dos dígitos para la los valores de la última columna.
+\begin{figure}[!ht]
+    \centering
+    \begin{minipage}{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/s202-2.png}
+    \end{minipage}
+    \captionsetup{width=0.9\textwidth}
+    \caption{Código para calcular los marginales en la tabla conjunta}
+    \label{fig:s202-2}
+\end{figure}
+\\
 
 \clearpage
 
