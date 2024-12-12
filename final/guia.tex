@@ -988,15 +988,378 @@ $P(Renuncia|8h) = \frac{P(8h \cap Renuncia)}{P(8h)}$.
 
 \subsection*{Problema 5 | Probabilidad Conjunta de Tres Eventos}
 
+Para cuando tenemos tres eventos simultáneos, por ejemplo, A - poseer un género (hombre o mujer), B - conseguir un aumento (conseguirlo o no conseguirlo) y C - tipo de trabajo (administrativo, operativo, de diseño, gerencial). Nos lleva a la necesidad de separar los datos más allá de una tabla, para eso, necesitaremos ahora plantear los datos como una sucesión de filas y la frecuencia con la que ocurren las combinaciones de eventos.
+\\[12pt]
+Por ejemplo, la siguiente tabla muestra todas las combinaciones posibles de los eventos A, B y C en la primera columna y su frecuencia (número de eventos) que ocurrieron, algunos tienen cero ya que no hay registros que cumplan esas tres condiciones al mismo tiempo, como ser hombre, no conseguir un aumento y tener un trabajo gerencial.
+\[
+\begin{array}{|l|c|}
+\hline
+\textbf{Combinación de Eventos (A, B, C)} & \textbf{Frecuencia} \\
+\hline
+\text{Hombre, Consigue aumento, Administrativo} & 12 \\
+\text{Hombre, Consigue aumento, Operativo} & 8 \\
+\text{Hombre, Consigue aumento, Diseño} & 15 \\
+\text{Hombre, Consigue aumento, Gerencial} & 6 \\
+\text{Hombre, No consigue aumento, Administrativo} & 7 \\
+\text{Hombre, No consigue aumento, Operativo} & 10 \\
+\text{Hombre, No consigue aumento, Diseño} & 4 \\
+\text{Hombre, No consigue aumento, Gerencial} & 0 \\
+\text{Mujer, Consigue aumento, Administrativo} & 18 \\
+\text{Mujer, Consigue aumento, Operativo} & 20 \\
+\text{Mujer, Consigue aumento, Diseño} & 25 \\
+\text{Mujer, Consigue aumento, Gerencial} & 10 \\
+\text{Mujer, No consigue aumento, Administrativo} & 5 \\
+\text{Mujer, No consigue aumento, Operativo} & 3 \\
+\text{Mujer, No consigue aumento, Diseño} & 2 \\
+\text{Mujer, No consigue aumento, Gerencial} & 0 \\
+\hline
+\end{array}
+\]
+Lugo para poder determinar la probabilidad conjunta de que ocurra un evento combinado, tendríamos que dividir cada frecuencia entre la suma.
+\\[12pt]
+(a) Calcula la probabilidad que ocurran los eventos dividiendo cada frecuencia entre la suma de todas las frecuencias.
+\\[6pt]
+(b) Indica la probabilidad de ser mujer, conseguir un aumento y ser administrativa.
+\\[6pt]
+(c) Indica la probabilidad de ser mujer, conseguir un aumento y ser de diseño.
+\\[6pt]
+(d) Indica la probabilidad de ser hombre, no conseguir un aumento y ser de administrativo.
+\\[6pt]
+(e) ¿Quién tiene mayor probabilidad de conseguir un aumento, hombres o mujeres?, ¿Cómo calculaste esta probabilidad?
+
+\clearpage
+
 \subsection*{Problema 6 | Probabilidad Condicional de Tres Eventos}
+
+Para calcular la probabilidad condicional de tres eventos, necesitamos la tabla de probabilidad conjunta, y las tablas marginales de la probabilidad simple o combinada de que ocurran los eventos anteriores.
+\\[12pt]
+Por ejemplo, si se tienen tres eventos A, B y C y se desea calcular la probabilidad condicional $P(A=a_1|B=b_1,C=c_1)$ que se lee como la probabilidad que el evento A tenga el valor de $a_1$, dado que el evento B tiene el valor de $b_1$ y el evento C tenga el valor de $c_1$, entonces necesitaremos desarrollar la probabilidad con la regla de bayes como:
+\begin{equation*}
+    \begin{aligned}
+        P(A=a_1|B=b_1,C=c_1) = \frac{P(A=a_1,B=b_1,C=c_1)}{P(B=b_1,C=c_1)}
+    \end{aligned}
+\end{equation*}
+Pero, si desearmos calcular la probabilidad condicional $P(A=a_2,B=b_2|C=c_2)$ que se lee como la probabilidad que el evento A tenga el valor de $a_2$ y el evento B tiene el valor de $b_2$ (se desea saber la probabilidad que $A=a_2$ y $B=b_2$ pasen), dado que el evento C tenga el valor de $c_2$ (ya ocurrió que esto pasa), entonces necesitaremos desarrollar la probabilidad con la regla de bayes como:
+\begin{equation*}
+    \begin{aligned}
+        P(A=a_1,B=b_1|C=c_1) = \frac{P(A=a_1,B=b_1,C=c_1)}{P(C=c_1)}
+    \end{aligned}
+\end{equation*}
+Entonces, en resumen, estamos usando las probabilidades marginales $P(A=a)$, $P(B=b)$, $P(C=c)$, $P(A=a,B=b)$, $P(A=a,C=c)$, $P(B=b,C=c)$ y $P(A=a,B=b,C=c)$, lo que implica tener la probabilidad que ocurra cada posible valor en cada evento y las combinaciones. Es decir, tendremos una tabla como la del problema anterior donde tenemos cada valor de los eventos A, B y C y su probabilidad de que ocurra esa combinación, más a parte tendremos las tablas de probabilidad conjunta para los eventos $(A, B)$, $(A, C)$, $(B,C)$ y la tabla simple para cada posible valor del evento de $A$, del evento $B$ y del evento $C$.
+\\[12pt]
+Por lo que, tenemos las tablas de probabilidad conjunta y simple $(A,B,C)$, $(A,B)$, $(A,C)$, $(B,C)$, $(A)$, $(B)$, $(C)$.
+\\[12pt]
+Por ejemplo, supongamos los tres eventos que ocurren en la cafetería de una empresa: A - tipo de empleado (permanente, temporal), B - tipo de puesto (programación, diseño) y C - tipo de alimento preferido (saludable, no saludable). Entonces podemos formar todas las tablas de probabilidad conjunta, donde la primera columna indicará la combinación de valores sobre los eventos y la segunda columna la probabilidad que ocurra dicha combinación, tanto para los tres eventos simultáneos, como para sus combinaciones, entonces todas las tablas para este ejemplo son:
+\\[12pt]
+Probabilidad que ocurran los tres eventos (A, B, C):
+\[
+\begin{array}{|l|c|}
+\hline
+\textbf{Combinación de Eventos (A, B, C)} & \textbf{P(A,B,C)} \\
+\hline
+\text{Permanente, Programación, Saludable} & 0.12 \\
+\text{Permanente, Programación, No saludable} & 0.08 \\
+\text{Permanente, Diseño, Saludable} & 0.10 \\
+\text{Permanente, Diseño, No saludable} & 0.05 \\
+\text{Temporal, Programación, Saludable} & 0.15 \\
+\text{Temporal, Programación, No saludable} & 0.10 \\
+\text{Temporal, Diseño, Saludable} & 0.20 \\
+\text{Temporal, Diseño, No saludable} & 0.10 \\
+\hline
+\end{array}
+\]
+Probabilidad que ocurran los dos eventos (A, B):
+\[
+\begin{array}{|l|c|}
+\hline
+\textbf{Combinación de Eventos (A, B)} & \textbf{P(A,B)} \\
+\hline
+\text{Permanente, Programación} & 0.20 \\
+\text{Permanente, Diseño} & 0.15 \\
+\text{Temporal, Programación} & 0.25 \\
+\text{Temporal, Diseño} & 0.30 \\
+\hline
+\end{array}
+\]
+Probabilidad que ocurran los dos eventos (A, C):
+\[
+\begin{array}{|l|c|}
+\hline
+\textbf{Combinación de Eventos (A, C)} & \textbf{P(A,C)} \\
+\hline
+\text{Permanente, Saludable} & 0.22 \\
+\text{Permanente, No saludable} & 0.13 \\
+\text{Temporal, Saludable} & 0.35 \\
+\text{Temporal, No saludable} & 0.20 \\
+\hline
+\end{array}
+\]
+Probabilidad que ocurran los dos eventos (B, C):
+\[
+\begin{array}{|l|c|}
+\hline
+\textbf{Combinación de Eventos (B, C)} & \textbf{P(B,C)} \\
+\hline
+\text{Programación, Saludable} & 0.27 \\
+\text{Programación, No saludable} & 0.18 \\
+\text{Diseño, Saludable} & 0.30 \\
+\text{Diseño, No saludable} & 0.25 \\
+\hline
+\end{array}
+\]
+Probabilidad que ocurran los valores para el evento A:
+\[
+\begin{array}{|l|c|}
+\hline
+\textbf{A} & \textbf{P(A)} \\
+\hline
+\text{Permanente} & 0.35 \\
+\text{Temporal} & 0.65 \\
+\hline
+\end{array}
+\]
+Probabilidad que ocurran los valores para el evento B:
+\[
+\begin{array}{|l|c|}
+\hline
+\textbf{B} & \textbf{P(B)} \\
+\hline
+\text{Programación} & 0.45 \\
+\text{Diseño} & 0.55 \\
+\hline
+\end{array}
+\]
+Probabilidad que ocurran los valores para el evento C:
+\[
+\begin{array}{|l|c|}
+\hline
+\textbf{C} & \textbf{P(C)} \\
+\hline
+\text{Saludable} & 0.57 \\
+\text{No saludable} & 0.43 \\
+\hline
+\end{array}
+\]
+Observa que las tablas marginales se derivan de sumar los eventos complementarios, por ejemplo, para calcular la tabla marginal de los eventos $(A, C)$, se sumaron las probabilidades de la tabla $(A,B,C)$ para todos los valores de $B$, en este caso, se dice que el evento $B$ fue reducido. Otro ejemplo, es que para calcular la tabla marginal del evento C, se tuvieron que reducir los evento $A$ y $B$ de la tabla $(A,B,C)$, es decir, sumar todas las probabilidades de A y B.
+\\[12pt]
+Ahora con estas tablas podemos resolver la probabilidad condicional que nos interese, por ejemplo, la probabilidad que alguien sea un programador, dado que es temporal y come comida saludable:
+\begin{equation*}
+    P(B=\text{programación}|A=\text{temporal},C=\text{saludable}) \\
+\end{equation*}
+\begin{equation*}
+    \hspace*{2cm}
+    \begin{aligned}
+        &= \frac{P(A=\text{temporal},B=\text{programación},C=\text{saludable})}{P(A=\text{temporal},C=\text{saludable})} \\
+        &= \frac{0.15}{0.35} \\
+        &= 0.4286 \, (42.86\%)
+    \end{aligned}
+\end{equation*}
+De esta forma solo basta con consultar las tablas e indicar la probabilidad que se tiene por ejemplo, $P(A=\text{temporal},C=\text{saludable}) = 0.35$ que se obtuvo de la tabla $(A, C)$ en los valores combinados.
+\\[12pt]
+Calcula las siguiente probabilidades:
+\\[12pt]
+(a) La probabilidad de comer saludable siendo programador temporal.
+\\[6pt]
+(b) La probabilidad de comer no saludable siendo diseñador permanente.
+\\[6pt]
+(c) La probabilidad de ser temporal siendo diseñador y no comer saludable.
+\\[6pt]
+(d) La probabilidad de permanente siendo programador que come saludable.
+
+\clearpage
 
 \subsection*{Problema 7 | Estadísticos Principales de Un Eje}
 
+Los \textbf{estadísticos principales} de un eje de datos permiten analizar y describir el comportamiento de los valores registrados en dicho eje. Un eje de datos puede considerarse como una variable aleatoria cuyos valores comparten una lógica subyacente, lo que los hace pertenecer a la misma categoría de análisis. Por ejemplo, un eje que contiene las edades de una muestra, o uno que describe el grado académico alcanzado por una población.
+\\[12pt]
+Generalmente, el eje de datos representa valores observados de una muestra tomada de la población de interés. Estos datos contienen información que, a través del análisis estadístico, permite inferir propiedades del conjunto. Es importante diferenciar entre los términos \textbf{estadística y estadístico}:
+\begin{itemize}
+    \item \textbf{Estadística}: hace referencia al campo de estudio o al conjunto de métodos utilizados para analizar los datos.
+    \item \textbf{Estadístico}: es un valor calculado a partir de los datos de una muestra, como la media, la mediana o los percentiles, que describe una característica específica de la muestra.
+\end{itemize}
+En este contexto, nos referimos a \textbf{estadísticos} como los resultados de aplicar procedimientos matemáticos a los datos (por ejemplo, el cálculo de la mediana o un percentil). Estos estadísticos se utilizan para describir y resumir los datos, permitiendo generar una \textbf{estadística descriptiva} que facilite la interpretación de las propiedades del eje de datos respecto a la población analizada.
+\\[12pt]
+Dentro de los estadísticos, algunos se consideran principales porque son ampliamente utilizados para describir datos de manera práctica y efectiva. Estos estadísticos permiten realizar análisis descriptivos que, a partir de una muestra, nos acercan a una comprensión más general sobre la población en estudio.
+\\[12pt]
+Los estadísticos principales son:
+\begin{itemize}
+    \item \textbf{Conteo} - Representa el total de elementos en la muestra, generalmente se llama $N$ o $n$ y se asocia algunas veces a los grados de libertad, por ejemplo, algunas distibuciones usan $n-1$ grados de libertad para hacer cálculos como la prueba $F$.
+    \item \textbf{Suma} - Representa la suma de todos los valores del eje y explica la dimesión o volumen del eje, por ejemplo, si cada dato en el eje es un precio de algún producto, la suma representará la cantidad total de dinero acumulado en todos los productos.
+    \item \textbf{Mínimo} - Representa el valor mínimo dentro de todos los datos, este valor explica el límite inferior alcanzado por los datos, por ejemplo, si el eje de datos son estaturas, explicará cuál es la estatura más pequeña registrada.
+    \item \textbf{Máximo} - Representa el valor máximo dentro de todos los datos, este valor explica el límite superior alcanzado por los datos, por ejemplo, si el eje de datos son pesos, explicará cuál es el peso más grande registrado.
+    \item \textbf{Promedio / Media} - Representa el valor más cercano a todos los valores dentro del eje, esta valor explica el valor ideal que deberían tener todos los datos si se reducieran a un único valor, por ejemplo, si el eje de datos son salarios, el promedio representaría el salario que deberían tener todos si ganaran lo mismo y cuya suma se mantendría.
+    \item \textbf{Cuartil 1 / $Q_1 \sim 25\%$} - Representa el valor que separa el primer $25\%$ de los datos ordenados respecto al resto ($75\%$). Este valor indica el límite superior de los datos más bajos en la distribución, lo que puede ser útil para identificar valores considerados significativamente pequeños. Por ejemplo, si los datos corresponden a fallas en motores de automóviles, el primer cuartil reflejará el número de fallas acumuladas en el $25\%$ de los vehículos con menor número de fallas.
+    \item \textbf{Cuartil 2 / $Q_2 \sim 50\%$ / Mediana} - Representa el valor que divide los datos en dos mitades iguales, es decir, el $50\%$ de los valores inferiores y el $50\%$ de los valores superiores. Este estadístico mide el valor central de la distribución y puede usarse para identificar sesgos en los datos. Por ejemplo, si los datos son tiempos de fabricación de una pieza, el segundo cuartil o mediana refleja el tiempo intermedio, indicando si la distribución de tiempos está más próxima a $Q_1$ o $Q_3$.
+    \item \textbf{Cuartil 3 / $Q_3 \sim 75\%$} - Representa el valor que separa el $75\%$ de los datos ordenados respecto al $25\%$ restante. Este valor marca el límite inferior de los datos más altos en la distribución y puede ser útil para identificar valores significativamente grandes. Por ejemplo, si los datos corresponden al índice de madurez de manzanas (verde o roja), el tercer cuartil representará el valor alcanzado por el $75\%$ de las manzanas con mayor madurez.
+    \item \textbf{Percentil 5\% / $P_{5} \sim 5\%$ / Mínimo relativo} - Representa el valor que corta el $5\%$ inferior de los datos ordenados de menor a mayor. Este estadístico ayuda a evitar que valores extremos (outliers) distorsionen los análisis, proporcionando un límite inferior más confiable que el mínimo absoluto. Por ejemplo, si los datos son alturas de tornillos producidos, el percentil $5\%$ excluiría tornillos con alturas inusualmente bajas, posiblemente debidas a errores de medición.
+    \item \textbf{Percentil 95\% / $P_{95} \sim 95\%$ / Máximo relativo} - Representa el valor que corta el $5\%$ superior de los datos ordenados de mayor a menor. Este estadístico establece un límite superior confiable, ignorando valores atípicos o errores de medición que podrían sesgar el máximo absoluto. Por ejemplo, si los datos son tiempos de permanencia de clientes en una sucursal, el percentil $95\%$ excluiría tiempos extremadamente largos registrados en situaciones atípicas.
+\end{itemize}
+El siguiente ejemplo muestra un eje de datos sobre los precios de la gasolina a lo largo del mes de enero con 31 valores representan el precio que fue registrado día a día, por ejemplo el día 1 el precio fue de \textbf{\$ 23.65} y el día 18 de \textbf{\$ 24.16}.
+\begin{table}[ht]
+    \centering
+    \caption{Precios de la Gasolina a lo Largo del Mes}
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Día} & \textbf{Precio (en \$)} \\
+        \hline
+        1 & 23.65 \\
+        2 & 23.75 \\
+        3 & 23.85 \\
+        4 & 23.90 \\
+        5 & 24.00 \\
+        6 & 24.10 \\
+        7 & 24.05 \\
+        8 & 24.15 \\
+        9 & 24.25 \\
+        10 & 24.30 \\
+        11 & 24.35 \\
+        12 & 24.40 \\
+        13 & 24.45 \\
+        14 & 24.50 \\
+        15 & 24.55 \\
+        16 & 24.60 \\
+        17 & 24.65 \\
+        18 & 24.16 \\
+        19 & 24.20 \\
+        20 & 24.25 \\
+        21 & 24.30 \\
+        22 & 24.35 \\
+        23 & 24.40 \\
+        24 & 24.45 \\
+        25 & 24.50 \\
+        26 & 24.55 \\
+        27 & 24.60 \\
+        28 & 24.65 \\
+        29 & 24.70 \\
+        30 & 24.75 \\
+        31 & 24.80 \\
+        \hline
+    \end{tabular}
+\end{table}
+\\
+(a) Determina los estadísticos principales descritos.
+\\[6pt]
+(b) ¿Qué tan alejado está el mínimo absoluto del relativo?
+\\[6pt]
+(c) ¿Qué tan alejado está el máximo absoluto del relativo?
+
+\clearpage
+
 \subsection*{Problema 8 | Estadísticos Principales de Dos Ejes }
+
+Cuando analizamos dos ejes, es muy común agregar cuatro estadísticos principales más para poder comparar el comportamiento entre los ejes, estos son:
+\begin{itemize}
+    \item \textbf{Varianza} - Representa qué tan alejados cuadráticamente están los valores de la media.
+    \item \textbf{Desviación Estándar} - Representa qué tan alejados están los valores de la media en la misma magnitud, este se calcula como la raíz cuadrada de la varianza.
+    \item \textbf{Covarianza} - Representa qué tan alejados están los valores de un eje respecto a su media del eje y los valores del otro eje respecto a la media de ese otro eje, es decir, mide el grado de dispersión entre dos ejes, este será positivo si al mismo tiempo los valores de un eje son mayores a su media, mientras que los valores del otro eje también son mayores a su media o al mismo tiempo ambos son menores a la media de su respectivo eje, ya que el producto será positivo. En el caso que uno sea mayor a su media y el otro menor o viceversa, el producto será negativo y la suma de todas las ponderaciones será negativo, finalmente será cero si las sumas se anulan por a veces ser positivas o negativas. La covarianza mide la relación entre dos ejes y esta relación es positiva o directa si la suma de las ponderaciones es muy positiva, la relación será negativa o inversa si las ponderaciones son muy negativas o la relación será cero o nula si se anulan.
+    \item \textbf{Correlación} - Representa el grado de relación entre $[-1, 1]$ y se obtiene de normalizar la covarianza mediante la desviación de cada eje.
+\end{itemize}
+Podemos comparar dos ejes estadísticamente para entender qué tan similares o distintos son comparando sus medias y el grado de correlación entre ambos ejes. Si la correlación es cercana $1$ diremos que un eje explica al otro y viceversa de forma directa, es decir, cuando los valores de un eje crecen, los valores en el otro eje también lo hacen. Si la correlación es cercana a $-1$ diremos que un eje explica al otro y viceversa de forma inversa, es decir, cuando los valores de un eje crecen, los valores en el otro eje decrecen (al revés). Y si la correlación es cercana a $0$, diremos que un eje no explica al otro y viceversa, es decir hay una relación nula entre ambos ejes.
+\\[12pt]
+Por ejemplo, podemos comparar dos ejes de datos estadísticamente, para determinar si hay una correlación entre sus datos que nos lleven a concluir si un eje es capaz de explicar al otro. Tomemos las estaturas y pesos que se medieron de 15 personas y determinemos el grado de relación entre la estatura y el peso. La correlación entre el eje de datos de las estaturas y el eje de datos de los pesos determinará si la relación es directa, inversa o nula, de ser directa, a mayor estatura se encontrará un mayor peso (o a menor estatura, menor peso), al ser inversa a menor estatura mayor será el peso (o a mayor estatura, menor peso) o al ser nula, no se encontrará una relación entre las estaturas y los pesos.
+\begin{table}[ht]
+    \centering
+    \caption{Precios de la Gasolina a lo Largo del Mes}
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Estatura (m)} & \textbf{Peso (kg)} \\
+        \hline
+        1.67 & 65 \\
+        1.58 & 56 \\
+        1.72 & 78 \\
+        1.68 & 63 \\
+        1.53 & 61 \\
+        1.65 & 71 \\
+        1.84 & 95 \\
+        1.49 & 56 \\
+        1.57 & 52 \\
+        1.91 & 87 \\
+        1.83 & 84 \\
+        1.67 & 70 \\
+        1.70 & 64 \\
+        1.58 & 48 \\
+        1.82 & 95 \\
+        \hline
+    \end{tabular}
+\end{table}
+\\
+(a) Calcula la media de las estaturas
+\\[6pt]
+(b) Calcula la media de los pesos
+\\[6pt]
+(c) Calcula la varianza de las estaturas
+\\[6pt]
+(d) Calcula la varianza de los pesos
+\\[6pt]
+(e) Calcula la desviación estándar de las estaturas
+\\[6pt]
+(f) Calcula la desviación estándar de los pesos
+\\[6pt]
+(g) Calcula la covarianza entre estaturas y pesos
+\\[6pt]
+(h) Calcula la correlación entre estaturas y pesos
+\\[6pt]
+(i) Indica que tipo de relación es la correlación
+
+\clearpage
 
 \subsection*{Problema 9 | Matriz de Correlación entre Tres Ejes}
 
+Diseña una matriz de correlación que considere 3 ejes, la correlación está definida 2 a 2. Por lo que tendrás que considerar que las filas serán los 3 ejes y las columnas también los 3 ejes, luego en cada celda entre la fila y la columna anota la correlación entre el eje de la fila y el eje de la columna. Observa que sea cual sea el eje, la diagonal de la matriz será 1 dado que la correlación entre el eje y el mismo es 1 siempre.
+\\[12pt]
+Por ejemplo, para los ejes de datos A, B, C tendríamos:
+\begin{table}[ht]
+    \centering
+    \caption{Precios de la Gasolina a lo Largo del Mes}
+    \begin{tabular}{|l|c|c|c|}
+        \hline
+        - & \textbf{A} & \textbf{B} & \textbf{C} \\
+        \hline
+        \textbf{A} & 1 & · & · \\
+        \textbf{B} & · & 1 & · \\
+        \textbf{C} & · & · & 1 \\
+        \hline
+    \end{tabular}
+\end{table}
+\\
+(a) Diseña 3 ejes de datos con al menos 10 valores realistas cada uno
+\\[6pt]
+(b) Genera la matriz de correlación entre los 3 ejes, calculando la correlación entre el eje de la fila y el eje de la columna
+\\[6pt]
+(c) Indica si el segundo o tercer eje de datos tiene mayor correlación hacia el primer eje de datos, ya sea positiva o negativa
+\\[6pt]
+(d) Ubica el valor de mayor correlación que no esté en la diagonal
+\\[6pt]
+(e) Describe la hipótesis sobre esta correlación según si su relación es directa, inversa o nula
+
+\clearpage
+
 \subsection*{Problema 10 | Prueba F entre Dos Hipótesis de Un Eje}
+
+Diseña un experimento que considere dos ejes de datos de una misma característica de la población objetivo, pero para diferentes segmentos de la población. Por ejemplo, si la población son precios de productos, toma el primer eje de datos como los precios de los productos que se venden más en línea y el otro eje de datos como los precios de los productos que venden más en tienda física. Otro ejemplo, es la población de personas que fuman, considera un eje de datos bajo el segmento de los que son hombres y el otro eje de datos como las personas que son mujeres.
+\\[12pt]
+Los ejes no necesariamente deben tener el mismo número de elementos, por ejemplo, un eje podría tener 60 precios de productos, mientras que el otro eje de datos podría contener solo 40 precios de productos.
+\\[12pt]
+(a) Diseña una población de una sola característica que se pueda segmentar fácilmente en dos segmentos
+\\[6pt]
+(b) Crea dos ejes de datos para el primer segmento, con al menos 20 valores realistas
+\\[6pt]
+(c) Calcula la media del primer eje
+\\[6pt]
+(d) Calcula la media del segundo eje
+\\[6pt]
+(e) Calcula la desviación estándar del primer eje
+\\[6pt]
+(f) Calcula la desviación estándar del segundo eje
+\\[6pt]
+(g) Calcula la covarianza entre ambos ejes
+\\[6pt]
+(h) Calcula la correlación entre ambos ejes
+\\[6pt]
+(i) Indica si la correlación es cercana a 1, 0, -1 y el tipo de relación
+\\[6pt]
+(j) Aplica la prueba F entre ambos ejes con $n_1-1$ grados de libertad para el primer eje y $n_2-1$ grados de libertad para el segundo eje. Donde $n_1, n_2$ son el número de elementos en el primer y segundo eje respectivamente
+(k) Indica si el valor F es mayor a $0.05$ o no lo es y qué significa esto
 
 \clearpage
 
